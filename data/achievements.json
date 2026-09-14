@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-09-14T18:26:45.980Z",
+  "generatedAt": "2026-09-14T18:29:28.322Z",
   "repo": "posthog/posthog",
   "highestPr": 100533,
   "stats": {
-    "total": 198,
+    "total": 199,
     "claimed": 47,
     "byHumans": 43,
     "byBots": 4,
     "missed": 44,
-    "future": 107,
+    "future": 108,
     "members": 24
   },
   "upcoming": [
@@ -2354,6 +2354,20 @@
       "why": "future"
     },
     {
+      "number": 362880,
+      "category": "math",
+      "tier": "legendary",
+      "name": "Nine Factorial",
+      "blurb": "The last factorial that fits -- 10! overshoots the ceiling entirely.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 50,
+      "claimed": false,
+      "future": true,
+      "toGo": 262347,
+      "why": "future"
+    },
+    {
       "number": 370000,
       "category": "round",
       "tier": "legendary",
@@ -3677,7 +3691,7 @@
       "points": 20,
       "count": 2,
       "firstMergedAt": "2021-05-14T00:43:35Z",
-      "rank": 8
+      "rank": 9
     },
     {
       "login": "alexkim205",
@@ -3708,7 +3722,7 @@
       "points": 20,
       "count": 2,
       "firstMergedAt": "2021-08-12T00:25:13Z",
-      "rank": 8
+      "rank": 10
     },
     {
       "login": "ablaszkiewicz",
@@ -3752,7 +3766,7 @@
       "points": 50,
       "count": 1,
       "firstMergedAt": "2026-07-14T18:33:00Z",
-      "rank": 11
+      "rank": 12
     },
     {
       "login": "jakesciotto",
@@ -3774,7 +3788,7 @@
       "points": 50,
       "count": 1,
       "firstMergedAt": "2026-08-10T14:44:04Z",
-      "rank": 11
+      "rank": 13
     },
     {
       "login": "fuziontech",
@@ -3818,7 +3832,7 @@
       "points": 25,
       "count": 1,
       "firstMergedAt": "2022-08-03T16:48:14Z",
-      "rank": 14
+      "rank": 15
     },
     {
       "login": "hazzadous",
@@ -3840,7 +3854,7 @@
       "points": 25,
       "count": 1,
       "firstMergedAt": "2022-10-28T10:05:16Z",
-      "rank": 14
+      "rank": 16
     },
     {
       "login": "pauldambra",
@@ -3862,7 +3876,7 @@
       "points": 25,
       "count": 1,
       "firstMergedAt": "2022-12-14T22:48:29Z",
-      "rank": 14
+      "rank": 17
     },
     {
       "login": "daibhin",
@@ -3884,7 +3898,7 @@
       "points": 25,
       "count": 1,
       "firstMergedAt": "2023-07-05T12:14:38Z",
-      "rank": 14
+      "rank": 18
     },
     {
       "login": "tiina303",
@@ -3906,7 +3920,7 @@
       "points": 25,
       "count": 1,
       "firstMergedAt": "2024-05-09T14:38:29Z",
-      "rank": 14
+      "rank": 19
     },
     {
       "login": "zlwaterfield",
@@ -3928,7 +3942,7 @@
       "points": 25,
       "count": 1,
       "firstMergedAt": "2025-04-21T23:01:23Z",
-      "rank": 14
+      "rank": 20
     },
     {
       "login": "lucasheriques",
@@ -3950,7 +3964,7 @@
       "points": 25,
       "count": 1,
       "firstMergedAt": "2025-04-23T16:07:30Z",
-      "rank": 14
+      "rank": 21
     },
     {
       "login": "adboio",
@@ -3972,7 +3986,7 @@
       "points": 25,
       "count": 1,
       "firstMergedAt": "2025-11-24T23:15:51Z",
-      "rank": 14
+      "rank": 22
     },
     {
       "login": "jamesefhawkins",
@@ -4016,7 +4030,7 @@
       "points": 10,
       "count": 1,
       "firstMergedAt": "2020-11-13T15:55:45Z",
-      "rank": 23
+      "rank": 24
     }
   ]
 }

@@ -68,10 +68,12 @@
     points: (a, b) => b.points - a.points || b.count - a.count,
   }
 
+  const key = (prefix, tier) => `${prefix}${tier[0].toUpperCase()}${tier.slice(1)}`
+
   const members = [...register.children].map((el) => ({
     el,
-    first: el.dataset.first,
-    byTier: Object.fromEntries(TIERS.map((t) => [t, Number(el.dataset[`tier${t[0].toUpperCase()}${t.slice(1)}`] || 0)])),
+    byTier: Object.fromEntries(TIERS.map((t) => [t, Number(el.dataset[key('tier', t)] || 0)])),
+    firstByTier: Object.fromEntries(TIERS.map((t) => [t, el.dataset[key('first', t)] || ''])),
     rankEl: el.querySelector('.register__rank'),
     countEl: el.querySelector('.register__count'),
     pointsEl: el.querySelector('.register__pts'),
@@ -82,6 +84,10 @@
     for (const m of members) {
       m.count = TIERS.reduce((n, t) => (selected.has(t) ? n + m.byTier[t] : n), 0)
       m.points = TIERS.reduce((n, t) => (selected.has(t) ? n + m.byTier[t] * tierPoints[t] : n), 0)
+      // Earliest claim among the rarities still being counted.
+      m.first = TIERS.filter((t) => selected.has(t) && m.firstByTier[t])
+        .map((t) => m.firstByTier[t])
+        .sort()[0] ?? ''
       for (const chip of m.chips) chip.hidden = !selected.has(chip.dataset.tier)
     }
 
@@ -89,15 +95,8 @@
     const ranked = members.filter((m) => m.count > 0)
     ranked.sort((a, b) => ORDER[sortMode](a, b) || a.first.localeCompare(b.first))
 
-    // Standard competition ranking: ties share a place, the next one skips.
-    let rank = 0
-    let previous = null
     ranked.forEach((m, i) => {
-      const key = `${m.count}:${m.points}`
-      if (key !== previous) {
-        rank = i + 1
-        previous = key
-      }
+      const rank = i + 1
       m.rankEl.textContent = rank
       m.el.dataset.podium = rank
       m.countEl.textContent = m.count

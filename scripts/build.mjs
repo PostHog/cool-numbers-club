@@ -92,8 +92,14 @@ const searchKey = (a) =>
 /* ── Register ──────────────────────────────────────────────── */
 
 function registerRow(m) {
+  // Counts and earliest claim per tier, so narrowing the rarities re-scores and
+  // re-breaks ties against only what is still being counted.
   const perTier = Object.keys(TIERS)
-    .map((t) => `data-tier-${t}="${m.achievements.filter((a) => a.tier === t).length}"`)
+    .map((t) => {
+      const held = m.achievements.filter((a) => a.tier === t)
+      const earliest = held.reduce((min, a) => (min === '' || a.mergedAt < min ? a.mergedAt : min), '')
+      return `data-tier-${t}="${held.length}" data-first-${t}="${esc(earliest)}"`
+    })
     .join(' ')
   const numbers = m.achievements
     .map(
@@ -193,7 +199,7 @@ const html = `<!doctype html>
     <div class="section__head">
       <div>
         <h2 class="section__title">The register</h2>
-        <p class="section__sub">Ranked by how many cool numbers you hold, with rarity breaking ties. Narrow the rarities to see who leads on the good ones. Bots are on the wall but not in the running.</p>
+        <p class="section__sub">Ranked by how many cool numbers you hold, then by rarity, then by whoever got there first. Narrow the rarities to see who leads on the good ones. Bots are on the wall but not in the running.</p>
       </div>
       <div class="controls">
         <div class="control">

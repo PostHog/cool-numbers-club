@@ -98,6 +98,7 @@ const MATH = [
   [8128, 'Perfect Number', 'The fourth perfect number, and rarer than it looks.'],
   [5040, 'Seven Factorial', "Plato's favourite number."],
   [40320, 'Eight Factorial', '8! ways to arrange your commits.'],
+  [362880, 'Nine Factorial', 'The last factorial that fits -- 10! overshoots the ceiling entirely.'],
   [1089, 'The Magic Number', 'Reverse it, subtract, and the magic trick works.'],
 ]
 

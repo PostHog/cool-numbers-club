@@ -177,7 +177,12 @@ async function main() {
   )
 }
 
-/** Rank by number of achievements, then by rarity, then by who got there first. */
+/**
+ * Rank by number of achievements, then by rarity, then by who got there first.
+ *
+ * Every member gets a distinct rank: if two people are level on both count and
+ * rarity, the one whose earliest cool number merged first takes the higher spot.
+ */
 function buildLeaderboard(claimed) {
   const byLogin = new Map()
   for (const a of claimed) {
@@ -198,14 +203,7 @@ function buildLeaderboard(claimed) {
     (a, b) => b.count - a.count || b.points - a.points || a.firstMergedAt.localeCompare(b.firstMergedAt)
   )
 
-  // Standard competition ranking: equal scores share a rank, the next one skips.
-  let rank = 0
-  let previous = null
-  return members.map((m, i) => {
-    const key = `${m.count}:${m.points}`
-    if (key !== previous) { rank = i + 1; previous = key }
-    return { ...m, rank }
-  })
+  return members.map((m, i) => ({ ...m, rank: i + 1 }))
 }
 
 await main()
