@@ -121,6 +121,26 @@ function ordinalSuffix(n) {
   return n + (s[(v - 20) % 10] || s[v] || s[0])
 }
 
+/**
+ * How far apart round-number milestones sit, by magnitude. The ladder widens as
+ * the repo grows: a 10k milestone is a real event at PR #40,000 and a few weeks'
+ * work at PR #400,000. Add a row to extend it past ten million.
+ */
+const MILESTONE_STEPS = [
+  [10_000, 1_000],
+  [100_000, 10_000],
+  [1_000_000, 50_000],
+  [Infinity, 500_000],
+]
+
+const stepAt = (n) => MILESTONE_STEPS.find(([upTo]) => n < upTo)[1]
+
+/** Powers of ten that have earned a name of their own. */
+const POWER_NAMES = {
+  1: 'The First',
+  1_000_000: 'One in a Million',
+}
+
 /** Round numbers: powers of ten, plus a ladder that widens as the repo grows. */
 function* roundNumbers(max) {
   for (let p = 1; p <= max; p *= 10) {
@@ -129,13 +149,9 @@ function* roundNumbers(max) {
       number: p,
       category: 'round',
       tier: final ? 'singularity' : 'mythic',
-      name: final
-        ? CEILING === 1_000_000
-          ? 'One in a Million'
-          : 'The Last Ticket'
-        : p === 1
-          ? 'The First'
-          : `PR #${p.toLocaleString('en-US')}`,
+      // The ceiling is always the Singularity, whatever it is set to. #1,000,000
+      // keeps its name either way -- it is the better joke even when outranked.
+      name: POWER_NAMES[p] ?? (final ? 'The Last Ticket' : `PR #${p.toLocaleString('en-US')}`),
       blurb: final
         ? `The ${CEILING.toLocaleString('en-US')}th pull request, and the highest number the club recognises. The machine prints exactly one of these, ever.`
         : p === 1
@@ -143,17 +159,18 @@ function* roundNumbers(max) {
           : `The ${ordinalSuffix(String(p).length - 1)} power of ten. A genuine odometer moment.`,
     }
   }
-  // The ladder widens as the repo grows: every 1k to 10k, every 10k to 100k,
-  // then every 50k. Past six figures a 10k milestone is a few weeks' work,
-  // which is not much of a milestone.
-  for (let n = 1000; n <= max; n += n < 10000 ? 1000 : n < 100000 ? 10000 : 50000) {
+
+  for (let n = 1000; n <= max; n += stepAt(n)) {
     if (String(n).match(/^10*$/)) continue // already claimed as a power of ten
     yield {
       number: n,
       category: 'round',
       tier: n >= 10000 ? 'legendary' : 'epic',
-      name: `${n / 1000}k`,
-      blurb: `${(n / 1000).toLocaleString('en-US')} thousand pull requests deep.`,
+      name: n >= 1_000_000 ? `${n / 1_000_000}M` : `${n / 1000}k`,
+      blurb:
+        n >= 1_000_000
+          ? `${(n / 1_000_000).toLocaleString('en-US')} million pull requests deep.`
+          : `${(n / 1000).toLocaleString('en-US')} thousand pull requests deep.`,
     }
   }
 }

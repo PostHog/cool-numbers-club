@@ -16,7 +16,7 @@ so it keeps growing on its own as the repo burns through PR numbers:
 
 | Category | Rule | Examples |
 | --- | --- | --- |
-| Round numbers | Powers of ten, then every 1k to 10k, every 10k to 100k, every 50k beyond | `#1`, `#5000`, `#100000`, `#450000` |
+| Round numbers | Powers of ten, plus a ladder that widens: every 1k to 10k, 10k to 100k, 50k to 1M, 500k beyond | `#1`, `#5000`, `#450000`, `#7500000` |
 | Repdigits | Every digit the same | `#777`, `#9999`, `#111111` |
 | Staircases | The digits 1 through n, up or down | `#1234`, `#4321`, `#123456` |
 | Powers of two | From 256 up | `#1024`, `#65536` |
@@ -74,8 +74,13 @@ Fork or clone this, then edit `config.json`:
 | --- | --- |
 | `repo` | The repo to read, as `owner/name`. Must be public, or the token needs access to it. |
 | `title` | Shown in the masthead and the page title. The last word gets the accent colour. |
-| `ceiling` | Highest number the club recognises. That number becomes the sole **Singularity**. Defaults to 1,000,000. |
+| `ceiling` | Highest number the club recognises. **This one number decides the whole catalogue** — it sets how far ahead the "still to come" list runs, and that number becomes the sole **Singularity**. |
 | `source` | Where *this* site's code lives, for the "fork it" link in the footer. Point it at your fork, or omit it to drop the line. |
+
+Pick a `ceiling` that suits your repo's pace — a project at PR #4,000 is better
+served by `10000` than by ten million, since the ceiling decides how far ahead
+the "still to come" list runs. To extend the milestone ladder past ten million,
+add a row to `MILESTONE_STEPS` in `scripts/numbers.mjs`.
 
 Then:
 
@@ -85,9 +90,7 @@ npm run refresh    # fetch your repo's data and render
 npm run dev        # look at it
 ```
 
-That is the whole change — no code to edit. Pick a `ceiling` that suits your
-repo's pace: a project at PR #4,000 is better served by `10000` than by a
-million, since the ceiling decides how far ahead the "still to come" list runs.
+That is the whole change — no code to edit.
 
 To deploy your copy, point Cloudflare Pages at your fork (build command
 `npm run build`, output `dist`) and the nightly workflow keeps it current. There
