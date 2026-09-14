@@ -9,8 +9,9 @@
 import { execFileSync } from 'node:child_process'
 import { readFileSync, writeFileSync } from 'node:fs'
 import { catalogue, CEILING } from './numbers.mjs'
+import { config } from './config.mjs'
 
-const REPO = { owner: 'posthog', name: 'posthog' }
+const REPO = { owner: config.owner, name: config.name }
 const BATCH_SIZE = 100
 
 /**

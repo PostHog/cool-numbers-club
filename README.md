@@ -3,8 +3,11 @@
 Nobody picks their pull request number. A register of the people at
 [posthog/posthog](https://github.com/posthog/posthog) who got a good one anyway.
 
-A static site with no runtime dependencies. It reads the GitHub API at build
-time and renders a single HTML page.
+A static site with no runtime dependencies. It reads the GitHub API, renders a
+single HTML page, and refreshes itself nightly.
+
+**Works for any repo** — everything repo-specific is in
+[`config.json`](config.json). See [Run it for your own repo](#run-it-for-your-own-repo).
 
 ## What counts as a cool number
 
@@ -54,6 +57,44 @@ it. (Rarity toggles only render for tiers that at least one member holds.) The l
 number of achievements and breaks ties by rarity. On the page you can re-sort by
 rarity alone, and narrow which rarities count at all — picking just Mythic and
 Legendary re-scores everyone and shows who leads on the numbers that matter.
+
+## Run it for your own repo
+
+Fork or clone this, then edit `config.json`:
+
+```json
+{
+  "repo": "your-org/your-repo",
+  "title": "The Cool Numbers Club",
+  "ceiling": 1000000
+}
+```
+
+| Key | Meaning |
+| --- | --- |
+| `repo` | The repo to read, as `owner/name`. Must be public, or the token needs access to it. |
+| `title` | Shown in the masthead and the page title. The last word gets the accent colour. |
+| `ceiling` | Highest number the club recognises. That number becomes the sole **Singularity**. Defaults to 1,000,000. |
+
+Then:
+
+```sh
+gh auth login      # or export GITHUB_TOKEN
+npm run refresh    # fetch your repo's data and render
+npm run dev        # look at it
+```
+
+That is the whole change — no code to edit. Pick a `ceiling` that suits your
+repo's pace: a project at PR #4,000 is better served by `10000` than by a
+million, since the ceiling decides how far ahead the "still to come" list runs.
+
+To deploy your copy, point Cloudflare Pages at your fork (build command
+`npm run build`, output `dist`) and the nightly workflow keeps it current. There
+are no secrets to configure.
+
+Everything else is shared: the rule-generated categories work on any repo, and
+the hand-written `MEMES`/`MATH` lists are just as valid elsewhere. If your repo
+has its own in-joke numbers, add them to `MEMES` in `scripts/numbers.mjs`.
 
 ## Running it locally
 

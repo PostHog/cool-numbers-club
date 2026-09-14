@@ -8,6 +8,7 @@
 
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync } from 'node:fs'
 import { CATEGORIES, TIERS } from './numbers.mjs'
+import { config } from './config.mjs'
 
 const src = (f) => new URL(`../src/${f}`, import.meta.url)
 const root = (f) => new URL(`../${f}`, import.meta.url)
@@ -126,6 +127,11 @@ function registerRow(m) {
 
 const next = data.upcoming[0]
 
+// The masthead accents the last word of the title, whatever it happens to be.
+const titleWords = config.title.split(/\s+/)
+const titleTail = titleWords.at(-1)
+const titleLead = titleWords.slice(0, -1).join(' ')
+
 // Only offer a rarity toggle if someone actually holds one. Singularity stays
 // hidden until the day #1,000,000 lands, then appears on its own.
 const heldTiers = new Set(data.leaderboard.flatMap((m) => m.achievements.map((a) => a.tier)))
@@ -153,7 +159,7 @@ const html = `<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Cool Numbers Club — posthog/posthog</title>
 <meta name="description" content="Nobody picks their pull request number. These ${data.stats.byHumans} were worth keeping. A register of cool PR numbers in posthog/posthog, rebuilt nightly.">
-<meta property="og:title" content="The Cool Numbers Club">
+<meta property="og:title" content="${esc(config.title)}">
 <meta property="og:description" content="Nobody picks their pull request number. These ${data.stats.byHumans} were worth keeping.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#14161d">
@@ -167,7 +173,7 @@ const html = `<!doctype html>
 
 <header class="masthead">
   <div class="wrap masthead__inner">
-    <div class="masthead__mark">The Cool Numbers <b>Club</b></div>
+    <div class="masthead__mark">${titleLead ? `${esc(titleLead)} ` : ''}<b>${esc(titleTail)}</b></div>
     <a class="masthead__repo" href="https://github.com/${esc(data.repo)}/pulls">${esc(data.repo)} ↗</a>
   </div>
 </header>
@@ -255,7 +261,7 @@ const html = `<!doctype html>
     <div class="section__head">
       <div>
         <h2 class="section__title">The numbers</h2>
-        <p class="section__sub">Every number the club recognises, from #1 to #1,000,000. A number is only issued once a pull request with it gets merged — ${data.stats.missed} were missed for good, and ${data.stats.future} are still ahead of the repo.</p>
+        <p class="section__sub">Every number the club recognises, from #1 to #${num(config.ceiling)}. A number is only issued once a pull request with it gets merged — ${data.stats.missed} were missed for good, and ${data.stats.future} are still ahead of the repo.</p>
       </div>
     </div>
     <div class="filters">
