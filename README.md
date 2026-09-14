@@ -184,17 +184,12 @@ at all; hiding one keeps the outline honest without touching the design.
 
 [`.github/workflows/refresh.yml`](.github/workflows/refresh.yml) runs at 06:00
 UTC, fetches the latest claims, redraws the social card, and commits the result
-only if it changed.
-
-**Publishing is still manual.** Nothing is wired to deploy on push — the repo
-has no Git integration and no deployment has ever been triggered by one — so
-the refresh commits the new register and it sits there until someone runs
-`npx wrangler deploy`. Connect Workers Builds, or add a deploy step with a
-`CLOUDFLARE_API_TOKEN` secret, and the nightly refresh publishes itself.
+only if it changed. Cloudflare builds from that push, so the nightly publishes
+itself.
 
 **There is no PAT and no deploy hook to set up.** GitHub Actions injects
 `secrets.GITHUB_TOKEN` automatically for the fetch, and Cloudflare deploys on
-git push like any other commit. Point Cloudflare at the repo and you are done.
+git push like any other commit. Connect Cloudflare to the repo and you are done.
 
 Pushes made with `GITHUB_TOKEN` do not start `on: push` **workflows** — that is
 GitHub's loop prevention — but the suppression is scoped to Actions runs and does
@@ -204,16 +199,16 @@ equivalent rule for third-party apps.)
 
 Three things would silently stop the nightly deploy, so watch for them:
 
-- **`[skip ci]` in the commit message.** Cloudflare reads `[skip ci]`,
-  `[CI Skip]` and `[CF-Pages-Skip]` as "do not deploy". The workflow carries a
-  comment warning against adding one.
+- **`[skip ci]` in the commit message.** Cloudflare reads `[skip ci]` and its
+  variants as "do not deploy". The workflow carries a comment warning against
+  adding one.
 - **Branch deployment controls** excluding the branch being pushed to.
 - **Build watch paths** filtering out `data/achievements.json`.
 
-If you want a guarantee rather than a default, add a Pages
-[deploy hook](https://developers.cloudflare.com/pages/configuration/deploy-hooks/)
-and `curl -X POST` it after the push — that bypasses webhook delivery entirely,
-at the cost of one stored secret.
+If any of those bite, `npx wrangler deploy` publishes `dist/` from a laptop
+without waiting for a build. For a guarantee rather than a default, give the
+workflow a `CLOUDFLARE_API_TOKEN` and let it deploy directly — that bypasses
+webhook delivery entirely, at the cost of one stored secret.
 
 Run it by hand any time from the Actions tab — the workflow has a
 `workflow_dispatch` trigger.

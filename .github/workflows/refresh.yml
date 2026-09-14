@@ -6,15 +6,15 @@
 # there is no PAT to mint, store or rotate.
 #
 # This commits the refreshed data and the re-rendered social card, and
-# Cloudflare Pages redeploys on push. That means Cloudflare never talks to the
-# GitHub API and needs no secrets at all -- its build command just renders the
-# committed JSON.
+# Cloudflare rebuilds and deploys on that push. That means Cloudflare never talks
+# to the GitHub API and needs no secrets at all -- its build command just renders
+# the committed JSON.
 #
 # Commits go through the REST API rather than `git push` so that GitHub signs
 # them, satisfying branch rules that require verified signatures. That endpoint
 # takes one file per commit, hence the loop.
 #
-# Setup: none, beyond pointing Cloudflare Pages at this repo.
+# Setup: none, beyond connecting Cloudflare to this repo.
 
 name: Refresh the register
 
@@ -57,7 +57,7 @@ jobs:
           npm run og
 
       # Do NOT add [skip ci] (or [CI Skip] / [CF-Pages-Skip]) to this commit
-      # message. Cloudflare Pages treats those as "do not deploy" and the nightly
+      # message. Cloudflare treats those as "do not deploy" and the nightly
       # refresh would silently stop publishing.
       #
       # It is not needed anyway: pushes made with GITHUB_TOKEN do not trigger
@@ -104,4 +104,4 @@ jobs:
           commit src/og.png 'Redraw the social card'
           commit data/achievements.json 'Refresh the club register'
 
-          echo "Register updated. Cloudflare Pages will redeploy on this push."
+          echo "Register updated. Cloudflare will redeploy on this push."
