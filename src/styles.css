@@ -17,6 +17,7 @@
   --yellow: #f9bd2b;
   --dim: #858c9e;
 
+  --tier-singularity: #a855f7;
   --tier-mythic: var(--yellow);
   --tier-legendary: var(--orange);
   --tier-epic: var(--blue);
@@ -300,6 +301,14 @@ a { color: inherit; }
 /* Rarity toggles wear their own tier colour, so the legend is the control. */
 .sorter__btn--tier[aria-pressed='false'] { color: var(--dim); }
 .sorter__btn--tier[aria-pressed='true'] { color: var(--ink); }
+.sorter__btn--tier[data-tier-filter='singularity'][aria-pressed='true'] {
+  background: var(--rainbow);
+  background-size: 200% auto;
+  border-color: #7c3aed;
+  color: var(--paper);
+  animation: rainbow-shift 3.5s linear infinite;
+}
+.sorter__btn--tier[data-tier-filter='singularity'][aria-pressed='false'] { color: #c084fc; }
 .sorter__btn--tier[data-tier-filter='mythic'][aria-pressed='true'] { background: var(--yellow); border-color: var(--yellow); }
 .sorter__btn--tier[data-tier-filter='legendary'][aria-pressed='true'] { background: var(--orange); border-color: var(--orange); }
 .sorter__btn--tier[data-tier-filter='epic'][aria-pressed='true'] { background: var(--blue); border-color: var(--blue); }
@@ -368,6 +377,7 @@ a { color: inherit; }
 }
 .chip { cursor: pointer; }
 .chip:hover { color: var(--ink); background: var(--paper); border-color: var(--paper); }
+.chip[data-tier='singularity'] { color: #c084fc; border-color: color-mix(in srgb, #c084fc 45%, transparent); }
 .chip[data-tier='mythic'] { color: var(--yellow); border-color: color-mix(in srgb, var(--yellow) 40%, transparent); }
 .chip[data-tier='legendary'] { color: var(--orange); border-color: color-mix(in srgb, var(--orange) 40%, transparent); }
 .chip[data-tier='epic'] { color: var(--blue); border-color: color-mix(in srgb, var(--blue) 40%, transparent); }
@@ -397,6 +407,32 @@ a { color: inherit; }
 }
 .search::placeholder { color: var(--dim); }
 .search:focus { border-color: var(--dim); outline-offset: 1px; }
+
+/* ── The Singularity ──────────────────────────────────────────
+   #1,000,000 only. One ticket in the whole catalogue gets this,
+   so it is the single loudest thing on the page and nothing else
+   is allowed to compete with it. */
+
+:root {
+  --rainbow: linear-gradient(90deg, #7c3aed, #d946ef, #22d3ee, #a855f7, #7c3aed);
+}
+
+@keyframes rainbow-shift {
+  to { background-position: 200% center; }
+}
+@keyframes rainbow-pulse {
+  0%, 100% { opacity: 1; filter: saturate(1); }
+  50% { opacity: 0.82; filter: saturate(1.6); }
+}
+
+.rainbow-text {
+  background: var(--rainbow);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow-shift 3.5s linear infinite;
+}
 
 /* ── Ticket stubs ─────────────────────────────────────────── */
 
@@ -430,6 +466,36 @@ a { color: inherit; }
   12%, 62% { box-shadow: 0 0 0 3px var(--yellow), 0 10px 28px rgba(0, 0, 0, 0.5); }
 }
 .stub.is-found { animation: found 1.8s ease-out; }
+
+/* The top bar is drawn as an overlay so it can carry a moving gradient,
+   which border-top-color cannot. */
+.stub[data-tier='singularity'] { border-top-color: transparent; }
+.stub[data-tier='singularity']::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  inset-inline: -1px;
+  height: 5px;
+  background: var(--rainbow);
+  background-size: 200% auto;
+  animation: rainbow-shift 3.5s linear infinite, rainbow-pulse 2s ease-in-out infinite;
+}
+.stub[data-tier='singularity'] .stub__number {
+  background: var(--rainbow);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow-shift 3.5s linear infinite;
+}
+/* The label stays a solid readable purple -- a gradient at 10px is unreadable. */
+.stub[data-tier='singularity'] .stub__tier { color: #6d28d9; }
+.stub--open[data-tier='singularity'] .stub__tier { color: var(--tier-singularity); }
+.stub--open[data-tier='singularity'] .stub__name { color: var(--tier-singularity); }
+.stub--open[data-tier='singularity'] .stub__status {
+  color: var(--tier-singularity);
+  border-color: color-mix(in srgb, var(--tier-singularity) 45%, transparent);
+}
 
 a.stub:hover {
   transform: translateY(-3px);
@@ -594,6 +660,7 @@ a.stub:hover {
   min-width: 4.5rem;
   font-variant-numeric: tabular-nums;
 }
+.recent__n[data-tier='singularity'] { color: #c084fc; }
 .recent__n[data-tier='mythic'] { color: var(--yellow); }
 .recent__n[data-tier='legendary'] { color: var(--orange); }
 .recent__n[data-tier='epic'] { color: var(--blue); }
@@ -638,4 +705,11 @@ a.stub:hover {
     transition-duration: 0.01ms !important;
   }
   .odo__reel { animation: none; transform: translateY(calc(var(--digit) * -10%)); }
+  .rainbow-text,
+  .stub[data-tier='singularity']::before,
+  .stub[data-tier='singularity'] .stub__number,
+  .sorter__btn--tier[data-tier-filter='singularity'][aria-pressed='true'] {
+    animation: none !important;
+    background-position: 25% center;
+  }
 }

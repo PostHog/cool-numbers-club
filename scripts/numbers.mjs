@@ -14,6 +14,8 @@
 export const CEILING = 1_000_000
 
 export const TIERS = {
+  // One number in the entire catalogue sits here, and only one ever will.
+  singularity: { label: 'Singularity', points: 1000 },
   mythic: { label: 'Mythic', points: 100 },
   legendary: { label: 'Legendary', points: 50 },
   epic: { label: 'Epic', points: 25 },
@@ -112,13 +114,15 @@ function ordinalSuffix(n) {
 /** Round numbers: powers of ten, then every 10k once we are past 10k. */
 function* roundNumbers(max) {
   for (let p = 1; p <= max; p *= 10) {
+    const final = p === CEILING
     yield {
       number: p,
       category: 'round',
-      tier: 'mythic',
-      name: p === 1 ? 'The First' : `PR #${p.toLocaleString('en-US')}`,
-      blurb:
-        p === 1
+      tier: final ? 'singularity' : 'mythic',
+      name: final ? 'One in a Million' : p === 1 ? 'The First' : `PR #${p.toLocaleString('en-US')}`,
+      blurb: final
+        ? 'The millionth pull request. The machine prints exactly one of these, ever.'
+        : p === 1
           ? 'Where it all began. The very first pull request.'
           : `The ${ordinalSuffix(String(p).length - 1)} power of ten. A genuine odometer moment.`,
     }
@@ -210,7 +214,7 @@ function* handwritten(max, list, category) {
 }
 
 /** Tiers are ranked so that a better claim wins when two rules collide. */
-const TIER_RANK = { mythic: 4, legendary: 3, epic: 2, rare: 1 }
+const TIER_RANK = { singularity: 5, mythic: 4, legendary: 3, epic: 2, rare: 1 }
 
 /** Higher tier wins a collision; on a tie, a hand-written name beats a generated one. */
 function beats(a, b) {

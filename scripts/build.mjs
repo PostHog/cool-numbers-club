@@ -120,6 +120,10 @@ function registerRow(m) {
 
 const next = data.upcoming[0]
 
+// Only offer a rarity toggle if someone actually holds one. Singularity stays
+// hidden until the day #1,000,000 lands, then appears on its own.
+const heldTiers = new Set(data.leaderboard.flatMap((m) => m.achievements.map((a) => a.tier)))
+
 const counters = [
   { n: num(data.stats.byHumans), label: 'Numbers issued', accent: 'yellow' },
   { n: data.stats.members, label: 'Club members', accent: 'orange' },
@@ -203,6 +207,7 @@ const html = `<!doctype html>
           <span class="stencil control__label">Count</span>
           <div class="sorter" role="group" aria-label="Which rarities to count">
             ${Object.entries(TIERS)
+              .filter(([key]) => heldTiers.has(key))
               .map(
                 ([key, t]) =>
                   `<button class="sorter__btn sorter__btn--tier" type="button" data-tier-filter="${key}" aria-pressed="true">${t.label}</button>`

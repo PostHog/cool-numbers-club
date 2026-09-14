@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T18:23:33.236Z",
+  "generatedAt": "2026-09-14T18:25:23.886Z",
   "repo": "posthog/posthog",
   "highestPr": 100532,
   "stats": {
@@ -3334,11 +3334,11 @@
     {
       "number": 1000000,
       "category": "round",
-      "tier": "mythic",
-      "name": "PR #1,000,000",
-      "blurb": "The 6th power of ten. A genuine odometer moment.",
+      "tier": "singularity",
+      "name": "One in a Million",
+      "blurb": "The millionth pull request. The machine prints exactly one of these, ever.",
       "alsoKnownAs": [],
-      "points": 100,
+      "points": 1000,
       "claimed": false,
       "future": true,
       "toGo": 899468,

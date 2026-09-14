@@ -44,7 +44,11 @@ Two rules about how these are counted:
   whose login ends in `-bot`/`[bot]`/`-app`, is listed as the holder but kept
   off the leaderboard.
 
-Scoring: Mythic 100, Legendary 50, Epic 25, Rare 10. The leaderboard ranks by
+Scoring: Singularity 1000, Mythic 100, Legendary 50, Epic 25, Rare 10.
+**Singularity** exists for exactly one number — `#1,000,000`, the last ticket the
+machine will ever print. It gets an animated rainbow treatment on the page, and
+its rarity toggle stays hidden from the leaderboard until someone actually claims
+it. (Rarity toggles only render for tiers that at least one member holds.) The leaderboard ranks by
 number of achievements and breaks ties by rarity. On the page you can re-sort by
 rarity alone, and narrow which rarities count at all — picking just Mythic and
 Legendary re-scores everyone and shows who leads on the numbers that matter.
