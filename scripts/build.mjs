@@ -18,7 +18,7 @@ const esc = (s) =>
   String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]))
 const num = (n) => n.toLocaleString('en-US')
 
-/** Why a number is still unissued, in the voice of the machine. */
+/** Why a number is not yet on someone's wall, in the voice of the machine. */
 const STATUS = {
   'not-a-pr': 'Never a pull request',
   unmerged: 'Opened, never merged',
@@ -60,14 +60,17 @@ function stub(a) {
     : ''
 
   if (!a.claimed) {
-    return `<div class="stub stub--open" data-tier="${a.tier}" data-category="${a.category}" data-claimed="false" data-search="${esc(searchKey(a))}">
+    const status = a.future
+      ? `${num(a.toGo)} pull requests away`
+      : (STATUS[a.why] ?? 'Unissued')
+    return `<div class="stub stub--open${a.future ? ' stub--future' : ''}" id="n-${a.number}" data-tier="${a.tier}" data-category="${a.category}" data-claimed="false" data-status="${a.future ? 'future' : 'missed'}" data-search="${esc(searchKey(a))}">
       ${head}${title}${aka}
-      <div class="stub__status">${esc(STATUS[a.why] ?? 'Unissued')}</div>
+      <div class="stub__status">${esc(status)}</div>
     </div>`
   }
 
   const h = a.holder
-  return `<a class="stub" href="${esc(a.pr.url)}" data-tier="${a.tier}" data-category="${a.category}" data-claimed="true" data-bot="${a.bot}" data-search="${esc(searchKey(a))}">
+  return `<a class="stub" id="n-${a.number}" href="${esc(a.pr.url)}" data-tier="${a.tier}" data-category="${a.category}" data-claimed="true" data-status="claimed" data-bot="${a.bot}" data-search="${esc(searchKey(a))}">
     ${head}${title}${aka}
     <div class="stub__perf"></div>
     <div class="stub__holder">
@@ -89,10 +92,16 @@ const searchKey = (a) =>
 /* ── Register ──────────────────────────────────────────────── */
 
 function registerRow(m) {
+  const perTier = Object.keys(TIERS)
+    .map((t) => `data-tier-${t}="${m.achievements.filter((a) => a.tier === t).length}"`)
+    .join(' ')
   const numbers = m.achievements
-    .map((a) => `<a class="chip" data-tier="${a.tier}" href="${esc(a.url)}" title="${esc(a.name)} — ${esc(a.title)}">#${num(a.number)}</a>`)
+    .map(
+      (a) =>
+        `<a class="chip" data-tier="${a.tier}" href="#n-${a.number}" title="${esc(a.name)} — ${esc(a.title)}">#${num(a.number)}</a>`
+    )
     .join('')
-  return `<li class="register__row" data-podium="${m.rank}" data-count="${m.count}" data-points="${m.points}" data-first="${esc(m.firstMergedAt)}">
+  return `<li class="register__row" data-podium="${m.rank}" data-first="${esc(m.firstMergedAt)}" ${perTier}>
     <div class="register__rank">${m.rank}</div>
     ${avatar(m.avatarUrl, 'register__avatar', '')}
     <div class="register__who">
@@ -114,7 +123,8 @@ const next = data.upcoming[0]
 const counters = [
   { n: num(data.stats.byHumans), label: 'Numbers issued', accent: 'yellow' },
   { n: data.stats.members, label: 'Club members', accent: 'orange' },
-  { n: data.stats.unclaimed, label: 'Still unissued', accent: 'blue' },
+  { n: data.stats.missed, label: 'Missed for good' },
+  { n: data.stats.future, label: 'Still to come', accent: 'blue' },
   { n: data.stats.byBots, label: 'Taken by bots' },
 ]
 
@@ -122,7 +132,8 @@ const filters = [
   ['all', 'Everything'],
   ...Object.entries(CATEGORIES).map(([k, v]) => [k, v.label]),
   ['claimed', 'Issued'],
-  ['open', 'Unissued'],
+  ['missed', 'Missed'],
+  ['future', 'Still to come'],
 ]
 
 const html = `<!doctype html>
@@ -178,14 +189,33 @@ const html = `<!doctype html>
     <div class="section__head">
       <div>
         <h2 class="section__title">The register</h2>
-        <p class="section__sub">Ranked by how many cool numbers you hold. Rarity breaks ties. Bots are on the wall but not in the running.</p>
+        <p class="section__sub">Ranked by how many cool numbers you hold, with rarity breaking ties. Narrow the rarities to see who leads on the good ones. Bots are on the wall but not in the running.</p>
       </div>
-      <div class="sorter" role="group" aria-label="Sort the register">
-        <button class="sorter__btn" type="button" data-sort="count" aria-pressed="true">By count</button>
-        <button class="sorter__btn" type="button" data-sort="points" aria-pressed="false">By rarity</button>
+      <div class="controls">
+        <div class="control">
+          <span class="stencil control__label">Sort</span>
+          <div class="sorter" role="group" aria-label="Sort the register">
+            <button class="sorter__btn" type="button" data-sort="count" aria-pressed="true">By count</button>
+            <button class="sorter__btn" type="button" data-sort="points" aria-pressed="false">By rarity</button>
+          </div>
+        </div>
+        <div class="control">
+          <span class="stencil control__label">Count</span>
+          <div class="sorter" role="group" aria-label="Which rarities to count">
+            ${Object.entries(TIERS)
+              .map(
+                ([key, t]) =>
+                  `<button class="sorter__btn sorter__btn--tier" type="button" data-tier-filter="${key}" aria-pressed="true">${t.label}</button>`
+              )
+              .join('')}
+          </div>
+        </div>
       </div>
     </div>
-    <ol class="register">${data.leaderboard.map(registerRow).join('')}</ol>
+    <ol class="register" data-tier-points='${JSON.stringify(
+      Object.fromEntries(Object.entries(TIERS).map(([k, v]) => [k, v.points]))
+    )}'>${data.leaderboard.map(registerRow).join('')}</ol>
+    <p class="empty" data-register-empty hidden>Nothing to count. Pick at least one rarity.</p>
   </section>
 
   <section class="section wrap" id="recent">
@@ -214,7 +244,7 @@ const html = `<!doctype html>
     <div class="section__head">
       <div>
         <h2 class="section__title">The numbers</h2>
-        <p class="section__sub">Every number the club recognises. ${data.stats.unclaimed} are still on the roll — a number is only issued once a pull request with it gets merged.</p>
+        <p class="section__sub">Every number the club recognises, from #1 to #1,000,000. A number is only issued once a pull request with it gets merged — ${data.stats.missed} were missed for good, and ${data.stats.future} are still ahead of the repo.</p>
       </div>
     </div>
     <div class="filters">

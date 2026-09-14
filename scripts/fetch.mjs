@@ -8,7 +8,7 @@
 
 import { execFileSync } from 'node:child_process'
 import { writeFileSync } from 'node:fs'
-import { catalogue } from './numbers.mjs'
+import { catalogue, CEILING } from './numbers.mjs'
 
 const REPO = { owner: 'posthog', name: 'posthog' }
 const BATCH_SIZE = 100
@@ -96,12 +96,19 @@ async function main() {
   const max = await highestPrNumber()
   console.error(`Highest PR in ${REPO.owner}/${REPO.name}: #${max.toLocaleString('en-US')}`)
 
-  const entries = catalogue(max)
-  console.error(`Catalogue: ${entries.length} cool numbers`)
+  // The catalogue runs all the way to the ceiling. Numbers past the current
+  // highest PR cannot have been claimed yet, so they are listed as still to come
+  // rather than quietly left off the wall.
+  const entries = catalogue(CEILING)
+  const reachable = entries.filter((e) => e.number <= max)
+  console.error(`Catalogue: ${entries.length} cool numbers, ${reachable.length} reachable so far`)
 
-  const pulls = await fetchPulls(entries.map((e) => e.number))
+  const pulls = await fetchPulls(reachable.map((e) => e.number))
 
   const achievements = entries.map((entry) => {
+    if (entry.number > max) {
+      return { ...entry, claimed: false, future: true, toGo: entry.number - max, why: 'future' }
+    }
     const pr = pulls.get(entry.number)
     // Only merged PRs count. Issues, unmerged PRs and gaps leave the slot open.
     if (!pr || pr.state !== 'MERGED' || !pr.author) {
@@ -130,11 +137,7 @@ async function main() {
     }
   })
 
-  // Look past the current PR number to find what the repo is heading towards.
-  const upcoming = catalogue(max * 2 + 1000)
-    .filter((e) => e.number > max)
-    .slice(0, 4)
-    .map((e) => ({ ...e, toGo: e.number - max }))
+  const upcoming = achievements.filter((a) => a.future).slice(0, 4)
 
   // Bots hold their numbers on the wall of fame, but they do not get to compete.
   const leaderboard = buildLeaderboard(achievements.filter((a) => a.claimed && !a.bot))
@@ -149,7 +152,9 @@ async function main() {
       claimed: claimed.length,
       byHumans: claimed.filter((a) => !a.bot).length,
       byBots: claimed.filter((a) => a.bot).length,
-      unclaimed: achievements.length - claimed.length,
+      // Missed: the number went by and nothing merged on it. Future: not there yet.
+      missed: achievements.filter((a) => !a.claimed && !a.future).length,
+      future: achievements.filter((a) => a.future).length,
       members: leaderboard.length,
     },
     upcoming,
@@ -167,7 +172,8 @@ async function main() {
   console.error(
     `Wrote data/achievements.json -- ${payload.stats.claimed} claimed ` +
       `(${payload.stats.byHumans} human, ${payload.stats.byBots} bot), ` +
-      `${payload.stats.unclaimed} still up for grabs, ${leaderboard.length} club members.`
+      `${payload.stats.missed} missed, ${payload.stats.future} still to come, ` +
+      `${leaderboard.length} club members.`
   )
 }
 

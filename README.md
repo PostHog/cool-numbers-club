@@ -15,13 +15,26 @@ so it keeps growing on its own as the repo burns through PR numbers:
 | --- | --- | --- |
 | Round numbers | Powers of ten, then every 10,000 | `#1`, `#1000`, `#100000` |
 | Repdigits | Every digit the same | `#777`, `#9999`, `#111111` |
-| Staircases | Four or more consecutive digits, up or down | `#1234`, `#98765` |
+| Staircases | The digits 1 through n, up or down | `#1234`, `#4321`, `#123456` |
 | Powers of two | From 256 up | `#1024`, `#65536` |
-| Mathematical | Constants and famous integers | `#31415`, `#1729`, `#8128` |
+| Mathematical | Constants (five digits minimum) and exact famous integers | `#31415`, `#1729`, `#8128` |
 | Memes & culture | Hand-written, indefensible | `#42`, `#69420`, `#676767` |
 
 Numbers only cool by cultural decree live in the `MEMES` and `MATH` arrays at
 the top of that file. **Add new ones there** — one line each, `[number, name, blurb]`.
+The `MEMES` array carries the bar for what belongs: it should be fine read aloud
+at an all-hands, which rules out anything at a group's expense and anything that
+doubles as a hate symbol.
+
+The club stops at **#1,000,000** (`CEILING`). Every number up to there is listed
+from day one, so the page shows what is still ahead of the repo, not just what
+has already gone by.
+
+Every number is in one of three states:
+
+- **Issued** — a merged PR claimed it.
+- **Missed** — the number went by and nothing merged on it. Gone for good.
+- **Still to come** — the repo has not reached it yet.
 
 Two rules about how these are counted:
 
@@ -32,8 +45,9 @@ Two rules about how these are counted:
   off the leaderboard.
 
 Scoring: Mythic 100, Legendary 50, Epic 25, Rare 10. The leaderboard ranks by
-number of achievements and breaks ties by rarity — the page can also re-sort by
-rarity alone.
+number of achievements and breaks ties by rarity. On the page you can re-sort by
+rarity alone, and narrow which rarities count at all — picking just Mythic and
+Legendary re-scores everyone and shows who leads on the numbers that matter.
 
 ## Running it locally
 

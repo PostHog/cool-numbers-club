@@ -267,7 +267,16 @@ a { color: inherit; }
 
 /* ── Register (leaderboard) ───────────────────────────────── */
 
-.sorter { display: flex; gap: 0.25rem; align-items: center; }
+/* Two control groups: how to sort, and which rarities are counted at all. */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+}
+.control { display: flex; align-items: center; gap: 0.6rem; }
+.control__label { flex-shrink: 0; }
+
+.sorter { display: flex; flex-wrap: wrap; gap: 0.25rem; align-items: center; }
 .sorter__btn {
   font: inherit;
   font-family: var(--mono);
@@ -287,6 +296,14 @@ a { color: inherit; }
   background: var(--paper);
   border-color: var(--paper);
 }
+
+/* Rarity toggles wear their own tier colour, so the legend is the control. */
+.sorter__btn--tier[aria-pressed='false'] { color: var(--dim); }
+.sorter__btn--tier[aria-pressed='true'] { color: var(--ink); }
+.sorter__btn--tier[data-tier-filter='mythic'][aria-pressed='true'] { background: var(--yellow); border-color: var(--yellow); }
+.sorter__btn--tier[data-tier-filter='legendary'][aria-pressed='true'] { background: var(--orange); border-color: var(--orange); }
+.sorter__btn--tier[data-tier-filter='epic'][aria-pressed='true'] { background: var(--blue); border-color: var(--blue); }
+.sorter__btn--tier[data-tier-filter='rare'][aria-pressed='true'] { background: var(--paper-dim); border-color: var(--paper-dim); }
 
 .register { list-style: none; margin: 0; padding: 0; }
 .register__row {
@@ -349,6 +366,7 @@ a { color: inherit; }
   color: var(--dim);
   font-variant-numeric: tabular-nums;
 }
+.chip { cursor: pointer; }
 .chip:hover { color: var(--ink); background: var(--paper); border-color: var(--paper); }
 .chip[data-tier='mythic'] { color: var(--yellow); border-color: color-mix(in srgb, var(--yellow) 40%, transparent); }
 .chip[data-tier='legendary'] { color: var(--orange); border-color: color-mix(in srgb, var(--orange) 40%, transparent); }
@@ -404,6 +422,14 @@ a { color: inherit; }
 .stub[data-tier='mythic'] { border-top-color: var(--tier-mythic); }
 .stub[data-tier='legendary'] { border-top-color: var(--tier-legendary); }
 .stub[data-tier='epic'] { border-top-color: var(--tier-epic); }
+
+.stub { scroll-margin-top: 5rem; }
+
+@keyframes found {
+  0%, 100% { box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3); }
+  12%, 62% { box-shadow: 0 0 0 3px var(--yellow), 0 10px 28px rgba(0, 0, 0, 0.5); }
+}
+.stub.is-found { animation: found 1.8s ease-out; }
 
 a.stub:hover {
   transform: translateY(-3px);
@@ -533,6 +559,11 @@ a.stub:hover {
   padding: 0.3rem 0.5rem;
   margin-top: 1rem;
   text-align: center;
+}
+
+.stub--future .stub__status {
+  color: var(--yellow);
+  border-color: color-mix(in srgb, var(--yellow) 35%, transparent);
 }
 
 .empty {

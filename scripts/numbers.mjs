@@ -7,6 +7,12 @@
  * that are only cool because humans decided they were.
  */
 
+/**
+ * The club stops at a million. Past that the joke has run its course, and
+ * #1000000 is a fine place for the odometer to retire.
+ */
+export const CEILING = 1_000_000
+
 export const TIERS = {
   mythic: { label: 'Mythic', points: 100 },
   legendary: { label: 'Legendary', points: 50 },
@@ -88,7 +94,6 @@ const MATH = [
   [5040, 'Seven Factorial', "Plato's favourite number."],
   [40320, 'Eight Factorial', '8! ways to arrange your commits.'],
   [1089, 'The Magic Number', 'Reverse it, subtract, and the magic trick works.'],
-  [65535, 'Max Unsigned Short', 'One short of overflowing.'],
 ]
 
 const digits = (n) => String(n)
@@ -141,7 +146,7 @@ function* repdigits(max) {
         category: 'repdigit',
         tier: len >= 6 ? 'legendary' : len >= 5 ? 'epic' : 'rare',
         name: `${len} × ${d}`,
-        blurb: `${len} identical digits in a row. The odds were not good.`,
+        blurb: `${len} identical digits in a row. The odds are not good.`,
       }
     }
   }
@@ -220,7 +225,8 @@ function beats(a, b) {
  * meme). We keep one entry per number -- the highest tier wins -- but record
  * every rule it matched so the page can show them all.
  */
-export function catalogue(max) {
+export function catalogue(requestedMax) {
+  const max = Math.min(requestedMax, CEILING)
   const byNumber = new Map()
 
   const all = [
