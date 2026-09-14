@@ -66,12 +66,17 @@ jobs:
           # verified-signatures rule without storing a signing key anywhere.
           current=$(gh api "repos/$GITHUB_REPOSITORY/contents/$FILE?ref=$GITHUB_REF_NAME" --jq .sha)
 
+          # Via a file, not an argument: base64 of the register is ~150KB and a
+          # single argument caps out at 128KB.
+          base64 -w0 "$FILE" > /tmp/content.b64
+
           jq -n \
             --arg message 'Refresh the club register' \
             --arg branch  "$GITHUB_REF_NAME" \
             --arg sha     "$current" \
-            --arg content "$(base64 -w0 "$FILE")" \
-            '{message: $message, branch: $branch, sha: $sha, content: $content}' > /tmp/commit.json
+            --rawfile content /tmp/content.b64 \
+            '{message: $message, branch: $branch, sha: $sha, content: ($content | rtrimstr("\n"))}' \
+            > /tmp/commit.json
 
           gh api --method PUT "repos/$GITHUB_REPOSITORY/contents/$FILE" \
             --input /tmp/commit.json --jq '.commit.html_url'
