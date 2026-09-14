@@ -93,6 +93,9 @@ const MATH = [
   [31415, 'Pi', 'Five digits of a circle.'],
   [31416, 'Pi, Rounded', 'For the pedants who round correctly.'],
   [314159, 'Pi, Fully Committed', 'Six digits of transcendence.'],
+  [62831, 'Tau', 'Five digits of a full turn. Pi never finishes the circle.'],
+  [62832, 'Tau, Rounded', 'The same pedants, twice as satisfied.'],
+  [628318, 'Tau, Fully Committed', 'Six digits of the circle constant that should have won.'],
   [27182, "Euler's Number", 'The base of natural growth.'],
   [16180, 'Phi', 'The golden ratio, and allegedly the most beautiful proportion.'],
   [14142, 'Root Two', 'The diagonal of a unit square.'],
@@ -103,7 +106,6 @@ const MATH = [
   [5040, 'Seven Factorial', "Plato's favourite number."],
   [40320, 'Eight Factorial', '8! ways to arrange your commits.'],
   [362880, 'Nine Factorial', 'The last factorial that fits -- 10! overshoots the ceiling entirely.'],
-  [1089, 'The Magic Number', 'Reverse it, subtract, and the magic trick works.'],
 ]
 
 const digits = (n) => String(n)
