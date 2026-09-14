@@ -56,9 +56,9 @@ jobs:
           fi
           npm run og
 
-      # Do NOT add [skip ci] (or [CI Skip] / [CF-Pages-Skip]) to this commit
-      # message. Cloudflare treats those as "do not deploy" and the nightly
-      # refresh would silently stop publishing.
+      # Do NOT add [skip ci] (or any of its variants) to this commit message.
+      # Cloudflare treats those as "do not deploy" and the nightly refresh
+      # would silently stop publishing.
       #
       # It is not needed anyway: pushes made with GITHUB_TOKEN do not trigger
       # `on: push` workflows, so there is no loop to guard against. That
