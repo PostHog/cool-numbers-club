@@ -1,0 +1,3543 @@
+{
+  "generatedAt": "2026-09-14T18:11:14.353Z",
+  "repo": "posthog/posthog",
+  "highestPr": 100522,
+  "stats": {
+    "total": 123,
+    "claimed": 68,
+    "byHumans": 62,
+    "byBots": 6,
+    "unclaimed": 55,
+    "members": 30
+  },
+  "upcoming": [
+    {
+      "number": 110000,
+      "category": "round",
+      "tier": "legendary",
+      "name": "110k",
+      "blurb": "110 thousand pull requests deep.",
+      "alsoKnownAs": [],
+      "points": 50,
+      "toGo": 9478
+    },
+    {
+      "number": 111111,
+      "category": "repdigit",
+      "tier": "legendary",
+      "name": "6 × 1",
+      "blurb": "6 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 50,
+      "toGo": 10589
+    },
+    {
+      "number": 120000,
+      "category": "round",
+      "tier": "legendary",
+      "name": "120k",
+      "blurb": "120 thousand pull requests deep.",
+      "alsoKnownAs": [],
+      "points": 50,
+      "toGo": 19478
+    },
+    {
+      "number": 123456,
+      "category": "staircase",
+      "tier": "legendary",
+      "name": "Staircase Up",
+      "blurb": "6 consecutive digits, marching upwards.",
+      "alsoKnownAs": [],
+      "points": 50,
+      "toGo": 22934
+    }
+  ],
+  "recent": [
+    {
+      "number": 100000,
+      "name": "PR #100,000",
+      "tier": "mythic",
+      "holder": {
+        "login": "veryayskiy",
+        "name": "Alex V",
+        "url": "https://github.com/veryayskiy",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/13624984?u=9bd247851dfa702b3c5952fd7b9e1d967ed3c598&v=4",
+        "bot": false
+      },
+      "mergedAt": "2026-09-14T10:45:35Z",
+      "url": "https://github.com/PostHog/posthog/pull/100000"
+    },
+    {
+      "number": 80085,
+      "name": "Calculator Classic II",
+      "tier": "epic",
+      "holder": {
+        "login": "Gilbert09",
+        "name": "Tom Owers",
+        "url": "https://github.com/Gilbert09",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1459269?u=0edde3eeb61b9d9c80cf8e432bae838fee58f179&v=4",
+        "bot": false
+      },
+      "mergedAt": "2026-08-11T23:00:49Z",
+      "url": "https://github.com/PostHog/posthog/pull/80085"
+    },
+    {
+      "number": 80000,
+      "name": "80k",
+      "tier": "legendary",
+      "holder": {
+        "login": "jakesciotto",
+        "name": "jake sciotto",
+        "url": "https://github.com/jakesciotto",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/4285855?u=5dfa4e6834404a69ef97536b9c406ab45b7c53f0&v=4",
+        "bot": false
+      },
+      "mergedAt": "2026-08-10T14:44:04Z",
+      "url": "https://github.com/PostHog/posthog/pull/80000"
+    },
+    {
+      "number": 70000,
+      "name": "70k",
+      "tier": "legendary",
+      "holder": {
+        "login": "Gilbert09",
+        "name": "Tom Owers",
+        "url": "https://github.com/Gilbert09",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1459269?u=0edde3eeb61b9d9c80cf8e432bae838fee58f179&v=4",
+        "bot": false
+      },
+      "mergedAt": "2026-07-14T18:33:00Z",
+      "url": "https://github.com/PostHog/posthog/pull/70000"
+    },
+    {
+      "number": 67000,
+      "name": "Six Seven Thousand",
+      "tier": "epic",
+      "holder": {
+        "login": "jurajmajerik",
+        "name": "Juraj Majerik",
+        "url": "https://github.com/jurajmajerik",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/22996112?u=3f92ee554edcfbfdfff407fca686467bd0d973a8&v=4",
+        "bot": false
+      },
+      "mergedAt": "2026-06-30T13:18:39Z",
+      "url": "https://github.com/PostHog/posthog/pull/67000"
+    },
+    {
+      "number": 65432,
+      "name": "Staircase Down",
+      "tier": "epic",
+      "holder": {
+        "login": "webjunkie",
+        "name": "Julian Bez",
+        "url": "https://github.com/webjunkie",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/59713?u=7bfc22f91a964d0015731031bccaebdf5bddb754&v=4",
+        "bot": false
+      },
+      "mergedAt": "2026-06-23T20:00:35Z",
+      "url": "https://github.com/PostHog/posthog/pull/65432"
+    }
+  ],
+  "achievements": [
+    {
+      "number": 1,
+      "category": "round",
+      "tier": "mythic",
+      "name": "The First",
+      "blurb": "Where it all began. The very first pull request.",
+      "alsoKnownAs": [],
+      "points": 100,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 10,
+      "category": "round",
+      "tier": "mythic",
+      "name": "PR #10",
+      "blurb": "The 1st power of ten. A genuine odometer moment.",
+      "alsoKnownAs": [],
+      "points": 100,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 42,
+      "category": "meme",
+      "tier": "rare",
+      "name": "The Answer",
+      "blurb": "To life, the universe, and everything.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": true,
+      "holder": {
+        "login": "dependabot-preview",
+        "name": null,
+        "url": "https://github.com/apps/dependabot-preview",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/2141?v=4",
+        "bot": true
+      },
+      "pr": {
+        "title": "Bump parso from 0.5.1 to 0.6.1",
+        "url": "https://github.com/PostHog/posthog/pull/42",
+        "mergedAt": "2020-02-10T00:11:43Z",
+        "createdAt": "2020-02-09T23:29:03Z",
+        "additions": 1,
+        "deletions": 1
+      }
+    },
+    {
+      "number": 67,
+      "category": "meme",
+      "tier": "rare",
+      "name": "Six Seven",
+      "blurb": "No further explanation has ever been offered.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "timgl",
+        "name": "timgl",
+        "url": "https://github.com/timgl",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1727427?u=68d3693009c289044285447b6ed667bdb08176d2&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Closes #52 toolbar freezes because react-draggable gets in the way",
+        "url": "https://github.com/PostHog/posthog/pull/67",
+        "mergedAt": "2020-02-11T22:15:58Z",
+        "createdAt": "2020-02-11T22:15:41Z",
+        "additions": 3,
+        "deletions": 7
+      }
+    },
+    {
+      "number": 69,
+      "category": "meme",
+      "tier": "rare",
+      "name": "Nice",
+      "blurb": "Nice.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 88,
+      "category": "meme",
+      "tier": "rare",
+      "name": "Double Infinity",
+      "blurb": "Two fat ladies.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "timgl",
+        "name": "timgl",
+        "url": "https://github.com/timgl",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1727427?u=68d3693009c289044285447b6ed667bdb08176d2&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Closes #79 pagination on EventsTable",
+        "url": "https://github.com/PostHog/posthog/pull/88",
+        "mergedAt": "2020-02-13T19:03:01Z",
+        "createdAt": "2020-02-13T00:12:43Z",
+        "additions": 74,
+        "deletions": 15
+      }
+    },
+    {
+      "number": 100,
+      "category": "round",
+      "tier": "mythic",
+      "name": "PR #100",
+      "blurb": "The 2nd power of ten. A genuine odometer moment.",
+      "alsoKnownAs": [],
+      "points": 100,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 111,
+      "category": "repdigit",
+      "tier": "rare",
+      "name": "3 × 1",
+      "blurb": "3 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 161,
+      "category": "math",
+      "tier": "rare",
+      "name": "Golden Ratio",
+      "blurb": "Aesthetically optimal.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "timgl",
+        "name": "timgl",
+        "url": "https://github.com/timgl",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1727427?u=68d3693009c289044285447b6ed667bdb08176d2&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Point people to demo environment locally for them to have a play",
+        "url": "https://github.com/PostHog/posthog/pull/161",
+        "mergedAt": "2020-02-21T22:35:47Z",
+        "createdAt": "2020-02-21T22:35:36Z",
+        "additions": 5,
+        "deletions": 4
+      }
+    },
+    {
+      "number": 222,
+      "category": "repdigit",
+      "tier": "rare",
+      "name": "3 × 2",
+      "blurb": "3 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "timgl",
+        "name": "timgl",
+        "url": "https://github.com/timgl",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1727427?u=68d3693009c289044285447b6ed667bdb08176d2&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Remove incorrect dist files",
+        "url": "https://github.com/PostHog/posthog/pull/222",
+        "mergedAt": "2020-02-27T23:56:57Z",
+        "createdAt": "2020-02-27T23:56:52Z",
+        "additions": 0,
+        "deletions": 28
+      }
+    },
+    {
+      "number": 256,
+      "category": "power",
+      "tier": "rare",
+      "name": "2^8",
+      "blurb": "Two to the 8th. A number with real binary dignity.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 271,
+      "category": "math",
+      "tier": "rare",
+      "name": "Euler's Number",
+      "blurb": "The base of natural growth.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 314,
+      "category": "math",
+      "tier": "rare",
+      "name": "Pi",
+      "blurb": "The first three digits of a circle.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 333,
+      "category": "repdigit",
+      "tier": "rare",
+      "name": "3 × 3",
+      "blurb": "3 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 404,
+      "category": "meme",
+      "tier": "rare",
+      "name": "Not Found",
+      "blurb": "This PR could not be located. It was right there.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 418,
+      "category": "meme",
+      "tier": "rare",
+      "name": "I'm a Teapot",
+      "blurb": "Short and stout, and RFC 2324 compliant.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 420,
+      "category": "meme",
+      "tier": "rare",
+      "name": "Blaze It",
+      "blurb": "A PR of leisure.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "timgl",
+        "name": "timgl",
+        "url": "https://github.com/timgl",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1727427?u=68d3693009c289044285447b6ed667bdb08176d2&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Closes #410 - precalculcate events that match action",
+        "url": "https://github.com/PostHog/posthog/pull/420",
+        "mergedAt": "2020-04-03T14:05:28Z",
+        "createdAt": "2020-03-31T10:40:32Z",
+        "additions": 351,
+        "deletions": 32
+      }
+    },
+    {
+      "number": 444,
+      "category": "repdigit",
+      "tier": "rare",
+      "name": "3 × 4",
+      "blurb": "3 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 496,
+      "category": "math",
+      "tier": "rare",
+      "name": "Perfect Number",
+      "blurb": "Equal to the sum of its own divisors.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 500,
+      "category": "meme",
+      "tier": "rare",
+      "name": "Internal Server Error",
+      "blurb": "Something went wrong. Probably ClickHouse.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "jamesefhawkins",
+        "name": "James Hawkins",
+        "url": "https://github.com/jamesefhawkins",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/47497682?u=1d8f389d659a32c35903c90f263ad83b69d0aa36&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Updated docs link in SendEventsOverlay.js",
+        "url": "https://github.com/PostHog/posthog/pull/500",
+        "mergedAt": "2020-04-08T12:15:13Z",
+        "createdAt": "2020-04-08T11:47:13Z",
+        "additions": 1,
+        "deletions": 1
+      }
+    },
+    {
+      "number": 512,
+      "category": "power",
+      "tier": "rare",
+      "name": "2^9",
+      "blurb": "Two to the 9th. A number with real binary dignity.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 555,
+      "category": "repdigit",
+      "tier": "rare",
+      "name": "3 × 5",
+      "blurb": "3 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 666,
+      "category": "meme",
+      "tier": "rare",
+      "name": "The Beast",
+      "blurb": "Merged at your own peril.",
+      "handwritten": true,
+      "alsoKnownAs": [
+        {
+          "name": "3 × 6",
+          "category": "repdigit",
+          "blurb": "3 identical digits in a row. The odds were not good."
+        }
+      ],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 777,
+      "category": "meme",
+      "tier": "rare",
+      "name": "Jackpot",
+      "blurb": "Three cherries.",
+      "handwritten": true,
+      "alsoKnownAs": [
+        {
+          "name": "3 × 7",
+          "category": "repdigit",
+          "blurb": "3 identical digits in a row. The odds were not good."
+        }
+      ],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "timgl",
+        "name": "timgl",
+        "url": "https://github.com/timgl",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1727427?u=68d3693009c289044285447b6ed667bdb08176d2&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "772 add  is true and is false",
+        "url": "https://github.com/PostHog/posthog/pull/777",
+        "mergedAt": "2020-05-20T16:03:20Z",
+        "createdAt": "2020-05-15T11:33:28Z",
+        "additions": 250,
+        "deletions": 196
+      }
+    },
+    {
+      "number": 888,
+      "category": "repdigit",
+      "tier": "rare",
+      "name": "3 × 8",
+      "blurb": "3 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 999,
+      "category": "repdigit",
+      "tier": "rare",
+      "name": "3 × 9",
+      "blurb": "3 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "unmerged"
+    },
+    {
+      "number": 1000,
+      "category": "round",
+      "tier": "mythic",
+      "name": "PR #1,000",
+      "blurb": "The 3rd power of ten. A genuine odometer moment.",
+      "alsoKnownAs": [],
+      "points": 100,
+      "claimed": false,
+      "why": "unmerged"
+    },
+    {
+      "number": 1024,
+      "category": "power",
+      "tier": "rare",
+      "name": "2^10",
+      "blurb": "Two to the 10th. A number with real binary dignity.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "timgl",
+        "name": "timgl",
+        "url": "https://github.com/timgl",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1727427?u=68d3693009c289044285447b6ed667bdb08176d2&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "470 filter by event name",
+        "url": "https://github.com/PostHog/posthog/pull/1024",
+        "mergedAt": "2020-06-17T09:46:22Z",
+        "createdAt": "2020-06-15T20:30:29Z",
+        "additions": 71,
+        "deletions": 23
+      }
+    },
+    {
+      "number": 1089,
+      "category": "math",
+      "tier": "rare",
+      "name": "The Magic Number",
+      "blurb": "Reverse it, subtract, and the magic trick works.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 1111,
+      "category": "repdigit",
+      "tier": "rare",
+      "name": "4 × 1",
+      "blurb": "4 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "timgl",
+        "name": "timgl",
+        "url": "https://github.com/timgl",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1727427?u=68d3693009c289044285447b6ed667bdb08176d2&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Update logo",
+        "url": "https://github.com/PostHog/posthog/pull/1111",
+        "mergedAt": "2020-07-01T14:12:39Z",
+        "createdAt": "2020-06-26T20:18:28Z",
+        "additions": 57,
+        "deletions": 5
+      }
+    },
+    {
+      "number": 1234,
+      "category": "staircase",
+      "tier": "rare",
+      "name": "Staircase Up",
+      "blurb": "4 consecutive digits, marching upwards.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "EDsCODE",
+        "name": "Eric Duong",
+        "url": "https://github.com/EDsCODE",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/13127476?u=2a386defcb1d46405ed55144922da81fe9c1d00e&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Retention entity selection",
+        "url": "https://github.com/PostHog/posthog/pull/1234",
+        "mergedAt": "2020-07-21T18:11:25Z",
+        "createdAt": "2020-07-16T20:04:12Z",
+        "additions": 152,
+        "deletions": 29
+      }
+    },
+    {
+      "number": 1337,
+      "category": "meme",
+      "tier": "rare",
+      "name": "Leet",
+      "blurb": "Certified hacker PR.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "EDsCODE",
+        "name": "Eric Duong",
+        "url": "https://github.com/EDsCODE",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/13127476?u=2a386defcb1d46405ed55144922da81fe9c1d00e&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Fix compare being parsed as string",
+        "url": "https://github.com/PostHog/posthog/pull/1337",
+        "mergedAt": "2020-08-04T13:05:28Z",
+        "createdAt": "2020-08-03T17:53:09Z",
+        "additions": 22,
+        "deletions": 3
+      }
+    },
+    {
+      "number": 1414,
+      "category": "math",
+      "tier": "rare",
+      "name": "Root Two",
+      "blurb": "The diagonal of a unit square.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 1618,
+      "category": "math",
+      "tier": "rare",
+      "name": "Phi",
+      "blurb": "The most beautiful proportion, allegedly.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "fuziontech",
+        "name": "James Greenhill",
+        "url": "https://github.com/fuziontech",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/391319?u=653d605da3baa9badfc2b1d2783010c4858646a0&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Convert private functions to public for ee access",
+        "url": "https://github.com/PostHog/posthog/pull/1618",
+        "mergedAt": "2020-09-09T05:35:27Z",
+        "createdAt": "2020-09-09T04:30:45Z",
+        "additions": 1097,
+        "deletions": 29
+      }
+    },
+    {
+      "number": 1701,
+      "category": "meme",
+      "tier": "rare",
+      "name": "NCC-1701",
+      "blurb": "To boldly ship what no one has shipped before.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "mariusandra",
+        "name": "Marius Andra",
+        "url": "https://github.com/mariusandra",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/53387?u=fff0dd833220dc640f9c50d6f8a9dadc74e1896e&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Fix Master EE code",
+        "url": "https://github.com/PostHog/posthog/pull/1701",
+        "mergedAt": "2020-09-24T10:14:18Z",
+        "createdAt": "2020-09-23T08:37:59Z",
+        "additions": 521,
+        "deletions": 126
+      }
+    },
+    {
+      "number": 1729,
+      "category": "math",
+      "tier": "rare",
+      "name": "The Taxicab Number",
+      "blurb": "The smallest number expressible as two cubes, two ways.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "unmerged"
+    },
+    {
+      "number": 1984,
+      "category": "meme",
+      "tier": "rare",
+      "name": "Big Brother",
+      "blurb": "This PR is watching you.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "EDsCODE",
+        "name": "Eric Duong",
+        "url": "https://github.com/EDsCODE",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/13127476?u=2a386defcb1d46405ed55144922da81fe9c1d00e&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Remove unneeded properties on sessions query",
+        "url": "https://github.com/PostHog/posthog/pull/1984",
+        "mergedAt": "2020-10-22T13:18:38Z",
+        "createdAt": "2020-10-22T12:28:39Z",
+        "additions": 2,
+        "deletions": 17
+      }
+    },
+    {
+      "number": 2001,
+      "category": "meme",
+      "tier": "rare",
+      "name": "Space Odyssey",
+      "blurb": "I'm afraid I can't merge that, Dave.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 2048,
+      "category": "meme",
+      "tier": "rare",
+      "name": "The Game",
+      "blurb": "You just lost it. Also a power of two.",
+      "handwritten": true,
+      "alsoKnownAs": [
+        {
+          "name": "2^11",
+          "category": "power",
+          "blurb": "Two to the 11th. A number with real binary dignity."
+        }
+      ],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "EDsCODE",
+        "name": "Eric Duong",
+        "url": "https://github.com/EDsCODE",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/13127476?u=2a386defcb1d46405ed55144922da81fe9c1d00e&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Fix flaky test",
+        "url": "https://github.com/PostHog/posthog/pull/2048",
+        "mergedAt": "2020-10-27T14:02:23Z",
+        "createdAt": "2020-10-27T13:13:34Z",
+        "additions": 47,
+        "deletions": 41
+      }
+    },
+    {
+      "number": 2147,
+      "category": "math",
+      "tier": "rare",
+      "name": "Almost Max Int",
+      "blurb": "The beginning of a very famous overflow.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "timgl",
+        "name": "timgl",
+        "url": "https://github.com/timgl",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1727427?u=68d3693009c289044285447b6ed667bdb08176d2&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Slim down dev docker image",
+        "url": "https://github.com/PostHog/posthog/pull/2147",
+        "mergedAt": "2020-10-30T20:30:06Z",
+        "createdAt": "2020-10-30T19:11:55Z",
+        "additions": 0,
+        "deletions": 1
+      }
+    },
+    {
+      "number": 2222,
+      "category": "repdigit",
+      "tier": "rare",
+      "name": "4 × 2",
+      "blurb": "4 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "paolodamico",
+        "name": "Paolo D'Amico",
+        "url": "https://github.com/paolodamico",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/5864173?u=a16869d7c39e9f146cdf35b293d24062a5e99413&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Enable email on localhost by default",
+        "url": "https://github.com/PostHog/posthog/pull/2222",
+        "mergedAt": "2020-11-13T15:55:45Z",
+        "createdAt": "2020-11-04T14:01:24Z",
+        "additions": 17,
+        "deletions": 7
+      }
+    },
+    {
+      "number": 2345,
+      "category": "staircase",
+      "tier": "rare",
+      "name": "Staircase Up",
+      "blurb": "4 consecutive digits, marching upwards.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 2718,
+      "category": "math",
+      "tier": "rare",
+      "name": "e, Extended",
+      "blurb": "Compound interest, personified.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 3141,
+      "category": "math",
+      "tier": "rare",
+      "name": "Pi, Extended",
+      "blurb": "Four digits deep.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "Twixes",
+        "name": "Michael Matloka",
+        "url": "https://github.com/Twixes",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/4550621?u=8cfecce44cfc8ff05fccd1d27bc103fb2462f97c&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Improve handling of .git* files/dirs",
+        "url": "https://github.com/PostHog/posthog/pull/3141",
+        "mergedAt": "2021-02-01T08:25:41Z",
+        "createdAt": "2021-02-01T08:17:59Z",
+        "additions": 14,
+        "deletions": 7
+      }
+    },
+    {
+      "number": 3210,
+      "category": "staircase",
+      "tier": "rare",
+      "name": "Staircase Down",
+      "blurb": "4 consecutive digits, marching downwards.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "paolodamico",
+        "name": "Paolo D'Amico",
+        "url": "https://github.com/paolodamico",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/5864173?u=a16869d7c39e9f146cdf35b293d24062a5e99413&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Fix more z-index wonkiness",
+        "url": "https://github.com/PostHog/posthog/pull/3210",
+        "mergedAt": "2021-02-08T15:23:45Z",
+        "createdAt": "2021-02-05T07:10:55Z",
+        "additions": 24,
+        "deletions": 9
+      }
+    },
+    {
+      "number": 3333,
+      "category": "repdigit",
+      "tier": "rare",
+      "name": "4 × 3",
+      "blurb": "4 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 3456,
+      "category": "staircase",
+      "tier": "rare",
+      "name": "Staircase Up",
+      "blurb": "4 consecutive digits, marching upwards.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": true,
+      "holder": {
+        "login": "posthog-bot",
+        "name": "PostHog Bot",
+        "url": "https://github.com/posthog-bot",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/69588470?u=0b71d256b6218d78b51c69fa51f623946eb3234e&v=4",
+        "bot": true
+      },
+      "pr": {
+        "title": "Update plugin server to 0.9.28",
+        "url": "https://github.com/PostHog/posthog/pull/3456",
+        "mergedAt": "2021-02-24T11:49:49Z",
+        "createdAt": "2021-02-24T11:40:51Z",
+        "additions": 7,
+        "deletions": 6
+      }
+    },
+    {
+      "number": 4096,
+      "category": "power",
+      "tier": "epic",
+      "name": "2^12",
+      "blurb": "Two to the 12th. A number with real binary dignity.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "fuziontech",
+        "name": "James Greenhill",
+        "url": "https://github.com/fuziontech",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/391319?u=653d605da3baa9badfc2b1d2783010c4858646a0&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Enable cleanup of SSM Task that enables us to exec into containers on ecs",
+        "url": "https://github.com/PostHog/posthog/pull/4096",
+        "mergedAt": "2021-05-04T14:22:21Z",
+        "createdAt": "2021-04-23T23:54:57Z",
+        "additions": 16,
+        "deletions": 4
+      }
+    },
+    {
+      "number": 4200,
+      "category": "meme",
+      "tier": "rare",
+      "name": "Blaze It, Rounded",
+      "blurb": "Leisure, but tidier.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 4321,
+      "category": "staircase",
+      "tier": "rare",
+      "name": "Staircase Down",
+      "blurb": "4 consecutive digits, marching downwards.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "liyiy",
+        "name": "Li Yi Yu",
+        "url": "https://github.com/liyiy",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/25164963?u=41a108f0dd5dab038ff4c665e491b273b4b64eb8&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Fix dashboard insight loader",
+        "url": "https://github.com/PostHog/posthog/pull/4321",
+        "mergedAt": "2021-05-14T00:43:35Z",
+        "createdAt": "2021-05-12T19:15:34Z",
+        "additions": 4,
+        "deletions": 1
+      }
+    },
+    {
+      "number": 4444,
+      "category": "repdigit",
+      "tier": "rare",
+      "name": "4 × 4",
+      "blurb": "4 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 4567,
+      "category": "staircase",
+      "tier": "rare",
+      "name": "Staircase Up",
+      "blurb": "4 consecutive digits, marching upwards.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 5040,
+      "category": "math",
+      "tier": "rare",
+      "name": "Seven Factorial",
+      "blurb": "Plato's favourite number.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "liyiy",
+        "name": "Li Yi Yu",
+        "url": "https://github.com/liyiy",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/25164963?u=41a108f0dd5dab038ff4c665e491b273b4b64eb8&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Persons modal style updates",
+        "url": "https://github.com/PostHog/posthog/pull/5040",
+        "mergedAt": "2021-07-09T13:57:22Z",
+        "createdAt": "2021-07-08T13:52:43Z",
+        "additions": 179,
+        "deletions": 82
+      }
+    },
+    {
+      "number": 5432,
+      "category": "staircase",
+      "tier": "rare",
+      "name": "Staircase Down",
+      "blurb": "4 consecutive digits, marching downwards.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "paolodamico",
+        "name": "Paolo D'Amico",
+        "url": "https://github.com/paolodamico",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/5864173?u=a16869d7c39e9f146cdf35b293d24062a5e99413&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Better insights instrumentation",
+        "url": "https://github.com/PostHog/posthog/pull/5432",
+        "mergedAt": "2021-08-04T21:45:14Z",
+        "createdAt": "2021-08-03T18:54:57Z",
+        "additions": 103,
+        "deletions": 21
+      }
+    },
+    {
+      "number": 5555,
+      "category": "repdigit",
+      "tier": "rare",
+      "name": "4 × 5",
+      "blurb": "4 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "alexkim205",
+        "name": "Alex Gyujin Kim",
+        "url": "https://github.com/alexkim205",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/13460330?v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Add docker compose down to remove network",
+        "url": "https://github.com/PostHog/posthog/pull/5555",
+        "mergedAt": "2021-08-12T00:25:13Z",
+        "createdAt": "2021-08-11T22:50:09Z",
+        "additions": 1,
+        "deletions": 1
+      }
+    },
+    {
+      "number": 5678,
+      "category": "staircase",
+      "tier": "rare",
+      "name": "Staircase Up",
+      "blurb": "4 consecutive digits, marching upwards.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "kpthatsme",
+        "name": "Kunal",
+        "url": "https://github.com/kpthatsme",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/5965891?v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "sentence case the readme",
+        "url": "https://github.com/PostHog/posthog/pull/5678",
+        "mergedAt": "2021-08-21T06:13:50Z",
+        "createdAt": "2021-08-21T05:19:01Z",
+        "additions": 7,
+        "deletions": 7
+      }
+    },
+    {
+      "number": 6174,
+      "category": "math",
+      "tier": "rare",
+      "name": "Kaprekar's Constant",
+      "blurb": "All roads lead here in four steps.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": true,
+      "holder": {
+        "login": "posthog-bot",
+        "name": "PostHog Bot",
+        "url": "https://github.com/posthog-bot",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/69588470?u=0b71d256b6218d78b51c69fa51f623946eb3234e&v=4",
+        "bot": true
+      },
+      "pr": {
+        "title": "Update posthog-js to 1.13.15",
+        "url": "https://github.com/PostHog/posthog/pull/6174",
+        "mergedAt": "2021-09-29T11:24:12Z",
+        "createdAt": "2021-09-29T11:03:50Z",
+        "additions": 5,
+        "deletions": 5
+      }
+    },
+    {
+      "number": 6543,
+      "category": "staircase",
+      "tier": "rare",
+      "name": "Staircase Down",
+      "blurb": "4 consecutive digits, marching downwards.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": true,
+      "holder": {
+        "login": "posthog-bot",
+        "name": "PostHog Bot",
+        "url": "https://github.com/posthog-bot",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/69588470?u=0b71d256b6218d78b51c69fa51f623946eb3234e&v=4",
+        "bot": true
+      },
+      "pr": {
+        "title": "Update plugin server to 1.10.1",
+        "url": "https://github.com/PostHog/posthog/pull/6543",
+        "mergedAt": "2021-10-19T12:32:15Z",
+        "createdAt": "2021-10-19T12:19:04Z",
+        "additions": 5,
+        "deletions": 5
+      }
+    },
+    {
+      "number": 6666,
+      "category": "repdigit",
+      "tier": "rare",
+      "name": "4 × 6",
+      "blurb": "4 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "neilkakkar",
+        "name": "Neil Kakkar",
+        "url": "https://github.com/neilkakkar",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/7115141?u=c1b21ee65c207eb778d423d9c06d4c4082cd3b15&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Add event with properties benchmark",
+        "url": "https://github.com/PostHog/posthog/pull/6666",
+        "mergedAt": "2021-10-26T16:19:25Z",
+        "createdAt": "2021-10-26T15:46:29Z",
+        "additions": 14,
+        "deletions": 0
+      }
+    },
+    {
+      "number": 6767,
+      "category": "meme",
+      "tier": "rare",
+      "name": "Six Seven Six Seven",
+      "blurb": "It got worse.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "neilkakkar",
+        "name": "Neil Kakkar",
+        "url": "https://github.com/neilkakkar",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/7115141?u=c1b21ee65c207eb778d423d9c06d4c4082cd3b15&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Fixes for Correlation UI: pagination & persons modal",
+        "url": "https://github.com/PostHog/posthog/pull/6767",
+        "mergedAt": "2021-11-02T09:54:45Z",
+        "createdAt": "2021-11-01T17:17:27Z",
+        "additions": 89,
+        "deletions": 52
+      }
+    },
+    {
+      "number": 6789,
+      "category": "staircase",
+      "tier": "rare",
+      "name": "Staircase Up",
+      "blurb": "4 consecutive digits, marching upwards.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "Twixes",
+        "name": "Michael Matloka",
+        "url": "https://github.com/Twixes",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/4550621?u=8cfecce44cfc8ff05fccd1d27bc103fb2462f97c&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Add top level danger `TopBar` indicator for potential system issues",
+        "url": "https://github.com/PostHog/posthog/pull/6789",
+        "mergedAt": "2021-11-02T17:01:04Z",
+        "createdAt": "2021-11-02T15:23:23Z",
+        "additions": 37,
+        "deletions": 2
+      }
+    },
+    {
+      "number": 6900,
+      "category": "meme",
+      "tier": "rare",
+      "name": "Nice, Rounded",
+      "blurb": "Nice, but tidier.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "mariusandra",
+        "name": "Marius Andra",
+        "url": "https://github.com/mariusandra",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/53387?u=fff0dd833220dc640f9c50d6f8a9dadc74e1896e&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Fix funnelLogic key",
+        "url": "https://github.com/PostHog/posthog/pull/6900",
+        "mergedAt": "2021-11-04T12:52:10Z",
+        "createdAt": "2021-11-04T12:45:12Z",
+        "additions": 1,
+        "deletions": 1
+      }
+    },
+    {
+      "number": 6969,
+      "category": "meme",
+      "tier": "rare",
+      "name": "Double Nice",
+      "blurb": "Twice as nice.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "alexkim205",
+        "name": "Alex Gyujin Kim",
+        "url": "https://github.com/alexkim205",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/13460330?v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Session Recording buffering race bug",
+        "url": "https://github.com/PostHog/posthog/pull/6969",
+        "mergedAt": "2021-11-09T00:36:38Z",
+        "createdAt": "2021-11-08T23:34:21Z",
+        "additions": 9,
+        "deletions": 7
+      }
+    },
+    {
+      "number": 7654,
+      "category": "staircase",
+      "tier": "rare",
+      "name": "Staircase Down",
+      "blurb": "4 consecutive digits, marching downwards.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "paolodamico",
+        "name": "Paolo D'Amico",
+        "url": "https://github.com/paolodamico",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/5864173?u=a16869d7c39e9f146cdf35b293d24062a5e99413&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Release funnel vertical breakdown",
+        "url": "https://github.com/PostHog/posthog/pull/7654",
+        "mergedAt": "2021-12-13T19:45:39Z",
+        "createdAt": "2021-12-11T01:38:06Z",
+        "additions": 143,
+        "deletions": 175
+      }
+    },
+    {
+      "number": 7777,
+      "category": "repdigit",
+      "tier": "rare",
+      "name": "4 × 7",
+      "blurb": "4 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "yakkomajuri",
+        "name": "Yakko Majuri",
+        "url": "https://github.com/yakkomajuri",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/38760734?u=09cfd31beabbaad90f2db045a2d8c917e93f10b7&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Fix migration healthcheck",
+        "url": "https://github.com/PostHog/posthog/pull/7777",
+        "mergedAt": "2021-12-17T18:09:41Z",
+        "createdAt": "2021-12-17T17:20:33Z",
+        "additions": 3,
+        "deletions": 2
+      }
+    },
+    {
+      "number": 8008,
+      "category": "meme",
+      "tier": "rare",
+      "name": "Calculator Classic",
+      "blurb": "Type it, flip the calculator upside down, giggle.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "paolodamico",
+        "name": "Paolo D'Amico",
+        "url": "https://github.com/paolodamico",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/5864173?u=a16869d7c39e9f146cdf35b293d24062a5e99413&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Fix cloud tests on master",
+        "url": "https://github.com/PostHog/posthog/pull/8008",
+        "mergedAt": "2022-01-12T20:06:41Z",
+        "createdAt": "2022-01-12T19:31:27Z",
+        "additions": 1,
+        "deletions": 0
+      }
+    },
+    {
+      "number": 8128,
+      "category": "math",
+      "tier": "rare",
+      "name": "Perfect Number",
+      "blurb": "The fourth perfect number, and rarer than it looks.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "unmerged"
+    },
+    {
+      "number": 8192,
+      "category": "power",
+      "tier": "epic",
+      "name": "2^13",
+      "blurb": "Two to the 13th. A number with real binary dignity.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "unmerged"
+    },
+    {
+      "number": 8765,
+      "category": "staircase",
+      "tier": "rare",
+      "name": "Staircase Down",
+      "blurb": "4 consecutive digits, marching downwards.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "Twixes",
+        "name": "Michael Matloka",
+        "url": "https://github.com/Twixes",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/4550621?u=8cfecce44cfc8ff05fccd1d27bc103fb2462f97c&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Fix `Popup` animation when the overlay is above reference",
+        "url": "https://github.com/PostHog/posthog/pull/8765",
+        "mergedAt": "2022-03-01T09:06:11Z",
+        "createdAt": "2022-02-28T14:37:06Z",
+        "additions": 10,
+        "deletions": 0
+      }
+    },
+    {
+      "number": 8888,
+      "category": "repdigit",
+      "tier": "rare",
+      "name": "4 × 8",
+      "blurb": "4 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "yakkomajuri",
+        "name": "Yakko Majuri",
+        "url": "https://github.com/yakkomajuri",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/38760734?u=09cfd31beabbaad90f2db045a2d8c917e93f10b7&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "feat(plugin-server): add structured logging",
+        "url": "https://github.com/PostHog/posthog/pull/8888",
+        "mergedAt": "2022-03-10T12:58:06Z",
+        "createdAt": "2022-03-07T11:48:22Z",
+        "additions": 77,
+        "deletions": 59
+      }
+    },
+    {
+      "number": 9001,
+      "category": "meme",
+      "tier": "rare",
+      "name": "It's Over 9000",
+      "blurb": "What, nine thousand?!",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 9876,
+      "category": "staircase",
+      "tier": "rare",
+      "name": "Staircase Down",
+      "blurb": "4 consecutive digits, marching downwards.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 9999,
+      "category": "repdigit",
+      "tier": "rare",
+      "name": "4 × 9",
+      "blurb": "4 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 10,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "yakkomajuri",
+        "name": "Yakko Majuri",
+        "url": "https://github.com/yakkomajuri",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/38760734?u=09cfd31beabbaad90f2db045a2d8c917e93f10b7&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "fix: update broken plugin-server deployment script",
+        "url": "https://github.com/PostHog/posthog/pull/9999",
+        "mergedAt": "2022-05-26T09:01:55Z",
+        "createdAt": "2022-05-25T17:37:34Z",
+        "additions": 3,
+        "deletions": 4
+      }
+    },
+    {
+      "number": 10000,
+      "category": "round",
+      "tier": "mythic",
+      "name": "PR #10,000",
+      "blurb": "The 4th power of ten. A genuine odometer moment.",
+      "alsoKnownAs": [],
+      "points": 100,
+      "claimed": false,
+      "why": "unmerged"
+    },
+    {
+      "number": 11111,
+      "category": "repdigit",
+      "tier": "epic",
+      "name": "5 × 1",
+      "blurb": "5 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "Twixes",
+        "name": "Michael Matloka",
+        "url": "https://github.com/Twixes",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/4550621?u=8cfecce44cfc8ff05fccd1d27bc103fb2462f97c&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "refactor(insights): Polish up axis unit setting",
+        "url": "https://github.com/PostHog/posthog/pull/11111",
+        "mergedAt": "2022-08-03T16:48:14Z",
+        "createdAt": "2022-08-03T13:11:37Z",
+        "additions": 33,
+        "deletions": 46
+      }
+    },
+    {
+      "number": 12345,
+      "category": "meme",
+      "tier": "epic",
+      "name": "Luggage Combination",
+      "blurb": "That's the stupidest combination I've ever heard.",
+      "handwritten": true,
+      "alsoKnownAs": [
+        {
+          "name": "Staircase Up",
+          "category": "staircase",
+          "blurb": "5 consecutive digits, marching upwards."
+        }
+      ],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "hazzadous",
+        "name": "Harry Waye",
+        "url": "https://github.com/hazzadous",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/128561?u=310d755f3aa3f8950fb680b28bde3e44767fd4de&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "chore(plugins-server): use Kafka to buffer app jobs requests",
+        "url": "https://github.com/PostHog/posthog/pull/12345",
+        "mergedAt": "2022-10-28T10:05:16Z",
+        "createdAt": "2022-10-19T13:46:37Z",
+        "additions": 653,
+        "deletions": 65
+      }
+    },
+    {
+      "number": 13337,
+      "category": "meme",
+      "tier": "epic",
+      "name": "Extra Leet",
+      "blurb": "Leet, but with more.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "pauldambra",
+        "name": "Paul D'Ambra",
+        "url": "https://github.com/pauldambra",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/984817?u=26510bc5f7090bfd110784beb7fbe5893d9f92b4&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "chore: reduce year in posthog metatags",
+        "url": "https://github.com/PostHog/posthog/pull/13337",
+        "mergedAt": "2022-12-14T22:48:29Z",
+        "createdAt": "2022-12-14T20:10:17Z",
+        "additions": 0,
+        "deletions": 1
+      }
+    },
+    {
+      "number": 14142,
+      "category": "math",
+      "tier": "epic",
+      "name": "Root Two, Extended",
+      "blurb": "Irrational and proud.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 16180,
+      "category": "math",
+      "tier": "epic",
+      "name": "Phi, Extended",
+      "blurb": "Divine proportion, five digits in.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "neilkakkar",
+        "name": "Neil Kakkar",
+        "url": "https://github.com/neilkakkar",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/7115141?u=c1b21ee65c207eb778d423d9c06d4c4082cd3b15&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "fix(decide): healthcheck takes into account all errors",
+        "url": "https://github.com/PostHog/posthog/pull/16180",
+        "mergedAt": "2023-06-22T13:32:05Z",
+        "createdAt": "2023-06-21T16:20:34Z",
+        "additions": 151,
+        "deletions": 30
+      }
+    },
+    {
+      "number": 16384,
+      "category": "power",
+      "tier": "epic",
+      "name": "2^14",
+      "blurb": "Two to the 14th. A number with real binary dignity.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "daibhin",
+        "name": "David Newell",
+        "url": "https://github.com/daibhin",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/6685876?u=ce27c6c84679269b524b624c3f38712b288f227d&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "chore: upgrade tiptap to 2.0.3",
+        "url": "https://github.com/PostHog/posthog/pull/16384",
+        "mergedAt": "2023-07-05T12:14:38Z",
+        "createdAt": "2023-07-05T08:40:13Z",
+        "additions": 175,
+        "deletions": 176
+      }
+    },
+    {
+      "number": 20000,
+      "category": "round",
+      "tier": "legendary",
+      "name": "20k",
+      "blurb": "20 thousand pull requests deep.",
+      "alsoKnownAs": [],
+      "points": 50,
+      "claimed": false,
+      "why": "unmerged"
+    },
+    {
+      "number": 22222,
+      "category": "repdigit",
+      "tier": "epic",
+      "name": "5 × 2",
+      "blurb": "5 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "tiina303",
+        "name": "Tiina Turban",
+        "url": "https://github.com/tiina303",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/890921?u=03d58c3f0788f326db62e9b504bdb59cca184c0a&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "fix: plugin config creation",
+        "url": "https://github.com/PostHog/posthog/pull/22222",
+        "mergedAt": "2024-05-09T14:38:29Z",
+        "createdAt": "2024-05-09T12:34:22Z",
+        "additions": 0,
+        "deletions": 9
+      }
+    },
+    {
+      "number": 23456,
+      "category": "staircase",
+      "tier": "epic",
+      "name": "Staircase Up",
+      "blurb": "5 consecutive digits, marching upwards.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 24601,
+      "category": "meme",
+      "tier": "epic",
+      "name": "Prisoner 24601",
+      "blurb": "Who am I? A PR author, apparently.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "unmerged"
+    },
+    {
+      "number": 27182,
+      "category": "math",
+      "tier": "epic",
+      "name": "e, Serious Business",
+      "blurb": "Five digits of e.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "unmerged"
+    },
+    {
+      "number": 30000,
+      "category": "round",
+      "tier": "legendary",
+      "name": "30k",
+      "blurb": "30 thousand pull requests deep.",
+      "alsoKnownAs": [],
+      "points": 50,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "rafaeelaudibert",
+        "name": "Rafael Audibert",
+        "url": "https://github.com/rafaeelaudibert",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/32079912?u=c3771922a6d7204c1d037e4c44e37325c42c6cb9&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "chore: Reinstate `changed-files` steps",
+        "url": "https://github.com/PostHog/posthog/pull/30000",
+        "mergedAt": "2025-03-17T04:15:29Z",
+        "createdAt": "2025-03-16T17:14:00Z",
+        "additions": 2,
+        "deletions": 2
+      }
+    },
+    {
+      "number": 31337,
+      "category": "meme",
+      "tier": "epic",
+      "name": "Elite",
+      "blurb": "The original spelling.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 31415,
+      "category": "math",
+      "tier": "epic",
+      "name": "Pi, Serious Business",
+      "blurb": "Five digits. This is a real commitment to pi.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "lucasheriques",
+        "name": "Lucas Faria",
+        "url": "https://github.com/lucasheriques",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/12522524?u=8435ec06c108b9ed20d7da8fa19d20f1e50fbd36&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "feat: persist survey answers and property filters",
+        "url": "https://github.com/PostHog/posthog/pull/31415",
+        "mergedAt": "2025-04-23T16:07:30Z",
+        "createdAt": "2025-04-21T20:54:38Z",
+        "additions": 199,
+        "deletions": 258
+      }
+    },
+    {
+      "number": 31416,
+      "category": "math",
+      "tier": "epic",
+      "name": "Pi, Rounded",
+      "blurb": "For the pedants who round correctly.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "zlwaterfield",
+        "name": "Zach Waterfield",
+        "url": "https://github.com/zlwaterfield",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/6392501?u=1f92ea9de0de5e55cb17df0c19f46163c4c141a2&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "chore: update rbac migration for feature flags",
+        "url": "https://github.com/PostHog/posthog/pull/31416",
+        "mergedAt": "2025-04-21T23:01:23Z",
+        "createdAt": "2025-04-21T21:03:21Z",
+        "additions": 19,
+        "deletions": 16
+      }
+    },
+    {
+      "number": 32768,
+      "category": "power",
+      "tier": "epic",
+      "name": "2^15",
+      "blurb": "Two to the 15th. A number with real binary dignity.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "jurajmajerik",
+        "name": "Juraj Majerik",
+        "url": "https://github.com/jurajmajerik",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/22996112?u=3f92ee554edcfbfdfff407fca686467bd0d973a8&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "feat(experiments): paginate and filter experiments list",
+        "url": "https://github.com/PostHog/posthog/pull/32768",
+        "mergedAt": "2025-05-30T13:23:45Z",
+        "createdAt": "2025-05-28T13:56:29Z",
+        "additions": 218,
+        "deletions": 210
+      }
+    },
+    {
+      "number": 33333,
+      "category": "repdigit",
+      "tier": "epic",
+      "name": "5 × 3",
+      "blurb": "5 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "unmerged"
+    },
+    {
+      "number": 34567,
+      "category": "staircase",
+      "tier": "epic",
+      "name": "Staircase Up",
+      "blurb": "5 consecutive digits, marching upwards.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "jose-sequeira",
+        "name": "José Sequeira",
+        "url": "https://github.com/jose-sequeira",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/117165826?u=390bdb2b233b0ee3dacf439bc42192d135acd124&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "fix(plugin-server): fix logger shutdown",
+        "url": "https://github.com/PostHog/posthog/pull/34567",
+        "mergedAt": "2025-07-04T12:06:31Z",
+        "createdAt": "2025-07-04T11:48:39Z",
+        "additions": 7,
+        "deletions": 2
+      }
+    },
+    {
+      "number": 40000,
+      "category": "round",
+      "tier": "legendary",
+      "name": "40k",
+      "blurb": "40 thousand pull requests deep.",
+      "alsoKnownAs": [],
+      "points": 50,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "rafaeelaudibert",
+        "name": "Rafael Audibert",
+        "url": "https://github.com/rafaeelaudibert",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/32079912?u=c3771922a6d7204c1d037e4c44e37325c42c6cb9&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "feat: Add new `TableNode` to support overlapping database names",
+        "url": "https://github.com/PostHog/posthog/pull/40000",
+        "mergedAt": "2025-10-28T14:02:14Z",
+        "createdAt": "2025-10-20T23:32:28Z",
+        "additions": 565,
+        "deletions": 460
+      }
+    },
+    {
+      "number": 40320,
+      "category": "math",
+      "tier": "epic",
+      "name": "Eight Factorial",
+      "blurb": "8! ways to arrange your commits.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 42000,
+      "category": "meme",
+      "tier": "epic",
+      "name": "The Answer, Rounded",
+      "blurb": "Approximately everything.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "adboio",
+        "name": "Adam Bowker",
+        "url": "https://github.com/adboio",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/23323033?u=8982f1493f0dd0fcf95baa82cdec6be2dd9ad0dc&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "feat(surveys): customize response columns",
+        "url": "https://github.com/PostHog/posthog/pull/42000",
+        "mergedAt": "2025-11-24T23:15:51Z",
+        "createdAt": "2025-11-24T20:33:19Z",
+        "additions": 100,
+        "deletions": 18
+      }
+    },
+    {
+      "number": 42069,
+      "category": "meme",
+      "tier": "epic",
+      "name": "The Grand Unified Meme",
+      "blurb": "Both jokes at once. Peak numerology.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "rafaeelaudibert",
+        "name": "Rafael Audibert",
+        "url": "https://github.com/rafaeelaudibert",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/32079912?u=c3771922a6d7204c1d037e4c44e37325c42c6cb9&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "chore: Assign security team ownership for .github directory due to untrusted GitHub Actions",
+        "url": "https://github.com/PostHog/posthog/pull/42069",
+        "mergedAt": "2025-11-25T16:44:30Z",
+        "createdAt": "2025-11-25T16:41:41Z",
+        "additions": 8,
+        "deletions": 2
+      }
+    },
+    {
+      "number": 43210,
+      "category": "staircase",
+      "tier": "epic",
+      "name": "Staircase Down",
+      "blurb": "5 consecutive digits, marching downwards.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "darkopia",
+        "name": "Ben Lea",
+        "url": "https://github.com/darkopia",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/80100530?u=49b034b7d423f83da26c1efd5b2fa015c6863688&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "fix: allow Personal API Key access to playlist recordings endpoint",
+        "url": "https://github.com/PostHog/posthog/pull/43210",
+        "mergedAt": "2025-12-18T13:00:40Z",
+        "createdAt": "2025-12-11T14:21:34Z",
+        "additions": 118,
+        "deletions": 1
+      }
+    },
+    {
+      "number": 44444,
+      "category": "repdigit",
+      "tier": "epic",
+      "name": "5 × 4",
+      "blurb": "5 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 45678,
+      "category": "staircase",
+      "tier": "epic",
+      "name": "Staircase Up",
+      "blurb": "5 consecutive digits, marching upwards.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "joshsny",
+        "name": "Joshua Snyder",
+        "url": "https://github.com/joshsny",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/7135900?u=109e43c5e906a8ecc1a2d465c4457f5cf29328a5&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "fix: single worker per pod",
+        "url": "https://github.com/PostHog/posthog/pull/45678",
+        "mergedAt": "2026-01-22T11:48:11Z",
+        "createdAt": "2026-01-22T11:35:18Z",
+        "additions": 1,
+        "deletions": 1
+      }
+    },
+    {
+      "number": 50000,
+      "category": "round",
+      "tier": "legendary",
+      "name": "50k",
+      "blurb": "50 thousand pull requests deep.",
+      "alsoKnownAs": [],
+      "points": 50,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "veryayskiy",
+        "name": "Alex V",
+        "url": "https://github.com/veryayskiy",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/13624984?u=9bd247851dfa702b3c5952fd7b9e1d967ed3c598&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "chore: one request instead of many for previous tickets",
+        "url": "https://github.com/PostHog/posthog/pull/50000",
+        "mergedAt": "2026-03-05T15:10:18Z",
+        "createdAt": "2026-03-05T13:10:53Z",
+        "additions": 15,
+        "deletions": 16
+      }
+    },
+    {
+      "number": 54321,
+      "category": "staircase",
+      "tier": "epic",
+      "name": "Staircase Down",
+      "blurb": "5 consecutive digits, marching downwards.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": true,
+      "holder": {
+        "login": "mendral-app",
+        "name": null,
+        "url": "https://github.com/apps/mendral-app",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/1975249?v=4",
+        "bot": true
+      },
+      "pr": {
+        "title": "fix(security): upgrade pillow to 12.2.0",
+        "url": "https://github.com/PostHog/posthog/pull/54321",
+        "mergedAt": "2026-04-14T08:02:10Z",
+        "createdAt": "2026-04-13T19:59:53Z",
+        "additions": 17,
+        "deletions": 16
+      }
+    },
+    {
+      "number": 55555,
+      "category": "repdigit",
+      "tier": "epic",
+      "name": "5 × 5",
+      "blurb": "5 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 56789,
+      "category": "staircase",
+      "tier": "epic",
+      "name": "Staircase Up",
+      "blurb": "5 consecutive digits, marching upwards.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "lricoy",
+        "name": "Lucas Ricoy",
+        "url": "https://github.com/lricoy",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/2034367?v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "feat(web-analytics): add bot definitions for Manus, NotebookLM, Lighthouse, Slack image proxy",
+        "url": "https://github.com/PostHog/posthog/pull/56789",
+        "mergedAt": "2026-04-29T02:18:13Z",
+        "createdAt": "2026-04-28T18:05:43Z",
+        "additions": 25,
+        "deletions": 17
+      }
+    },
+    {
+      "number": 60000,
+      "category": "round",
+      "tier": "legendary",
+      "name": "60k",
+      "blurb": "60 thousand pull requests deep.",
+      "alsoKnownAs": [],
+      "points": 50,
+      "claimed": false,
+      "why": "unmerged"
+    },
+    {
+      "number": 65432,
+      "category": "staircase",
+      "tier": "epic",
+      "name": "Staircase Down",
+      "blurb": "5 consecutive digits, marching downwards.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "webjunkie",
+        "name": "Julian Bez",
+        "url": "https://github.com/webjunkie",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/59713?u=7bfc22f91a964d0015731031bccaebdf5bddb754&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "feat(engineering_analytics): add branch filter and failure tracking to workflow health",
+        "url": "https://github.com/PostHog/posthog/pull/65432",
+        "mergedAt": "2026-06-23T20:00:35Z",
+        "createdAt": "2026-06-23T12:05:17Z",
+        "additions": 318,
+        "deletions": 50
+      }
+    },
+    {
+      "number": 65535,
+      "category": "math",
+      "tier": "epic",
+      "name": "Max Unsigned Short",
+      "blurb": "One short of overflowing.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "joshsny",
+        "name": "Joshua Snyder",
+        "url": "https://github.com/joshsny",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/7135900?u=109e43c5e906a8ecc1a2d465c4457f5cf29328a5&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "revert: diagnostic support agent with safety guardrails",
+        "url": "https://github.com/PostHog/posthog/pull/65535",
+        "mergedAt": "2026-06-23T17:13:29Z",
+        "createdAt": "2026-06-23T16:40:19Z",
+        "additions": 19,
+        "deletions": 1026
+      }
+    },
+    {
+      "number": 65536,
+      "category": "power",
+      "tier": "legendary",
+      "name": "2^16",
+      "blurb": "Two to the 16th. A number with real binary dignity.",
+      "alsoKnownAs": [],
+      "points": 50,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "ablaszkiewicz",
+        "name": "Aleksander Błaszkiewicz",
+        "url": "https://github.com/ablaszkiewicz",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/54682207?u=88966d9677a50f06145b9e5b5b7360744504c99d&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "feat(error-tracking): per-issue rate-limit metrics in app_metrics2 + history view",
+        "url": "https://github.com/PostHog/posthog/pull/65536",
+        "mergedAt": "2026-06-23T17:33:07Z",
+        "createdAt": "2026-06-23T16:40:40Z",
+        "additions": 223,
+        "deletions": 37
+      }
+    },
+    {
+      "number": 66666,
+      "category": "repdigit",
+      "tier": "epic",
+      "name": "5 × 6",
+      "blurb": "5 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "unmerged"
+    },
+    {
+      "number": 67000,
+      "category": "meme",
+      "tier": "epic",
+      "name": "Six Seven Thousand",
+      "blurb": "A round number that is also deeply unserious.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "jurajmajerik",
+        "name": "Juraj Majerik",
+        "url": "https://github.com/jurajmajerik",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/22996112?u=3f92ee554edcfbfdfff407fca686467bd0d973a8&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "feat(experiments): show query and group ids in slowest queries table",
+        "url": "https://github.com/PostHog/posthog/pull/67000",
+        "mergedAt": "2026-06-30T13:18:39Z",
+        "createdAt": "2026-06-30T11:38:18Z",
+        "additions": 43,
+        "deletions": 18
+      }
+    },
+    {
+      "number": 69000,
+      "category": "meme",
+      "tier": "epic",
+      "name": "Nice Thousand",
+      "blurb": "Nice, at scale.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "unmerged"
+    },
+    {
+      "number": 69420,
+      "category": "meme",
+      "tier": "epic",
+      "name": "The Other Grand Unified Meme",
+      "blurb": "The same two jokes, reversed.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 70000,
+      "category": "round",
+      "tier": "legendary",
+      "name": "70k",
+      "blurb": "70 thousand pull requests deep.",
+      "alsoKnownAs": [],
+      "points": 50,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "Gilbert09",
+        "name": "Tom Owers",
+        "url": "https://github.com/Gilbert09",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1459269?u=0edde3eeb61b9d9c80cf8e432bae838fee58f179&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "feat(data-warehouse): implement fly_io import source",
+        "url": "https://github.com/PostHog/posthog/pull/70000",
+        "mergedAt": "2026-07-14T18:33:00Z",
+        "createdAt": "2026-07-10T12:58:28Z",
+        "additions": 939,
+        "deletions": 5
+      }
+    },
+    {
+      "number": 76543,
+      "category": "staircase",
+      "tier": "epic",
+      "name": "Staircase Down",
+      "blurb": "5 consecutive digits, marching downwards.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "unmerged"
+    },
+    {
+      "number": 77777,
+      "category": "repdigit",
+      "tier": "epic",
+      "name": "5 × 7",
+      "blurb": "5 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "unmerged"
+    },
+    {
+      "number": 80000,
+      "category": "round",
+      "tier": "legendary",
+      "name": "80k",
+      "blurb": "80 thousand pull requests deep.",
+      "alsoKnownAs": [],
+      "points": 50,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "jakesciotto",
+        "name": "jake sciotto",
+        "url": "https://github.com/jakesciotto",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/4285855?u=5dfa4e6834404a69ef97536b9c406ab45b7c53f0&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "feat(data-warehouse): add tremendous balance_transactions table",
+        "url": "https://github.com/PostHog/posthog/pull/80000",
+        "mergedAt": "2026-08-10T14:44:04Z",
+        "createdAt": "2026-08-07T23:11:09Z",
+        "additions": 197,
+        "deletions": 27
+      }
+    },
+    {
+      "number": 80085,
+      "category": "meme",
+      "tier": "epic",
+      "name": "Calculator Classic II",
+      "blurb": "The calculator joke, all grown up.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "Gilbert09",
+        "name": "Tom Owers",
+        "url": "https://github.com/Gilbert09",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1459269?u=0edde3eeb61b9d9c80cf8e432bae838fee58f179&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "feat(warehouse_sources): support Loop Returns API version 2026-07",
+        "url": "https://github.com/PostHog/posthog/pull/80085",
+        "mergedAt": "2026-08-11T23:00:49Z",
+        "createdAt": "2026-08-08T10:54:51Z",
+        "additions": 126,
+        "deletions": 10
+      }
+    },
+    {
+      "number": 87654,
+      "category": "staircase",
+      "tier": "epic",
+      "name": "Staircase Down",
+      "blurb": "5 consecutive digits, marching downwards.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 88888,
+      "category": "repdigit",
+      "tier": "epic",
+      "name": "5 × 8",
+      "blurb": "5 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "unmerged"
+    },
+    {
+      "number": 90000,
+      "category": "round",
+      "tier": "legendary",
+      "name": "90k",
+      "blurb": "90 thousand pull requests deep.",
+      "alsoKnownAs": [],
+      "points": 50,
+      "claimed": true,
+      "bot": true,
+      "holder": {
+        "login": "posthog",
+        "name": null,
+        "url": "https://github.com/apps/posthog",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/1203049?v=4",
+        "bot": true
+      },
+      "pr": {
+        "title": "fix(warehouse-sources): classify exhausted impact.com 5xx as retryable",
+        "url": "https://github.com/PostHog/posthog/pull/90000",
+        "mergedAt": "2026-09-09T21:26:24Z",
+        "createdAt": "2026-08-27T10:31:03Z",
+        "additions": 72,
+        "deletions": 0
+      }
+    },
+    {
+      "number": 90210,
+      "category": "meme",
+      "tier": "epic",
+      "name": "Beverly Hills",
+      "blurb": "A PR from the right postcode.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "unmerged"
+    },
+    {
+      "number": 98765,
+      "category": "staircase",
+      "tier": "epic",
+      "name": "Staircase Down",
+      "blurb": "5 consecutive digits, marching downwards.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "open"
+    },
+    {
+      "number": 99999,
+      "category": "repdigit",
+      "tier": "epic",
+      "name": "5 × 9",
+      "blurb": "5 identical digits in a row. The odds were not good.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "open"
+    },
+    {
+      "number": 100000,
+      "category": "round",
+      "tier": "mythic",
+      "name": "PR #100,000",
+      "blurb": "The 5th power of ten. A genuine odometer moment.",
+      "alsoKnownAs": [],
+      "points": 100,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "veryayskiy",
+        "name": "Alex V",
+        "url": "https://github.com/veryayskiy",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/13624984?u=9bd247851dfa702b3c5952fd7b9e1d967ed3c598&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "fix: bk settings",
+        "url": "https://github.com/PostHog/posthog/pull/100000",
+        "mergedAt": "2026-09-14T10:45:35Z",
+        "createdAt": "2026-09-14T09:43:45Z",
+        "additions": 1,
+        "deletions": 1
+      }
+    }
+  ],
+  "leaderboard": [
+    {
+      "login": "timgl",
+      "name": "timgl",
+      "url": "https://github.com/timgl",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1727427?u=68d3693009c289044285447b6ed667bdb08176d2&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 67,
+          "name": "Six Seven",
+          "tier": "rare",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/67",
+          "title": "Closes #52 toolbar freezes because react-draggable gets in the way",
+          "mergedAt": "2020-02-11T22:15:58Z"
+        },
+        {
+          "number": 88,
+          "name": "Double Infinity",
+          "tier": "rare",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/88",
+          "title": "Closes #79 pagination on EventsTable",
+          "mergedAt": "2020-02-13T19:03:01Z"
+        },
+        {
+          "number": 161,
+          "name": "Golden Ratio",
+          "tier": "rare",
+          "category": "math",
+          "url": "https://github.com/PostHog/posthog/pull/161",
+          "title": "Point people to demo environment locally for them to have a play",
+          "mergedAt": "2020-02-21T22:35:47Z"
+        },
+        {
+          "number": 222,
+          "name": "3 × 2",
+          "tier": "rare",
+          "category": "repdigit",
+          "url": "https://github.com/PostHog/posthog/pull/222",
+          "title": "Remove incorrect dist files",
+          "mergedAt": "2020-02-27T23:56:57Z"
+        },
+        {
+          "number": 420,
+          "name": "Blaze It",
+          "tier": "rare",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/420",
+          "title": "Closes #410 - precalculcate events that match action",
+          "mergedAt": "2020-04-03T14:05:28Z"
+        },
+        {
+          "number": 777,
+          "name": "Jackpot",
+          "tier": "rare",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/777",
+          "title": "772 add  is true and is false",
+          "mergedAt": "2020-05-20T16:03:20Z"
+        },
+        {
+          "number": 1024,
+          "name": "2^10",
+          "tier": "rare",
+          "category": "power",
+          "url": "https://github.com/PostHog/posthog/pull/1024",
+          "title": "470 filter by event name",
+          "mergedAt": "2020-06-17T09:46:22Z"
+        },
+        {
+          "number": 1111,
+          "name": "4 × 1",
+          "tier": "rare",
+          "category": "repdigit",
+          "url": "https://github.com/PostHog/posthog/pull/1111",
+          "title": "Update logo",
+          "mergedAt": "2020-07-01T14:12:39Z"
+        },
+        {
+          "number": 2147,
+          "name": "Almost Max Int",
+          "tier": "rare",
+          "category": "math",
+          "url": "https://github.com/PostHog/posthog/pull/2147",
+          "title": "Slim down dev docker image",
+          "mergedAt": "2020-10-30T20:30:06Z"
+        }
+      ],
+      "points": 90,
+      "count": 9,
+      "firstMergedAt": "2020-02-11T22:15:58Z",
+      "rank": 1
+    },
+    {
+      "login": "paolodamico",
+      "name": "Paolo D'Amico",
+      "url": "https://github.com/paolodamico",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/5864173?u=a16869d7c39e9f146cdf35b293d24062a5e99413&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 2222,
+          "name": "4 × 2",
+          "tier": "rare",
+          "category": "repdigit",
+          "url": "https://github.com/PostHog/posthog/pull/2222",
+          "title": "Enable email on localhost by default",
+          "mergedAt": "2020-11-13T15:55:45Z"
+        },
+        {
+          "number": 3210,
+          "name": "Staircase Down",
+          "tier": "rare",
+          "category": "staircase",
+          "url": "https://github.com/PostHog/posthog/pull/3210",
+          "title": "Fix more z-index wonkiness",
+          "mergedAt": "2021-02-08T15:23:45Z"
+        },
+        {
+          "number": 5432,
+          "name": "Staircase Down",
+          "tier": "rare",
+          "category": "staircase",
+          "url": "https://github.com/PostHog/posthog/pull/5432",
+          "title": "Better insights instrumentation",
+          "mergedAt": "2021-08-04T21:45:14Z"
+        },
+        {
+          "number": 7654,
+          "name": "Staircase Down",
+          "tier": "rare",
+          "category": "staircase",
+          "url": "https://github.com/PostHog/posthog/pull/7654",
+          "title": "Release funnel vertical breakdown",
+          "mergedAt": "2021-12-13T19:45:39Z"
+        },
+        {
+          "number": 8008,
+          "name": "Calculator Classic",
+          "tier": "rare",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/8008",
+          "title": "Fix cloud tests on master",
+          "mergedAt": "2022-01-12T20:06:41Z"
+        }
+      ],
+      "points": 50,
+      "count": 5,
+      "firstMergedAt": "2020-11-13T15:55:45Z",
+      "rank": 2
+    },
+    {
+      "login": "Twixes",
+      "name": "Michael Matloka",
+      "url": "https://github.com/Twixes",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/4550621?u=8cfecce44cfc8ff05fccd1d27bc103fb2462f97c&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 3141,
+          "name": "Pi, Extended",
+          "tier": "rare",
+          "category": "math",
+          "url": "https://github.com/PostHog/posthog/pull/3141",
+          "title": "Improve handling of .git* files/dirs",
+          "mergedAt": "2021-02-01T08:25:41Z"
+        },
+        {
+          "number": 6789,
+          "name": "Staircase Up",
+          "tier": "rare",
+          "category": "staircase",
+          "url": "https://github.com/PostHog/posthog/pull/6789",
+          "title": "Add top level danger `TopBar` indicator for potential system issues",
+          "mergedAt": "2021-11-02T17:01:04Z"
+        },
+        {
+          "number": 8765,
+          "name": "Staircase Down",
+          "tier": "rare",
+          "category": "staircase",
+          "url": "https://github.com/PostHog/posthog/pull/8765",
+          "title": "Fix `Popup` animation when the overlay is above reference",
+          "mergedAt": "2022-03-01T09:06:11Z"
+        },
+        {
+          "number": 11111,
+          "name": "5 × 1",
+          "tier": "epic",
+          "category": "repdigit",
+          "url": "https://github.com/PostHog/posthog/pull/11111",
+          "title": "refactor(insights): Polish up axis unit setting",
+          "mergedAt": "2022-08-03T16:48:14Z"
+        }
+      ],
+      "points": 55,
+      "count": 4,
+      "firstMergedAt": "2021-02-01T08:25:41Z",
+      "rank": 3
+    },
+    {
+      "login": "EDsCODE",
+      "name": "Eric Duong",
+      "url": "https://github.com/EDsCODE",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/13127476?u=2a386defcb1d46405ed55144922da81fe9c1d00e&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 1234,
+          "name": "Staircase Up",
+          "tier": "rare",
+          "category": "staircase",
+          "url": "https://github.com/PostHog/posthog/pull/1234",
+          "title": "Retention entity selection",
+          "mergedAt": "2020-07-21T18:11:25Z"
+        },
+        {
+          "number": 1337,
+          "name": "Leet",
+          "tier": "rare",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/1337",
+          "title": "Fix compare being parsed as string",
+          "mergedAt": "2020-08-04T13:05:28Z"
+        },
+        {
+          "number": 1984,
+          "name": "Big Brother",
+          "tier": "rare",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/1984",
+          "title": "Remove unneeded properties on sessions query",
+          "mergedAt": "2020-10-22T13:18:38Z"
+        },
+        {
+          "number": 2048,
+          "name": "The Game",
+          "tier": "rare",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/2048",
+          "title": "Fix flaky test",
+          "mergedAt": "2020-10-27T14:02:23Z"
+        }
+      ],
+      "points": 40,
+      "count": 4,
+      "firstMergedAt": "2020-07-21T18:11:25Z",
+      "rank": 4
+    },
+    {
+      "login": "rafaeelaudibert",
+      "name": "Rafael Audibert",
+      "url": "https://github.com/rafaeelaudibert",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/32079912?u=c3771922a6d7204c1d037e4c44e37325c42c6cb9&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 30000,
+          "name": "30k",
+          "tier": "legendary",
+          "category": "round",
+          "url": "https://github.com/PostHog/posthog/pull/30000",
+          "title": "chore: Reinstate `changed-files` steps",
+          "mergedAt": "2025-03-17T04:15:29Z"
+        },
+        {
+          "number": 40000,
+          "name": "40k",
+          "tier": "legendary",
+          "category": "round",
+          "url": "https://github.com/PostHog/posthog/pull/40000",
+          "title": "feat: Add new `TableNode` to support overlapping database names",
+          "mergedAt": "2025-10-28T14:02:14Z"
+        },
+        {
+          "number": 42069,
+          "name": "The Grand Unified Meme",
+          "tier": "epic",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/42069",
+          "title": "chore: Assign security team ownership for .github directory due to untrusted GitHub Actions",
+          "mergedAt": "2025-11-25T16:44:30Z"
+        }
+      ],
+      "points": 125,
+      "count": 3,
+      "firstMergedAt": "2025-03-17T04:15:29Z",
+      "rank": 5
+    },
+    {
+      "login": "neilkakkar",
+      "name": "Neil Kakkar",
+      "url": "https://github.com/neilkakkar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/7115141?u=c1b21ee65c207eb778d423d9c06d4c4082cd3b15&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 6666,
+          "name": "4 × 6",
+          "tier": "rare",
+          "category": "repdigit",
+          "url": "https://github.com/PostHog/posthog/pull/6666",
+          "title": "Add event with properties benchmark",
+          "mergedAt": "2021-10-26T16:19:25Z"
+        },
+        {
+          "number": 6767,
+          "name": "Six Seven Six Seven",
+          "tier": "rare",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/6767",
+          "title": "Fixes for Correlation UI: pagination & persons modal",
+          "mergedAt": "2021-11-02T09:54:45Z"
+        },
+        {
+          "number": 16180,
+          "name": "Phi, Extended",
+          "tier": "epic",
+          "category": "math",
+          "url": "https://github.com/PostHog/posthog/pull/16180",
+          "title": "fix(decide): healthcheck takes into account all errors",
+          "mergedAt": "2023-06-22T13:32:05Z"
+        }
+      ],
+      "points": 45,
+      "count": 3,
+      "firstMergedAt": "2021-10-26T16:19:25Z",
+      "rank": 6
+    },
+    {
+      "login": "yakkomajuri",
+      "name": "Yakko Majuri",
+      "url": "https://github.com/yakkomajuri",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/38760734?u=09cfd31beabbaad90f2db045a2d8c917e93f10b7&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 7777,
+          "name": "4 × 7",
+          "tier": "rare",
+          "category": "repdigit",
+          "url": "https://github.com/PostHog/posthog/pull/7777",
+          "title": "Fix migration healthcheck",
+          "mergedAt": "2021-12-17T18:09:41Z"
+        },
+        {
+          "number": 8888,
+          "name": "4 × 8",
+          "tier": "rare",
+          "category": "repdigit",
+          "url": "https://github.com/PostHog/posthog/pull/8888",
+          "title": "feat(plugin-server): add structured logging",
+          "mergedAt": "2022-03-10T12:58:06Z"
+        },
+        {
+          "number": 9999,
+          "name": "4 × 9",
+          "tier": "rare",
+          "category": "repdigit",
+          "url": "https://github.com/PostHog/posthog/pull/9999",
+          "title": "fix: update broken plugin-server deployment script",
+          "mergedAt": "2022-05-26T09:01:55Z"
+        }
+      ],
+      "points": 30,
+      "count": 3,
+      "firstMergedAt": "2021-12-17T18:09:41Z",
+      "rank": 7
+    },
+    {
+      "login": "veryayskiy",
+      "name": "Alex V",
+      "url": "https://github.com/veryayskiy",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/13624984?u=9bd247851dfa702b3c5952fd7b9e1d967ed3c598&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 50000,
+          "name": "50k",
+          "tier": "legendary",
+          "category": "round",
+          "url": "https://github.com/PostHog/posthog/pull/50000",
+          "title": "chore: one request instead of many for previous tickets",
+          "mergedAt": "2026-03-05T15:10:18Z"
+        },
+        {
+          "number": 100000,
+          "name": "PR #100,000",
+          "tier": "mythic",
+          "category": "round",
+          "url": "https://github.com/PostHog/posthog/pull/100000",
+          "title": "fix: bk settings",
+          "mergedAt": "2026-09-14T10:45:35Z"
+        }
+      ],
+      "points": 150,
+      "count": 2,
+      "firstMergedAt": "2026-03-05T15:10:18Z",
+      "rank": 8
+    },
+    {
+      "login": "Gilbert09",
+      "name": "Tom Owers",
+      "url": "https://github.com/Gilbert09",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1459269?u=0edde3eeb61b9d9c80cf8e432bae838fee58f179&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 70000,
+          "name": "70k",
+          "tier": "legendary",
+          "category": "round",
+          "url": "https://github.com/PostHog/posthog/pull/70000",
+          "title": "feat(data-warehouse): implement fly_io import source",
+          "mergedAt": "2026-07-14T18:33:00Z"
+        },
+        {
+          "number": 80085,
+          "name": "Calculator Classic II",
+          "tier": "epic",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/80085",
+          "title": "feat(warehouse_sources): support Loop Returns API version 2026-07",
+          "mergedAt": "2026-08-11T23:00:49Z"
+        }
+      ],
+      "points": 75,
+      "count": 2,
+      "firstMergedAt": "2026-07-14T18:33:00Z",
+      "rank": 9
+    },
+    {
+      "login": "jurajmajerik",
+      "name": "Juraj Majerik",
+      "url": "https://github.com/jurajmajerik",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/22996112?u=3f92ee554edcfbfdfff407fca686467bd0d973a8&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 32768,
+          "name": "2^15",
+          "tier": "epic",
+          "category": "power",
+          "url": "https://github.com/PostHog/posthog/pull/32768",
+          "title": "feat(experiments): paginate and filter experiments list",
+          "mergedAt": "2025-05-30T13:23:45Z"
+        },
+        {
+          "number": 67000,
+          "name": "Six Seven Thousand",
+          "tier": "epic",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/67000",
+          "title": "feat(experiments): show query and group ids in slowest queries table",
+          "mergedAt": "2026-06-30T13:18:39Z"
+        }
+      ],
+      "points": 50,
+      "count": 2,
+      "firstMergedAt": "2025-05-30T13:23:45Z",
+      "rank": 10
+    },
+    {
+      "login": "joshsny",
+      "name": "Joshua Snyder",
+      "url": "https://github.com/joshsny",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/7135900?u=109e43c5e906a8ecc1a2d465c4457f5cf29328a5&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 45678,
+          "name": "Staircase Up",
+          "tier": "epic",
+          "category": "staircase",
+          "url": "https://github.com/PostHog/posthog/pull/45678",
+          "title": "fix: single worker per pod",
+          "mergedAt": "2026-01-22T11:48:11Z"
+        },
+        {
+          "number": 65535,
+          "name": "Max Unsigned Short",
+          "tier": "epic",
+          "category": "math",
+          "url": "https://github.com/PostHog/posthog/pull/65535",
+          "title": "revert: diagnostic support agent with safety guardrails",
+          "mergedAt": "2026-06-23T17:13:29Z"
+        }
+      ],
+      "points": 50,
+      "count": 2,
+      "firstMergedAt": "2026-01-22T11:48:11Z",
+      "rank": 10
+    },
+    {
+      "login": "fuziontech",
+      "name": "James Greenhill",
+      "url": "https://github.com/fuziontech",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/391319?u=653d605da3baa9badfc2b1d2783010c4858646a0&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 1618,
+          "name": "Phi",
+          "tier": "rare",
+          "category": "math",
+          "url": "https://github.com/PostHog/posthog/pull/1618",
+          "title": "Convert private functions to public for ee access",
+          "mergedAt": "2020-09-09T05:35:27Z"
+        },
+        {
+          "number": 4096,
+          "name": "2^12",
+          "tier": "epic",
+          "category": "power",
+          "url": "https://github.com/PostHog/posthog/pull/4096",
+          "title": "Enable cleanup of SSM Task that enables us to exec into containers on ecs",
+          "mergedAt": "2021-05-04T14:22:21Z"
+        }
+      ],
+      "points": 35,
+      "count": 2,
+      "firstMergedAt": "2020-09-09T05:35:27Z",
+      "rank": 12
+    },
+    {
+      "login": "mariusandra",
+      "name": "Marius Andra",
+      "url": "https://github.com/mariusandra",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/53387?u=fff0dd833220dc640f9c50d6f8a9dadc74e1896e&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 1701,
+          "name": "NCC-1701",
+          "tier": "rare",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/1701",
+          "title": "Fix Master EE code",
+          "mergedAt": "2020-09-24T10:14:18Z"
+        },
+        {
+          "number": 6900,
+          "name": "Nice, Rounded",
+          "tier": "rare",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/6900",
+          "title": "Fix funnelLogic key",
+          "mergedAt": "2021-11-04T12:52:10Z"
+        }
+      ],
+      "points": 20,
+      "count": 2,
+      "firstMergedAt": "2020-09-24T10:14:18Z",
+      "rank": 13
+    },
+    {
+      "login": "liyiy",
+      "name": "Li Yi Yu",
+      "url": "https://github.com/liyiy",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/25164963?u=41a108f0dd5dab038ff4c665e491b273b4b64eb8&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 4321,
+          "name": "Staircase Down",
+          "tier": "rare",
+          "category": "staircase",
+          "url": "https://github.com/PostHog/posthog/pull/4321",
+          "title": "Fix dashboard insight loader",
+          "mergedAt": "2021-05-14T00:43:35Z"
+        },
+        {
+          "number": 5040,
+          "name": "Seven Factorial",
+          "tier": "rare",
+          "category": "math",
+          "url": "https://github.com/PostHog/posthog/pull/5040",
+          "title": "Persons modal style updates",
+          "mergedAt": "2021-07-09T13:57:22Z"
+        }
+      ],
+      "points": 20,
+      "count": 2,
+      "firstMergedAt": "2021-05-14T00:43:35Z",
+      "rank": 13
+    },
+    {
+      "login": "alexkim205",
+      "name": "Alex Gyujin Kim",
+      "url": "https://github.com/alexkim205",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/13460330?v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 5555,
+          "name": "4 × 5",
+          "tier": "rare",
+          "category": "repdigit",
+          "url": "https://github.com/PostHog/posthog/pull/5555",
+          "title": "Add docker compose down to remove network",
+          "mergedAt": "2021-08-12T00:25:13Z"
+        },
+        {
+          "number": 6969,
+          "name": "Double Nice",
+          "tier": "rare",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/6969",
+          "title": "Session Recording buffering race bug",
+          "mergedAt": "2021-11-09T00:36:38Z"
+        }
+      ],
+      "points": 20,
+      "count": 2,
+      "firstMergedAt": "2021-08-12T00:25:13Z",
+      "rank": 13
+    },
+    {
+      "login": "ablaszkiewicz",
+      "name": "Aleksander Błaszkiewicz",
+      "url": "https://github.com/ablaszkiewicz",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/54682207?u=88966d9677a50f06145b9e5b5b7360744504c99d&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 65536,
+          "name": "2^16",
+          "tier": "legendary",
+          "category": "power",
+          "url": "https://github.com/PostHog/posthog/pull/65536",
+          "title": "feat(error-tracking): per-issue rate-limit metrics in app_metrics2 + history view",
+          "mergedAt": "2026-06-23T17:33:07Z"
+        }
+      ],
+      "points": 50,
+      "count": 1,
+      "firstMergedAt": "2026-06-23T17:33:07Z",
+      "rank": 16
+    },
+    {
+      "login": "jakesciotto",
+      "name": "jake sciotto",
+      "url": "https://github.com/jakesciotto",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/4285855?u=5dfa4e6834404a69ef97536b9c406ab45b7c53f0&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 80000,
+          "name": "80k",
+          "tier": "legendary",
+          "category": "round",
+          "url": "https://github.com/PostHog/posthog/pull/80000",
+          "title": "feat(data-warehouse): add tremendous balance_transactions table",
+          "mergedAt": "2026-08-10T14:44:04Z"
+        }
+      ],
+      "points": 50,
+      "count": 1,
+      "firstMergedAt": "2026-08-10T14:44:04Z",
+      "rank": 16
+    },
+    {
+      "login": "hazzadous",
+      "name": "Harry Waye",
+      "url": "https://github.com/hazzadous",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/128561?u=310d755f3aa3f8950fb680b28bde3e44767fd4de&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 12345,
+          "name": "Luggage Combination",
+          "tier": "epic",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/12345",
+          "title": "chore(plugins-server): use Kafka to buffer app jobs requests",
+          "mergedAt": "2022-10-28T10:05:16Z"
+        }
+      ],
+      "points": 25,
+      "count": 1,
+      "firstMergedAt": "2022-10-28T10:05:16Z",
+      "rank": 18
+    },
+    {
+      "login": "pauldambra",
+      "name": "Paul D'Ambra",
+      "url": "https://github.com/pauldambra",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/984817?u=26510bc5f7090bfd110784beb7fbe5893d9f92b4&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 13337,
+          "name": "Extra Leet",
+          "tier": "epic",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/13337",
+          "title": "chore: reduce year in posthog metatags",
+          "mergedAt": "2022-12-14T22:48:29Z"
+        }
+      ],
+      "points": 25,
+      "count": 1,
+      "firstMergedAt": "2022-12-14T22:48:29Z",
+      "rank": 18
+    },
+    {
+      "login": "daibhin",
+      "name": "David Newell",
+      "url": "https://github.com/daibhin",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6685876?u=ce27c6c84679269b524b624c3f38712b288f227d&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 16384,
+          "name": "2^14",
+          "tier": "epic",
+          "category": "power",
+          "url": "https://github.com/PostHog/posthog/pull/16384",
+          "title": "chore: upgrade tiptap to 2.0.3",
+          "mergedAt": "2023-07-05T12:14:38Z"
+        }
+      ],
+      "points": 25,
+      "count": 1,
+      "firstMergedAt": "2023-07-05T12:14:38Z",
+      "rank": 18
+    },
+    {
+      "login": "tiina303",
+      "name": "Tiina Turban",
+      "url": "https://github.com/tiina303",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/890921?u=03d58c3f0788f326db62e9b504bdb59cca184c0a&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 22222,
+          "name": "5 × 2",
+          "tier": "epic",
+          "category": "repdigit",
+          "url": "https://github.com/PostHog/posthog/pull/22222",
+          "title": "fix: plugin config creation",
+          "mergedAt": "2024-05-09T14:38:29Z"
+        }
+      ],
+      "points": 25,
+      "count": 1,
+      "firstMergedAt": "2024-05-09T14:38:29Z",
+      "rank": 18
+    },
+    {
+      "login": "zlwaterfield",
+      "name": "Zach Waterfield",
+      "url": "https://github.com/zlwaterfield",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6392501?u=1f92ea9de0de5e55cb17df0c19f46163c4c141a2&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 31416,
+          "name": "Pi, Rounded",
+          "tier": "epic",
+          "category": "math",
+          "url": "https://github.com/PostHog/posthog/pull/31416",
+          "title": "chore: update rbac migration for feature flags",
+          "mergedAt": "2025-04-21T23:01:23Z"
+        }
+      ],
+      "points": 25,
+      "count": 1,
+      "firstMergedAt": "2025-04-21T23:01:23Z",
+      "rank": 18
+    },
+    {
+      "login": "lucasheriques",
+      "name": "Lucas Faria",
+      "url": "https://github.com/lucasheriques",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/12522524?u=8435ec06c108b9ed20d7da8fa19d20f1e50fbd36&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 31415,
+          "name": "Pi, Serious Business",
+          "tier": "epic",
+          "category": "math",
+          "url": "https://github.com/PostHog/posthog/pull/31415",
+          "title": "feat: persist survey answers and property filters",
+          "mergedAt": "2025-04-23T16:07:30Z"
+        }
+      ],
+      "points": 25,
+      "count": 1,
+      "firstMergedAt": "2025-04-23T16:07:30Z",
+      "rank": 18
+    },
+    {
+      "login": "jose-sequeira",
+      "name": "José Sequeira",
+      "url": "https://github.com/jose-sequeira",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/117165826?u=390bdb2b233b0ee3dacf439bc42192d135acd124&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 34567,
+          "name": "Staircase Up",
+          "tier": "epic",
+          "category": "staircase",
+          "url": "https://github.com/PostHog/posthog/pull/34567",
+          "title": "fix(plugin-server): fix logger shutdown",
+          "mergedAt": "2025-07-04T12:06:31Z"
+        }
+      ],
+      "points": 25,
+      "count": 1,
+      "firstMergedAt": "2025-07-04T12:06:31Z",
+      "rank": 18
+    },
+    {
+      "login": "adboio",
+      "name": "Adam Bowker",
+      "url": "https://github.com/adboio",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/23323033?u=8982f1493f0dd0fcf95baa82cdec6be2dd9ad0dc&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 42000,
+          "name": "The Answer, Rounded",
+          "tier": "epic",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/42000",
+          "title": "feat(surveys): customize response columns",
+          "mergedAt": "2025-11-24T23:15:51Z"
+        }
+      ],
+      "points": 25,
+      "count": 1,
+      "firstMergedAt": "2025-11-24T23:15:51Z",
+      "rank": 18
+    },
+    {
+      "login": "darkopia",
+      "name": "Ben Lea",
+      "url": "https://github.com/darkopia",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/80100530?u=49b034b7d423f83da26c1efd5b2fa015c6863688&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 43210,
+          "name": "Staircase Down",
+          "tier": "epic",
+          "category": "staircase",
+          "url": "https://github.com/PostHog/posthog/pull/43210",
+          "title": "fix: allow Personal API Key access to playlist recordings endpoint",
+          "mergedAt": "2025-12-18T13:00:40Z"
+        }
+      ],
+      "points": 25,
+      "count": 1,
+      "firstMergedAt": "2025-12-18T13:00:40Z",
+      "rank": 18
+    },
+    {
+      "login": "lricoy",
+      "name": "Lucas Ricoy",
+      "url": "https://github.com/lricoy",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/2034367?v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 56789,
+          "name": "Staircase Up",
+          "tier": "epic",
+          "category": "staircase",
+          "url": "https://github.com/PostHog/posthog/pull/56789",
+          "title": "feat(web-analytics): add bot definitions for Manus, NotebookLM, Lighthouse, Slack image proxy",
+          "mergedAt": "2026-04-29T02:18:13Z"
+        }
+      ],
+      "points": 25,
+      "count": 1,
+      "firstMergedAt": "2026-04-29T02:18:13Z",
+      "rank": 18
+    },
+    {
+      "login": "webjunkie",
+      "name": "Julian Bez",
+      "url": "https://github.com/webjunkie",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/59713?u=7bfc22f91a964d0015731031bccaebdf5bddb754&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 65432,
+          "name": "Staircase Down",
+          "tier": "epic",
+          "category": "staircase",
+          "url": "https://github.com/PostHog/posthog/pull/65432",
+          "title": "feat(engineering_analytics): add branch filter and failure tracking to workflow health",
+          "mergedAt": "2026-06-23T20:00:35Z"
+        }
+      ],
+      "points": 25,
+      "count": 1,
+      "firstMergedAt": "2026-06-23T20:00:35Z",
+      "rank": 18
+    },
+    {
+      "login": "jamesefhawkins",
+      "name": "James Hawkins",
+      "url": "https://github.com/jamesefhawkins",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/47497682?u=1d8f389d659a32c35903c90f263ad83b69d0aa36&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 500,
+          "name": "Internal Server Error",
+          "tier": "rare",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/500",
+          "title": "Updated docs link in SendEventsOverlay.js",
+          "mergedAt": "2020-04-08T12:15:13Z"
+        }
+      ],
+      "points": 10,
+      "count": 1,
+      "firstMergedAt": "2020-04-08T12:15:13Z",
+      "rank": 29
+    },
+    {
+      "login": "kpthatsme",
+      "name": "Kunal",
+      "url": "https://github.com/kpthatsme",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/5965891?v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 5678,
+          "name": "Staircase Up",
+          "tier": "rare",
+          "category": "staircase",
+          "url": "https://github.com/PostHog/posthog/pull/5678",
+          "title": "sentence case the readme",
+          "mergedAt": "2021-08-21T06:13:50Z"
+        }
+      ],
+      "points": 10,
+      "count": 1,
+      "firstMergedAt": "2021-08-21T06:13:50Z",
+      "rank": 29
+    }
+  ]
+}
