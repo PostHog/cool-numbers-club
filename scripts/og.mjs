@@ -18,7 +18,7 @@ import { existsSync, mkdtempSync, readFileSync, rmSync, statSync, writeFileSync 
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { config } from './config.mjs'
+import { config, isHomeRepo } from './config.mjs'
 import { esc, num, since } from './format.mjs'
 
 const WIDTH = 1200
@@ -114,19 +114,14 @@ const titleLead = titleWords.slice(0, -1).join(' ')
 
 const host = config.url ? new URL(config.url).host : null
 
-/**
- * PostHog's mark signs the card only when the club is PostHog's own. Fork this
- * for another repository and the footer is just the repo and the domain --
- * someone else's register has no business flying someone else's flag.
- */
-const HOME_REPO = 'posthog/posthog'
-const logo =
-  data.repo.toLowerCase() === HOME_REPO
-    ? readFileSync(root('src/posthog-logo.svg'), 'utf8')
-        .replace(/<!--[\s\S]*?-->/g, '')
-        .trim()
-        .replace('<svg ', '<svg class="foot__logo" ')
-    : ''
+// PostHog's mark signs the card only when the club is PostHog's own; someone
+// else's register has no business flying someone else's flag.
+const logo = isHomeRepo
+  ? readFileSync(root('src/posthog-logo.svg'), 'utf8')
+      .replace(/<!--[\s\S]*?-->/g, '')
+      .trim()
+      .replace('<svg ', '<svg class="foot__logo" ')
+  : ''
 
 function row(r) {
   const face = r.avatar

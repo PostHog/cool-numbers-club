@@ -49,3 +49,10 @@ function load() {
 }
 
 export const config = load()
+
+/**
+ * Whether this is PostHog's own club rather than a fork pointed at some other
+ * repository. Only the original flies PostHog's mark on the social card or
+ * names PostHog as the publisher in the page's structured data.
+ */
+export const isHomeRepo = config.repo.toLowerCase() === 'posthog/posthog'

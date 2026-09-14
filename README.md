@@ -167,11 +167,30 @@ There is no `main` entry — nothing runs on a request, it is pure static hostin
 
 `.node-version` pins Node 22.
 
+### What the build emits for crawlers
+
+Alongside the page, `npm run build` writes `robots.txt` and a `sitemap.xml`
+(both only when `config.json` has a `url` — a sitemap of relative links is no
+sitemap at all), and inlines schema.org JSON-LD: a `WebSite`, an `ItemList` of
+the recently issued numbers, and PostHog as the publishing `Organization`. The
+last of those, like the mark on the social card, appears only for
+`posthog/posthog`.
+
+The page's `<h1>` is visually hidden. The masthead is set as a wordmark rather
+than a heading, so the document would otherwise start at `<h2>` with no `<h1>`
+at all; hiding one keeps the outline honest without touching the design.
+
 ### The nightly refresh
 
 [`.github/workflows/refresh.yml`](.github/workflows/refresh.yml) runs at 06:00
-UTC, fetches the latest claims, and commits the result only if it changed.
-Cloudflare redeploys on that push.
+UTC, fetches the latest claims, redraws the social card, and commits the result
+only if it changed.
+
+**Publishing is still manual.** Nothing is wired to deploy on push — the repo
+has no Git integration and no deployment has ever been triggered by one — so
+the refresh commits the new register and it sits there until someone runs
+`npx wrangler deploy`. Connect Workers Builds, or add a deploy step with a
+`CLOUDFLARE_API_TOKEN` secret, and the nightly refresh publishes itself.
 
 **There is no PAT and no deploy hook to set up.** GitHub Actions injects
 `secrets.GITHUB_TOKEN` automatically for the fetch, and Cloudflare deploys on

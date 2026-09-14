@@ -8,7 +8,7 @@
 
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync } from 'node:fs'
 import { CATEGORIES, TIERS } from './numbers.mjs'
-import { config } from './config.mjs'
+import { config, isHomeRepo } from './config.mjs'
 import { esc, num, since } from './format.mjs'
 
 const src = (f) => new URL(`../src/${f}`, import.meta.url)
@@ -118,6 +118,61 @@ function registerRow(m) {
 
 const next = data.upcoming[0]
 
+const tagline = `Nobody picks their pull request number. These ${data.stats.byHumans} were worth keeping.`
+const description = `${tagline} A register of cool PR numbers in ${data.repo}, rebuilt nightly.`
+
+/* ── Structured data ───────────────────────────────────────── */
+
+/**
+ * PostHog as a schema.org Organization, matching what posthog.com's SEO
+ * component emits so both describe the same entity rather than drifting
+ * copies of it.
+ */
+const POSTHOG_ORGANIZATION = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'PostHog',
+  url: 'https://posthog.com',
+  logo: 'https://posthog.com/brand/posthog-logo-stacked.png',
+  sameAs: ['https://twitter.com/PostHog', 'https://github.com/PostHog', 'https://www.linkedin.com/company/posthog'],
+}
+
+// Absolute URLs only, so there is nothing to say without a public one.
+const structuredData = !config.url
+  ? []
+  : [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: config.title,
+        url: `${config.url}/`,
+        description,
+        inLanguage: 'en',
+        ...(isHomeRepo ? { publisher: { '@type': 'Organization', name: 'PostHog', url: 'https://posthog.com' } } : {}),
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: 'Recently issued',
+        description: 'The numbers most recently claimed by a merged pull request.',
+        itemListOrder: 'https://schema.org/ItemListOrderDescending',
+        numberOfItems: data.recent.length,
+        itemListElement: data.recent.map((r, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: `#${num(r.number)} — ${r.name}`,
+          url: r.url,
+        })),
+      },
+      ...(isHomeRepo ? [POSTHOG_ORGANIZATION] : []),
+    ]
+
+// Escaping `<` keeps a stray "</script>" in any of the data from closing the
+// block early.
+const structuredDataTags = structuredData
+  .map((item) => `<script type="application/ld+json">${JSON.stringify(item).replace(/</g, '\\u003c')}</script>`)
+  .join('\n')
+
 // The masthead accents the last word of the title, whatever it happens to be.
 const titleWords = config.title.split(/\s+/)
 const titleTail = titleWords.at(-1)
@@ -149,9 +204,9 @@ const html = `<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Cool Numbers Club — posthog/posthog</title>
-<meta name="description" content="Nobody picks their pull request number. These ${data.stats.byHumans} were worth keeping. A register of cool PR numbers in posthog/posthog, rebuilt nightly.">
+<meta name="description" content="${esc(description)}">
 <meta property="og:title" content="${esc(config.title)}">
-<meta property="og:description" content="Nobody picks their pull request number. These ${data.stats.byHumans} were worth keeping.">
+<meta property="og:description" content="${esc(tagline)}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="${esc(config.title)}">
 <meta name="twitter:card" content="summary_large_image">
@@ -176,6 +231,7 @@ ${
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=DM+Mono:wght@400;500&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./styles.css">
+${structuredDataTags}
 </head>
 <body>
 
@@ -188,6 +244,10 @@ ${
 
 <main>
   <section class="dispenser wrap">
+    <!-- The masthead is set as a wordmark rather than a heading, so without this
+         the page would start at <h2> and have no <h1> at all. Hidden rather than
+         restyled: it is here for crawlers and screen readers, not for the eye. -->
+    <h1 class="visually-hidden">${esc(config.title)} — cool pull request numbers in ${esc(data.repo)}</h1>
     <div class="stencil dispenser__eyebrow">Now serving</div>
     <div class="odo" role="img" aria-label="Pull request number ${num(data.highestPr)}">${odometer(data.highestPr)}</div>
     <p class="dispenser__next">
@@ -319,4 +379,21 @@ copyFileSync(src('styles.css'), root('dist/styles.css'))
 copyFileSync(src('app.js'), root('dist/app.js'))
 copyFileSync(src('_headers'), root('dist/_headers'))
 copyFileSync(src('og.png'), root('dist/og.png'))
+
+// Both need a public URL to point at: a sitemap of relative links is no sitemap
+// at all, and robots.txt is mostly here to advertise one.
+if (config.url) {
+  writeFileSync(root('dist/robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${config.url}/sitemap.xml\n`)
+  writeFileSync(
+    root('dist/sitemap.xml'),
+    `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>${config.url}/</loc>
+    <lastmod>${data.generatedAt.slice(0, 10)}</lastmod>
+  </url>
+</urlset>
+`
+  )
+}
 console.error(`Built dist/ — ${data.achievements.length} numbers, ${data.leaderboard.length} members.`)
