@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-14T18:11:14.353Z",
+  "generatedAt": "2026-09-14T18:15:36.205Z",
   "repo": "posthog/posthog",
-  "highestPr": 100522,
+  "highestPr": 100523,
   "stats": {
-    "total": 123,
-    "claimed": 68,
-    "byHumans": 62,
+    "total": 117,
+    "claimed": 64,
+    "byHumans": 58,
     "byBots": 6,
-    "unclaimed": 55,
+    "unclaimed": 53,
     "members": 30
   },
   "upcoming": [
@@ -19,7 +19,7 @@
       "blurb": "110 thousand pull requests deep.",
       "alsoKnownAs": [],
       "points": 50,
-      "toGo": 9478
+      "toGo": 9477
     },
     {
       "number": 111111,
@@ -29,7 +29,7 @@
       "blurb": "6 identical digits in a row. The odds were not good.",
       "alsoKnownAs": [],
       "points": 50,
-      "toGo": 10589
+      "toGo": 10588
     },
     {
       "number": 120000,
@@ -39,7 +39,7 @@
       "blurb": "120 thousand pull requests deep.",
       "alsoKnownAs": [],
       "points": 50,
-      "toGo": 19478
+      "toGo": 19477
     },
     {
       "number": 123456,
@@ -49,7 +49,7 @@
       "blurb": "6 consecutive digits, marching upwards.",
       "alsoKnownAs": [],
       "points": 50,
-      "toGo": 22934
+      "toGo": 22933
     }
   ],
   "recent": [
@@ -66,20 +66,6 @@
       },
       "mergedAt": "2026-09-14T10:45:35Z",
       "url": "https://github.com/PostHog/posthog/pull/100000"
-    },
-    {
-      "number": 80085,
-      "name": "Calculator Classic II",
-      "tier": "epic",
-      "holder": {
-        "login": "Gilbert09",
-        "name": "Tom Owers",
-        "url": "https://github.com/Gilbert09",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/1459269?u=0edde3eeb61b9d9c80cf8e432bae838fee58f179&v=4",
-        "bot": false
-      },
-      "mergedAt": "2026-08-11T23:00:49Z",
-      "url": "https://github.com/PostHog/posthog/pull/80085"
     },
     {
       "number": 80000,
@@ -136,6 +122,20 @@
       },
       "mergedAt": "2026-06-23T20:00:35Z",
       "url": "https://github.com/PostHog/posthog/pull/65432"
+    },
+    {
+      "number": 65536,
+      "name": "2^16",
+      "tier": "legendary",
+      "holder": {
+        "login": "ablaszkiewicz",
+        "name": "Aleksander Błaszkiewicz",
+        "url": "https://github.com/ablaszkiewicz",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/54682207?u=88966d9677a50f06145b9e5b5b7360744504c99d&v=4",
+        "bot": false
+      },
+      "mergedAt": "2026-06-23T17:33:07Z",
+      "url": "https://github.com/PostHog/posthog/pull/65536"
     }
   ],
   "achievements": [
@@ -228,33 +228,6 @@
       "why": "not-a-pr"
     },
     {
-      "number": 88,
-      "category": "meme",
-      "tier": "rare",
-      "name": "Double Infinity",
-      "blurb": "Two fat ladies.",
-      "handwritten": true,
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": true,
-      "bot": false,
-      "holder": {
-        "login": "timgl",
-        "name": "timgl",
-        "url": "https://github.com/timgl",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/1727427?u=68d3693009c289044285447b6ed667bdb08176d2&v=4",
-        "bot": false
-      },
-      "pr": {
-        "title": "Closes #79 pagination on EventsTable",
-        "url": "https://github.com/PostHog/posthog/pull/88",
-        "mergedAt": "2020-02-13T19:03:01Z",
-        "createdAt": "2020-02-13T00:12:43Z",
-        "additions": 74,
-        "deletions": 15
-      }
-    },
-    {
       "number": 100,
       "category": "round",
       "tier": "mythic",
@@ -275,33 +248,6 @@
       "points": 10,
       "claimed": false,
       "why": "not-a-pr"
-    },
-    {
-      "number": 161,
-      "category": "math",
-      "tier": "rare",
-      "name": "Golden Ratio",
-      "blurb": "Aesthetically optimal.",
-      "handwritten": true,
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": true,
-      "bot": false,
-      "holder": {
-        "login": "timgl",
-        "name": "timgl",
-        "url": "https://github.com/timgl",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/1727427?u=68d3693009c289044285447b6ed667bdb08176d2&v=4",
-        "bot": false
-      },
-      "pr": {
-        "title": "Point people to demo environment locally for them to have a play",
-        "url": "https://github.com/PostHog/posthog/pull/161",
-        "mergedAt": "2020-02-21T22:35:47Z",
-        "createdAt": "2020-02-21T22:35:36Z",
-        "additions": 5,
-        "deletions": 4
-      }
     },
     {
       "number": 222,
@@ -335,30 +281,6 @@
       "tier": "rare",
       "name": "2^8",
       "blurb": "Two to the 8th. A number with real binary dignity.",
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": false,
-      "why": "not-a-pr"
-    },
-    {
-      "number": 271,
-      "category": "math",
-      "tier": "rare",
-      "name": "Euler's Number",
-      "blurb": "The base of natural growth.",
-      "handwritten": true,
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": false,
-      "why": "not-a-pr"
-    },
-    {
-      "number": 314,
-      "category": "math",
-      "tier": "rare",
-      "name": "Pi",
-      "blurb": "The first three digits of a circle.",
-      "handwritten": true,
       "alsoKnownAs": [],
       "points": 10,
       "claimed": false,
@@ -716,7 +638,7 @@
       "category": "math",
       "tier": "rare",
       "name": "Phi",
-      "blurb": "The most beautiful proportion, allegedly.",
+      "blurb": "The golden ratio, and allegedly the most beautiful proportion.",
       "handwritten": true,
       "alsoKnownAs": [],
       "points": 10,
@@ -917,8 +839,8 @@
       "number": 2718,
       "category": "math",
       "tier": "rare",
-      "name": "e, Extended",
-      "blurb": "Compound interest, personified.",
+      "name": "Euler's Number",
+      "blurb": "The base of natural growth, four digits in.",
       "handwritten": true,
       "alsoKnownAs": [],
       "points": 10,
@@ -929,8 +851,8 @@
       "number": 3141,
       "category": "math",
       "tier": "rare",
-      "name": "Pi, Extended",
-      "blurb": "Four digits deep.",
+      "name": "Pi",
+      "blurb": "Four digits of a circle.",
       "handwritten": true,
       "alsoKnownAs": [],
       "points": 10,
@@ -1442,33 +1364,6 @@
         "createdAt": "2021-12-17T17:20:33Z",
         "additions": 3,
         "deletions": 2
-      }
-    },
-    {
-      "number": 8008,
-      "category": "meme",
-      "tier": "rare",
-      "name": "Calculator Classic",
-      "blurb": "Type it, flip the calculator upside down, giggle.",
-      "handwritten": true,
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": true,
-      "bot": false,
-      "holder": {
-        "login": "paolodamico",
-        "name": "Paolo D'Amico",
-        "url": "https://github.com/paolodamico",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/5864173?u=a16869d7c39e9f146cdf35b293d24062a5e99413&v=4",
-        "bot": false
-      },
-      "pr": {
-        "title": "Fix cloud tests on master",
-        "url": "https://github.com/PostHog/posthog/pull/8008",
-        "mergedAt": "2022-01-12T20:06:41Z",
-        "createdAt": "2022-01-12T19:31:27Z",
-        "additions": 1,
-        "deletions": 0
       }
     },
     {
@@ -2455,33 +2350,6 @@
       }
     },
     {
-      "number": 80085,
-      "category": "meme",
-      "tier": "epic",
-      "name": "Calculator Classic II",
-      "blurb": "The calculator joke, all grown up.",
-      "handwritten": true,
-      "alsoKnownAs": [],
-      "points": 25,
-      "claimed": true,
-      "bot": false,
-      "holder": {
-        "login": "Gilbert09",
-        "name": "Tom Owers",
-        "url": "https://github.com/Gilbert09",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/1459269?u=0edde3eeb61b9d9c80cf8e432bae838fee58f179&v=4",
-        "bot": false
-      },
-      "pr": {
-        "title": "feat(warehouse_sources): support Loop Returns API version 2026-07",
-        "url": "https://github.com/PostHog/posthog/pull/80085",
-        "mergedAt": "2026-08-11T23:00:49Z",
-        "createdAt": "2026-08-08T10:54:51Z",
-        "additions": 126,
-        "deletions": 10
-      }
-    },
-    {
       "number": 87654,
       "category": "staircase",
       "tier": "epic",
@@ -2534,7 +2402,7 @@
       "category": "meme",
       "tier": "epic",
       "name": "Beverly Hills",
-      "blurb": "A PR from the right postcode.",
+      "blurb": "The ZIP code that got its own TV show.",
       "handwritten": true,
       "alsoKnownAs": [],
       "points": 25,
@@ -2608,24 +2476,6 @@
           "mergedAt": "2020-02-11T22:15:58Z"
         },
         {
-          "number": 88,
-          "name": "Double Infinity",
-          "tier": "rare",
-          "category": "meme",
-          "url": "https://github.com/PostHog/posthog/pull/88",
-          "title": "Closes #79 pagination on EventsTable",
-          "mergedAt": "2020-02-13T19:03:01Z"
-        },
-        {
-          "number": 161,
-          "name": "Golden Ratio",
-          "tier": "rare",
-          "category": "math",
-          "url": "https://github.com/PostHog/posthog/pull/161",
-          "title": "Point people to demo environment locally for them to have a play",
-          "mergedAt": "2020-02-21T22:35:47Z"
-        },
-        {
           "number": 222,
           "name": "3 × 2",
           "tier": "rare",
@@ -2680,68 +2530,10 @@
           "mergedAt": "2020-10-30T20:30:06Z"
         }
       ],
-      "points": 90,
-      "count": 9,
+      "points": 70,
+      "count": 7,
       "firstMergedAt": "2020-02-11T22:15:58Z",
       "rank": 1
-    },
-    {
-      "login": "paolodamico",
-      "name": "Paolo D'Amico",
-      "url": "https://github.com/paolodamico",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/5864173?u=a16869d7c39e9f146cdf35b293d24062a5e99413&v=4",
-      "bot": false,
-      "achievements": [
-        {
-          "number": 2222,
-          "name": "4 × 2",
-          "tier": "rare",
-          "category": "repdigit",
-          "url": "https://github.com/PostHog/posthog/pull/2222",
-          "title": "Enable email on localhost by default",
-          "mergedAt": "2020-11-13T15:55:45Z"
-        },
-        {
-          "number": 3210,
-          "name": "Staircase Down",
-          "tier": "rare",
-          "category": "staircase",
-          "url": "https://github.com/PostHog/posthog/pull/3210",
-          "title": "Fix more z-index wonkiness",
-          "mergedAt": "2021-02-08T15:23:45Z"
-        },
-        {
-          "number": 5432,
-          "name": "Staircase Down",
-          "tier": "rare",
-          "category": "staircase",
-          "url": "https://github.com/PostHog/posthog/pull/5432",
-          "title": "Better insights instrumentation",
-          "mergedAt": "2021-08-04T21:45:14Z"
-        },
-        {
-          "number": 7654,
-          "name": "Staircase Down",
-          "tier": "rare",
-          "category": "staircase",
-          "url": "https://github.com/PostHog/posthog/pull/7654",
-          "title": "Release funnel vertical breakdown",
-          "mergedAt": "2021-12-13T19:45:39Z"
-        },
-        {
-          "number": 8008,
-          "name": "Calculator Classic",
-          "tier": "rare",
-          "category": "meme",
-          "url": "https://github.com/PostHog/posthog/pull/8008",
-          "title": "Fix cloud tests on master",
-          "mergedAt": "2022-01-12T20:06:41Z"
-        }
-      ],
-      "points": 50,
-      "count": 5,
-      "firstMergedAt": "2020-11-13T15:55:45Z",
-      "rank": 2
     },
     {
       "login": "Twixes",
@@ -2752,7 +2544,7 @@
       "achievements": [
         {
           "number": 3141,
-          "name": "Pi, Extended",
+          "name": "Pi",
           "tier": "rare",
           "category": "math",
           "url": "https://github.com/PostHog/posthog/pull/3141",
@@ -2790,7 +2582,7 @@
       "points": 55,
       "count": 4,
       "firstMergedAt": "2021-02-01T08:25:41Z",
-      "rank": 3
+      "rank": 2
     },
     {
       "login": "EDsCODE",
@@ -2839,7 +2631,56 @@
       "points": 40,
       "count": 4,
       "firstMergedAt": "2020-07-21T18:11:25Z",
-      "rank": 4
+      "rank": 3
+    },
+    {
+      "login": "paolodamico",
+      "name": "Paolo D'Amico",
+      "url": "https://github.com/paolodamico",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/5864173?u=a16869d7c39e9f146cdf35b293d24062a5e99413&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 2222,
+          "name": "4 × 2",
+          "tier": "rare",
+          "category": "repdigit",
+          "url": "https://github.com/PostHog/posthog/pull/2222",
+          "title": "Enable email on localhost by default",
+          "mergedAt": "2020-11-13T15:55:45Z"
+        },
+        {
+          "number": 3210,
+          "name": "Staircase Down",
+          "tier": "rare",
+          "category": "staircase",
+          "url": "https://github.com/PostHog/posthog/pull/3210",
+          "title": "Fix more z-index wonkiness",
+          "mergedAt": "2021-02-08T15:23:45Z"
+        },
+        {
+          "number": 5432,
+          "name": "Staircase Down",
+          "tier": "rare",
+          "category": "staircase",
+          "url": "https://github.com/PostHog/posthog/pull/5432",
+          "title": "Better insights instrumentation",
+          "mergedAt": "2021-08-04T21:45:14Z"
+        },
+        {
+          "number": 7654,
+          "name": "Staircase Down",
+          "tier": "rare",
+          "category": "staircase",
+          "url": "https://github.com/PostHog/posthog/pull/7654",
+          "title": "Release funnel vertical breakdown",
+          "mergedAt": "2021-12-13T19:45:39Z"
+        }
+      ],
+      "points": 40,
+      "count": 4,
+      "firstMergedAt": "2020-11-13T15:55:45Z",
+      "rank": 3
     },
     {
       "login": "rafaeelaudibert",
@@ -2993,37 +2834,6 @@
       "rank": 8
     },
     {
-      "login": "Gilbert09",
-      "name": "Tom Owers",
-      "url": "https://github.com/Gilbert09",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/1459269?u=0edde3eeb61b9d9c80cf8e432bae838fee58f179&v=4",
-      "bot": false,
-      "achievements": [
-        {
-          "number": 70000,
-          "name": "70k",
-          "tier": "legendary",
-          "category": "round",
-          "url": "https://github.com/PostHog/posthog/pull/70000",
-          "title": "feat(data-warehouse): implement fly_io import source",
-          "mergedAt": "2026-07-14T18:33:00Z"
-        },
-        {
-          "number": 80085,
-          "name": "Calculator Classic II",
-          "tier": "epic",
-          "category": "meme",
-          "url": "https://github.com/PostHog/posthog/pull/80085",
-          "title": "feat(warehouse_sources): support Loop Returns API version 2026-07",
-          "mergedAt": "2026-08-11T23:00:49Z"
-        }
-      ],
-      "points": 75,
-      "count": 2,
-      "firstMergedAt": "2026-07-14T18:33:00Z",
-      "rank": 9
-    },
-    {
       "login": "jurajmajerik",
       "name": "Juraj Majerik",
       "url": "https://github.com/jurajmajerik",
@@ -3052,7 +2862,7 @@
       "points": 50,
       "count": 2,
       "firstMergedAt": "2025-05-30T13:23:45Z",
-      "rank": 10
+      "rank": 9
     },
     {
       "login": "joshsny",
@@ -3083,7 +2893,7 @@
       "points": 50,
       "count": 2,
       "firstMergedAt": "2026-01-22T11:48:11Z",
-      "rank": 10
+      "rank": 9
     },
     {
       "login": "fuziontech",
@@ -3114,7 +2924,7 @@
       "points": 35,
       "count": 2,
       "firstMergedAt": "2020-09-09T05:35:27Z",
-      "rank": 12
+      "rank": 11
     },
     {
       "login": "mariusandra",
@@ -3145,7 +2955,7 @@
       "points": 20,
       "count": 2,
       "firstMergedAt": "2020-09-24T10:14:18Z",
-      "rank": 13
+      "rank": 12
     },
     {
       "login": "liyiy",
@@ -3176,7 +2986,7 @@
       "points": 20,
       "count": 2,
       "firstMergedAt": "2021-05-14T00:43:35Z",
-      "rank": 13
+      "rank": 12
     },
     {
       "login": "alexkim205",
@@ -3207,7 +3017,7 @@
       "points": 20,
       "count": 2,
       "firstMergedAt": "2021-08-12T00:25:13Z",
-      "rank": 13
+      "rank": 12
     },
     {
       "login": "ablaszkiewicz",
@@ -3229,7 +3039,29 @@
       "points": 50,
       "count": 1,
       "firstMergedAt": "2026-06-23T17:33:07Z",
-      "rank": 16
+      "rank": 15
+    },
+    {
+      "login": "Gilbert09",
+      "name": "Tom Owers",
+      "url": "https://github.com/Gilbert09",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1459269?u=0edde3eeb61b9d9c80cf8e432bae838fee58f179&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 70000,
+          "name": "70k",
+          "tier": "legendary",
+          "category": "round",
+          "url": "https://github.com/PostHog/posthog/pull/70000",
+          "title": "feat(data-warehouse): implement fly_io import source",
+          "mergedAt": "2026-07-14T18:33:00Z"
+        }
+      ],
+      "points": 50,
+      "count": 1,
+      "firstMergedAt": "2026-07-14T18:33:00Z",
+      "rank": 15
     },
     {
       "login": "jakesciotto",
@@ -3251,7 +3083,7 @@
       "points": 50,
       "count": 1,
       "firstMergedAt": "2026-08-10T14:44:04Z",
-      "rank": 16
+      "rank": 15
     },
     {
       "login": "hazzadous",

@@ -23,12 +23,19 @@ export const CATEGORIES = {
   meme: { label: 'Memes & culture', blurb: 'Numbers that are funny for reasons nobody can defend.' },
 }
 
-/** Numbers that are cool purely by cultural decree. */
+/**
+ * Numbers that are cool purely by cultural decree.
+ *
+ * This list is public and it is about colleagues, so the bar for adding one is
+ * that it would be fine read aloud in a company all-hands. Nothing that punches
+ * at anyone's race, body, gender, or sexuality, and nothing that doubles as a
+ * hate symbol -- that rules out 88, among others. When in doubt, leave it out;
+ * the rule-generated categories have plenty of numbers already.
+ */
 const MEMES = [
   [42, 'The Answer', 'To life, the universe, and everything.'],
   [69, 'Nice', 'Nice.'],
   [67, 'Six Seven', 'No further explanation has ever been offered.'],
-  [88, 'Double Infinity', 'Two fat ladies.'],
   [404, 'Not Found', 'This PR could not be located. It was right there.'],
   [418, "I'm a Teapot", 'Short and stout, and RFC 2324 compliant.'],
   [420, 'Blaze It', 'A PR of leisure.'],
@@ -39,15 +46,13 @@ const MEMES = [
   [1984, 'Big Brother', 'This PR is watching you.'],
   [2001, 'Space Odyssey', "I'm afraid I can't merge that, Dave."],
   [6969, 'Double Nice', 'Twice as nice.'],
-  [8008, 'Calculator Classic', 'Type it, flip the calculator upside down, giggle.'],
   [9001, "It's Over 9000", 'What, nine thousand?!'],
   [12345, 'Luggage Combination', "That's the stupidest combination I've ever heard."],
   [13337, 'Extra Leet', 'Leet, but with more.'],
   [31337, 'Elite', 'The original spelling.'],
   [42069, 'The Grand Unified Meme', 'Both jokes at once. Peak numerology.'],
   [69420, 'The Other Grand Unified Meme', 'The same two jokes, reversed.'],
-  [80085, 'Calculator Classic II', 'The calculator joke, all grown up.'],
-  [90210, 'Beverly Hills', 'A PR from the right postcode.'],
+  [90210, 'Beverly Hills', 'The ZIP code that got its own TV show.'],
   [6767, 'Six Seven Six Seven', 'It got worse.'],
   [676767, 'Six Seven, Ad Infinitum', 'It got much worse.'],
   [696969, 'Nice, Thrice', 'The nicest number the repo can currently hold.'],
@@ -61,18 +66,20 @@ const MEMES = [
   [2048, 'The Game', 'You just lost it. Also a power of two.'],
 ]
 
-/** Numbers that are cool because mathematics says so. */
+/**
+ * Numbers that are cool because mathematics says so.
+ *
+ * Constants start at four digits -- three digits of pi is a coincidence, not an
+ * achievement.
+ */
 const MATH = [
-  [314, 'Pi', 'The first three digits of a circle.'],
-  [3141, 'Pi, Extended', 'Four digits deep.'],
+  [3141, 'Pi', 'Four digits of a circle.'],
   [31415, 'Pi, Serious Business', 'Five digits. This is a real commitment to pi.'],
   [31416, 'Pi, Rounded', 'For the pedants who round correctly.'],
   [314159, 'Pi, Fully Committed', 'Six digits of transcendence.'],
-  [271, "Euler's Number", 'The base of natural growth.'],
-  [2718, 'e, Extended', 'Compound interest, personified.'],
+  [2718, "Euler's Number", 'The base of natural growth, four digits in.'],
   [27182, 'e, Serious Business', 'Five digits of e.'],
-  [161, 'Golden Ratio', 'Aesthetically optimal.'],
-  [1618, 'Phi', 'The most beautiful proportion, allegedly.'],
+  [1618, 'Phi', 'The golden ratio, and allegedly the most beautiful proportion.'],
   [16180, 'Phi, Extended', 'Divine proportion, five digits in.'],
   [1414, 'Root Two', 'The diagonal of a unit square.'],
   [14142, 'Root Two, Extended', 'Irrational and proud.'],
