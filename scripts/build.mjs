@@ -178,7 +178,7 @@ const html = `<!doctype html>
 <header class="masthead">
   <div class="wrap masthead__inner">
     <div class="masthead__mark">${titleLead ? `${esc(titleLead)} ` : ''}<b>${esc(titleTail)}</b></div>
-    <a class="masthead__repo" href="https://github.com/${esc(data.repo)}/pulls">${esc(data.repo)} ↗</a>
+    <a class="masthead__repo" href="https://github.com/${esc(data.repo)}/pulls">${esc(data.repo)}&nbsp;↗</a>
   </div>
 </header>
 
@@ -289,18 +289,18 @@ const html = `<!doctype html>
   <div class="colophon__about">
     <p>
       Built from the ${esc(data.repo)} pull request history.
-      <a href="https://github.com/${esc(data.repo)}/pulls">Go get one ↗</a>
+      <a href="https://github.com/${esc(data.repo)}/pulls">Go get one&nbsp;↗</a>
     </p>
     ${
       config.source
         ? `<p>Any repo can have one of these.
-      <a href="https://github.com/${esc(config.source)}">Fork it and change one line ↗</a></p>`
+      <a href="https://github.com/${esc(config.source)}">Fork it and change one&nbsp;line&nbsp;↗</a></p>`
         : ''
     }
   </div>
   <dl>
-    <dt>Rebuilt</dt><dd>${new Date(data.generatedAt).toUTCString()}</dd>
-    <dt>Highest PR</dt><dd>#${num(data.highestPr)}</dd>
+    <div><dt>Rebuilt</dt><dd>${new Date(data.generatedAt).toUTCString()}</dd></div>
+    <div><dt>Highest PR</dt><dd>#${num(data.highestPr)}</dd></div>
   </dl>
 </footer>
 

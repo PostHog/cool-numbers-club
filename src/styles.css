@@ -692,12 +692,33 @@ a.stub:hover {
   justify-content: space-between;
 }
 .colophon a { color: var(--paper); }
-.colophon__about { max-width: 42ch; }
+/* Wide enough that neither line breaks mid-link on a desktop footer. */
+.colophon__about { max-width: 68ch; }
 .colophon__about p { margin: 0 0 0.35rem; }
 .colophon__about p:last-child { margin-bottom: 0; }
-.colophon dl { display: flex; flex-wrap: wrap; gap: 0.35rem 1.5rem; margin: 0; }
-.colophon dt { font-family: var(--mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; }
-.colophon dd { margin: 0 0 0 0.5rem; }
+/* Each label/value pair is one flex item, so a pair wraps as a unit and never
+   carries a stray indent onto the next line. */
+.colophon dl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.5rem;
+  margin: 0;
+}
+.colophon dl > div {
+  display: flex;
+  /* Label and value are different sizes, so align their baselines rather than
+     taking the flex default of stretch. */
+  align-items: baseline;
+  gap: 0.6rem;
+}
+.colophon dt {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+.colophon dd { margin: 0; font-variant-numeric: tabular-nums; }
 
 /* ── Responsive ───────────────────────────────────────────── */
 
