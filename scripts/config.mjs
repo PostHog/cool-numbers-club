@@ -30,6 +30,13 @@ function load() {
     throw new Error(`config.json: "title" must be a non-empty string, got ${JSON.stringify(raw.title)}`)
   }
 
+  // Public URL of the deployed site, no trailing slash. Needed for absolute
+  // OG image and canonical URLs; omit it and those tags are left out.
+  const url = raw.url ? String(raw.url).replace(/\/+$/, '') : null
+  if (url !== null && !/^https?:\/\/[^\s/]+/.test(url)) {
+    throw new Error(`config.json: "url" must be an absolute http(s) URL or be omitted, got ${JSON.stringify(raw.url)}`)
+  }
+
   // Where this site's own code lives, for the "fork it" line in the footer.
   // Optional: leave it out and the footer simply omits that line.
   const source = raw.source ?? null
@@ -38,7 +45,7 @@ function load() {
   }
 
   const [owner, name] = repo.split('/')
-  return { repo, owner, name, ceiling, title: title.trim(), source }
+  return { repo, owner, name, ceiling, title: title.trim(), url, source }
 }
 
 export const config = load()

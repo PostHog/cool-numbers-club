@@ -1,6 +1,7 @@
 {
   "repo": "posthog/posthog",
   "title": "The Cool Numbers Club",
+  "url": "https://coolnumbersclub.posthog.com",
   "ceiling": 1000000,
   "source": "PostHog/cool-numbers-club"
 }

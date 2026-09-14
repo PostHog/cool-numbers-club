@@ -75,6 +75,7 @@ Fork or clone this, then edit `config.json`:
 | `repo` | The repo to read, as `owner/name`. Must be public, or the token needs access to it. |
 | `title` | Shown in the masthead and the page title. The last word gets the accent colour. |
 | `ceiling` | Highest number the club recognises. **This one number decides the whole catalogue** — it sets how far ahead the "still to come" list runs, and that number becomes the sole **Singularity**. |
+| `url` | Public URL of your deployed site, no trailing slash. Used for the canonical link and the absolute OG image URL. Omit it and those tags are left out. |
 | `source` | Where *this* site's code lives, for the "fork it" link in the footer. Point it at your fork, or omit it to drop the line. |
 
 Pick a `ceiling` that suits your repo's pace — a project at PR #4,000 is better
@@ -108,6 +109,22 @@ npm run refresh  # pull fresh data from GitHub, then render
 ```
 
 No dependencies to install — the project has none.
+
+### The social preview card
+
+`src/og.png` is committed and copied into `dist/` by the build. Its source is
+[`src/og.html`](src/og.html), a standalone page using the same palette and type
+as the site. To change it, edit that file and re-render:
+
+```sh
+npx playwright install chromium   # once
+npm run og                        # writes src/og.png at 2400x1260
+```
+
+This is the only thing in the project that needs a browser, which is exactly why
+it is not part of `npm run build` — the deploy build stays dependency-free. The
+card shows fixed numbers rather than live ones, so it never goes stale between
+rebuilds.
 
 `npm run fetch` needs a GitHub token. It reads `GITHUB_TOKEN` (or `GH_TOKEN`)
 and falls back to `gh auth token`, so `gh auth login` is all the local setup

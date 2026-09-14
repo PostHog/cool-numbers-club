@@ -166,6 +166,20 @@ const html = `<!doctype html>
 <meta property="og:title" content="${esc(config.title)}">
 <meta property="og:description" content="Nobody picks their pull request number. These ${data.stats.byHumans} were worth keeping.">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="${esc(config.title)}">
+<meta name="twitter:card" content="summary_large_image">
+${
+  config.url
+    ? `<link rel="canonical" href="${esc(config.url)}/">
+<meta property="og:url" content="${esc(config.url)}/">
+<meta property="og:image" content="${esc(config.url)}/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="2400">
+<meta property="og:image:height" content="1260">
+<meta property="og:image:alt" content="${esc(config.title)} — ticket stubs for pull requests #42, #31,415, #100,000 and #1,000,000.">
+<meta name="twitter:image" content="${esc(config.url)}/og.png">`
+    : ''
+}
 <meta name="theme-color" content="#14161d">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%23f54e00'/><text x='50' y='74' font-size='68' font-family='Helvetica,Arial' font-weight='bold' text-anchor='middle' fill='%23f2eee2'>%23</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -314,4 +328,5 @@ writeFileSync(root('dist/index.html'), html)
 copyFileSync(src('styles.css'), root('dist/styles.css'))
 copyFileSync(src('app.js'), root('dist/app.js'))
 copyFileSync(src('_headers'), root('dist/_headers'))
+copyFileSync(src('og.png'), root('dist/og.png'))
 console.error(`Built dist/ — ${data.achievements.length} numbers, ${data.leaderboard.length} members.`)

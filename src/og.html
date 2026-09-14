@@ -1,0 +1,167 @@
+<!doctype html>
+<!--
+  Source for the social preview card. Render it to src/og.png with:
+      npm run og
+  It reuses the site's palette and type so the preview looks like the page it
+  links to. The numbers shown are chosen to be timeless, not live, so the image
+  never goes stale between rebuilds.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=DM+Mono:wght@400;500&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #14161d;
+    --ink-line: #2b2f3b;
+    --paper: #f2eee2;
+    --paper-edge: #cdc6b2;
+    --orange: #f54e00;
+    --blue: #5c86ff;
+    --yellow: #f9bd2b;
+    --dim: #858c9e;
+    --display: 'Big Shoulders Display', sans-serif;
+    --body: 'Public Sans', sans-serif;
+    --mono: 'DM Mono', monospace;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    width: 1200px;
+    height: 630px;
+    background: var(--ink);
+    background-image:
+      linear-gradient(var(--ink-line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--ink-line) 1px, transparent 1px);
+    background-size: 64px 64px;
+    color: var(--paper);
+    font-family: var(--body);
+    padding: 54px 60px 48px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+  .vignette {
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 110% 85% at 50% 0%, transparent 5%, var(--ink) 78%);
+  }
+  .layer { position: relative; display: flex; flex-direction: column; height: 100%; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 15px;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--orange);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .eyebrow::after { content: ''; flex: 1; height: 1px; background: currentColor; opacity: 0.45; }
+
+  h1 {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 116px;
+    line-height: 0.88;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+    margin-top: 18px;
+  }
+  h1 b { color: var(--orange); font-weight: 800; }
+
+  .tagline {
+    margin-top: 18px;
+    font-size: 26px;
+    line-height: 1.35;
+    color: var(--dim);
+    max-width: 40ch;
+    text-wrap: balance;
+  }
+  .tagline b { color: var(--paper); font-weight: 600; }
+
+  .stubs { display: flex; gap: 16px; margin-top: auto; }
+  .stub {
+    flex: 1;
+    background: var(--paper);
+    color: var(--ink);
+    border-radius: 4px;
+    border-top: 6px solid var(--tier, var(--paper-edge));
+    padding: 13px 15px 15px;
+    position: relative;
+  }
+  .stub .tier {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #6f685a;
+  }
+  .stub .n {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 1;
+    margin-top: 3px;
+    white-space: nowrap;
+  }
+  .stub .n::before { content: '#'; opacity: 0.32; font-size: 0.55em; vertical-align: 0.42em; }
+  .stub .name { font-weight: 700; font-size: 15px; margin-top: 2px; }
+
+  .stub[data-t='mythic']    { --tier: var(--yellow); }
+  .stub[data-t='epic']      { --tier: var(--blue); }
+  .stub[data-t='rare']      { --tier: var(--paper-edge); }
+  .stub[data-t='mythic'] .tier { color: #7d5a00; }
+  .stub[data-t='epic'] .tier   { color: #2c4fc4; }
+
+  /* The one-of-a-kind ticket, same rainbow as on the page. */
+  .stub[data-t='singularity'] { border-top-color: transparent; }
+  .stub[data-t='singularity']::before {
+    content: '';
+    position: absolute;
+    top: -6px; left: -1px; right: -1px; height: 6px;
+    background: linear-gradient(90deg, #7c3aed, #d946ef, #22d3ee, #a855f7);
+  }
+  .stub[data-t='singularity'] .n {
+    background: linear-gradient(90deg, #7c3aed, #d946ef, #22d3ee, #a855f7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .stub[data-t='singularity'] .tier { color: #6d28d9; }
+
+  .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 22px;
+    font-family: var(--mono);
+    font-size: 15px;
+    color: var(--dim);
+  }
+  .foot .domain { color: var(--paper); }
+</style>
+</head>
+<body>
+<div class="vignette"></div>
+<div class="layer">
+  <div class="eyebrow">Now serving</div>
+  <h1>The Cool<br>Numbers <b>Club</b></h1>
+  <p class="tagline">Nobody picks their pull request number. <b>These ones were worth keeping.</b></p>
+
+  <div class="stubs">
+    <div class="stub" data-t="rare"><div class="tier">Memes &amp; culture</div><div class="n">42</div><div class="name">The Answer</div></div>
+    <div class="stub" data-t="epic"><div class="tier">Mathematical</div><div class="n">31,415</div><div class="name">Pi</div></div>
+    <div class="stub" data-t="mythic"><div class="tier">Round numbers</div><div class="n">100,000</div><div class="name">PR #100,000</div></div>
+    <div class="stub" data-t="singularity"><div class="tier">Singularity</div><div class="n">1,000,000</div><div class="name">One in a Million</div></div>
+  </div>
+
+  <div class="foot">
+    <span>github.com/posthog/posthog</span>
+    <span class="domain">coolnumbersclub.posthog.com</span>
+  </div>
+</div>
+</body>
+</html>
