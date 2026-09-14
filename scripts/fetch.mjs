@@ -118,7 +118,14 @@ async function main() {
     const pr = pulls.get(entry.number)
     // Only merged PRs count. Issues, unmerged PRs and gaps leave the slot open.
     if (!pr || pr.state !== 'MERGED' || !pr.author) {
-      return { ...entry, claimed: false, why: !pr ? 'not-a-pr' : pr.state === 'OPEN' ? 'open' : 'unmerged' }
+      return {
+        ...entry,
+        claimed: false,
+        why: !pr ? 'not-a-pr' : pr.state === 'OPEN' ? 'open' : 'unmerged',
+        // Somebody did take this number, they just did not land it. Keep the
+        // link so the near miss is checkable.
+        ...(pr ? { pr: { url: pr.url, title: pr.title, state: pr.state } } : {}),
+      }
     }
     const isBot = looksLikeABot(pr.author)
     return {

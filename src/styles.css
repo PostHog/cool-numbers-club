@@ -615,6 +615,7 @@ a.stub:hover {
 .stub--open .stub__blurb { color: var(--dim); }
 .stub--open .stub__head { color: var(--dim); }
 .stub--open .stub__status {
+  display: block;
   font-family: var(--mono);
   font-size: 0.6875rem;
   letter-spacing: 0.08em;
@@ -625,6 +626,16 @@ a.stub:hover {
   padding: 0.3rem 0.5rem;
   margin-top: 1rem;
   text-align: center;
+}
+
+.stub__status--link {
+  text-decoration: none;
+  transition: background-color 140ms ease, color 140ms ease, border-color 140ms ease;
+}
+.stub__status--link:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: var(--ink);
 }
 
 .stub--future .stub__status {
@@ -681,6 +692,9 @@ a.stub:hover {
   justify-content: space-between;
 }
 .colophon a { color: var(--paper); }
+.colophon__about { max-width: 42ch; }
+.colophon__about p { margin: 0 0 0.35rem; }
+.colophon__about p:last-child { margin-bottom: 0; }
 .colophon dl { display: flex; flex-wrap: wrap; gap: 0.35rem 1.5rem; margin: 0; }
 .colophon dt { font-family: var(--mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; }
 .colophon dd { margin: 0 0 0 0.5rem; }

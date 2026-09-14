@@ -64,9 +64,13 @@ function stub(a) {
     const status = a.future
       ? `${num(a.toGo)} pull requests away`
       : (STATUS[a.why] ?? 'Unissued')
+    // A number lost to an unmerged or still-open PR links to that PR.
+    const statusEl = a.pr
+      ? `<a class="stub__status stub__status--link" href="${esc(a.pr.url)}" title="${esc(a.pr.title)}">${esc(status)} <span aria-hidden="true">&rarr;</span></a>`
+      : `<div class="stub__status">${esc(status)}</div>`
     return `<div class="stub stub--open${a.future ? ' stub--future' : ''}" id="n-${a.number}" data-tier="${a.tier}" data-category="${a.category}" data-claimed="false" data-status="${a.future ? 'future' : 'missed'}" data-search="${esc(searchKey(a))}">
       ${head}${title}${aka}
-      <div class="stub__status">${esc(status)}</div>
+      ${statusEl}
     </div>`
   }
 
@@ -282,9 +286,17 @@ const html = `<!doctype html>
 </main>
 
 <footer class="colophon wrap">
-  <div>
-    Built from the ${esc(data.repo)} pull request history.
-    <a href="https://github.com/${esc(data.repo)}/pulls">Go get one ↗</a>
+  <div class="colophon__about">
+    <p>
+      Built from the ${esc(data.repo)} pull request history.
+      <a href="https://github.com/${esc(data.repo)}/pulls">Go get one ↗</a>
+    </p>
+    ${
+      config.source
+        ? `<p>Any repo can have one of these.
+      <a href="https://github.com/${esc(config.source)}">Fork it and change one line ↗</a></p>`
+        : ''
+    }
   </div>
   <dl>
     <dt>Rebuilt</dt><dd>${new Date(data.generatedAt).toUTCString()}</dd>

@@ -1,30 +1,17 @@
 {
-  "generatedAt": "2026-09-14T18:43:33.446Z",
+  "generatedAt": "2026-09-14T18:45:28.281Z",
   "repo": "posthog/posthog",
-  "highestPr": 100549,
+  "highestPr": 100551,
   "stats": {
-    "total": 201,
-    "claimed": 47,
-    "byHumans": 43,
+    "total": 137,
+    "claimed": 52,
+    "byHumans": 48,
     "byBots": 4,
-    "missed": 45,
-    "future": 109,
-    "members": 24
+    "missed": 48,
+    "future": 37,
+    "members": 26
   },
   "upcoming": [
-    {
-      "number": 110000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "110k",
-      "blurb": "110 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 9451,
-      "why": "future"
-    },
     {
       "number": 111111,
       "category": "repdigit",
@@ -35,20 +22,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 10562,
-      "why": "future"
-    },
-    {
-      "number": 120000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "120k",
-      "blurb": "120 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 19451,
+      "toGo": 10560,
       "why": "future"
     },
     {
@@ -61,7 +35,33 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 22907,
+      "toGo": 22905,
+      "why": "future"
+    },
+    {
+      "number": 131072,
+      "category": "power",
+      "tier": "legendary",
+      "name": "2^17",
+      "blurb": "Two to the 17th. A number with real binary dignity.",
+      "alsoKnownAs": [],
+      "points": 50,
+      "claimed": false,
+      "future": true,
+      "toGo": 30521,
+      "why": "future"
+    },
+    {
+      "number": 150000,
+      "category": "round",
+      "tier": "legendary",
+      "name": "150k",
+      "blurb": "150 thousand pull requests deep.",
+      "alsoKnownAs": [],
+      "points": 50,
+      "claimed": false,
+      "future": true,
+      "toGo": 49449,
       "why": "future"
     }
   ],
@@ -504,7 +504,12 @@
       "alsoKnownAs": [],
       "points": 10,
       "claimed": false,
-      "why": "unmerged"
+      "why": "unmerged",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/999",
+        "title": "Bump amqp from 2.5.2 to 2.6.0",
+        "state": "CLOSED"
+      }
     },
     {
       "number": 1000,
@@ -515,7 +520,12 @@
       "alsoKnownAs": [],
       "points": 100,
       "claimed": false,
-      "why": "unmerged"
+      "why": "unmerged",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/1000",
+        "title": "Bump backcall from 0.1.0 to 0.2.0",
+        "state": "CLOSED"
+      }
     },
     {
       "number": 1024,
@@ -659,7 +669,12 @@
       "alsoKnownAs": [],
       "points": 10,
       "claimed": false,
-      "why": "unmerged"
+      "why": "unmerged",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/1729",
+        "title": "[clickhouse] Add feature flags to endpoints",
+        "state": "CLOSED"
+      }
     },
     {
       "number": 1984,
@@ -686,6 +701,32 @@
         "createdAt": "2020-10-22T12:28:39Z",
         "additions": 2,
         "deletions": 17
+      }
+    },
+    {
+      "number": 2000,
+      "category": "round",
+      "tier": "epic",
+      "name": "2k",
+      "blurb": "2 thousand pull requests deep.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "mariusandra",
+        "name": "Marius Andra",
+        "url": "https://github.com/mariusandra",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/53387?u=fff0dd833220dc640f9c50d6f8a9dadc74e1896e&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Fix cohort page link",
+        "url": "https://github.com/PostHog/posthog/pull/2000",
+        "mergedAt": "2020-10-23T09:12:27Z",
+        "createdAt": "2020-10-23T09:01:10Z",
+        "additions": 1,
+        "deletions": 1
       }
     },
     {
@@ -760,6 +801,32 @@
       }
     },
     {
+      "number": 3000,
+      "category": "round",
+      "tier": "epic",
+      "name": "3k",
+      "blurb": "3 thousand pull requests deep.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "macobo",
+        "name": "Karl-Aksel Puulmann",
+        "url": "https://github.com/macobo",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/148820?v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Allow filtering by unseen recordings",
+        "url": "https://github.com/PostHog/posthog/pull/3000",
+        "mergedAt": "2021-01-21T07:42:01Z",
+        "createdAt": "2021-01-19T19:45:03Z",
+        "additions": 179,
+        "deletions": 37
+      }
+    },
+    {
       "number": 3333,
       "category": "repdigit",
       "tier": "rare",
@@ -767,6 +834,17 @@
       "blurb": "4 identical digits in a row. The odds are not good.",
       "alsoKnownAs": [],
       "points": 10,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
+      "number": 4000,
+      "category": "round",
+      "tier": "epic",
+      "name": "4k",
+      "blurb": "4 thousand pull requests deep.",
+      "alsoKnownAs": [],
+      "points": 25,
       "claimed": false,
       "why": "not-a-pr"
     },
@@ -846,6 +924,32 @@
       "why": "not-a-pr"
     },
     {
+      "number": 5000,
+      "category": "round",
+      "tier": "epic",
+      "name": "5k",
+      "blurb": "5 thousand pull requests deep.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "kpthatsme",
+        "name": "Kunal",
+        "url": "https://github.com/kpthatsme",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/5965891?v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Change home default behavior, don't route by default",
+        "url": "https://github.com/PostHog/posthog/pull/5000",
+        "mergedAt": "2021-07-07T01:13:47Z",
+        "createdAt": "2021-07-05T23:25:20Z",
+        "additions": 6,
+        "deletions": 17
+      }
+    },
+    {
       "number": 5040,
       "category": "math",
       "tier": "rare",
@@ -896,6 +1000,32 @@
         "createdAt": "2021-08-11T22:50:09Z",
         "additions": 1,
         "deletions": 1
+      }
+    },
+    {
+      "number": 6000,
+      "category": "round",
+      "tier": "epic",
+      "name": "6k",
+      "blurb": "6 thousand pull requests deep.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "alexkim205",
+        "name": "Alex Gyujin Kim",
+        "url": "https://github.com/alexkim205",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/13460330?v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "Unordered funnel quirks",
+        "url": "https://github.com/PostHog/posthog/pull/6000",
+        "mergedAt": "2021-09-16T21:46:51Z",
+        "createdAt": "2021-09-16T19:15:14Z",
+        "additions": 39,
+        "deletions": 9
       }
     },
     {
@@ -1033,6 +1163,32 @@
       }
     },
     {
+      "number": 7000,
+      "category": "round",
+      "tier": "epic",
+      "name": "7k",
+      "blurb": "7 thousand pull requests deep.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "mariusandra",
+        "name": "Marius Andra",
+        "url": "https://github.com/mariusandra",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/53387?u=fff0dd833220dc640f9c50d6f8a9dadc74e1896e&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "404 on static assets",
+        "url": "https://github.com/PostHog/posthog/pull/7000",
+        "mergedAt": "2021-11-09T23:15:23Z",
+        "createdAt": "2021-11-09T22:44:45Z",
+        "additions": 5,
+        "deletions": 0
+      }
+    },
+    {
       "number": 7777,
       "category": "repdigit",
       "tier": "rare",
@@ -1059,6 +1215,17 @@
       }
     },
     {
+      "number": 8000,
+      "category": "round",
+      "tier": "epic",
+      "name": "8k",
+      "blurb": "8 thousand pull requests deep.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "not-a-pr"
+    },
+    {
       "number": 8128,
       "category": "math",
       "tier": "rare",
@@ -1068,7 +1235,12 @@
       "alsoKnownAs": [],
       "points": 10,
       "claimed": false,
-      "why": "unmerged"
+      "why": "unmerged",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/8128",
+        "title": "Archive and delete experiments",
+        "state": "CLOSED"
+      }
     },
     {
       "number": 8192,
@@ -1079,7 +1251,12 @@
       "alsoKnownAs": [],
       "points": 25,
       "claimed": false,
-      "why": "unmerged"
+      "why": "unmerged",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/8192",
+        "title": "Alternative staff users management prototype",
+        "state": "CLOSED"
+      }
     },
     {
       "number": 8888,
@@ -1105,6 +1282,22 @@
         "createdAt": "2022-03-07T11:48:22Z",
         "additions": 77,
         "deletions": 59
+      }
+    },
+    {
+      "number": 9000,
+      "category": "round",
+      "tier": "epic",
+      "name": "9k",
+      "blurb": "9 thousand pull requests deep.",
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": false,
+      "why": "unmerged",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/9000",
+        "title": "chore(plugin-server): skip historical export tests while functionality is disabled",
+        "state": "CLOSED"
       }
     },
     {
@@ -1154,7 +1347,12 @@
       "alsoKnownAs": [],
       "points": 100,
       "claimed": false,
-      "why": "unmerged"
+      "why": "unmerged",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/10000",
+        "title": "fix: correctly mark plugins as errored and avoid triggering more retries",
+        "state": "CLOSED"
+      }
     },
     {
       "number": 11111,
@@ -1316,7 +1514,12 @@
       "alsoKnownAs": [],
       "points": 50,
       "claimed": false,
-      "why": "unmerged"
+      "why": "unmerged",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/20000",
+        "title": "chore(deps): bump actions/checkout from 3 to 4",
+        "state": "CLOSED"
+      }
     },
     {
       "number": 22222,
@@ -1354,7 +1557,12 @@
       "alsoKnownAs": [],
       "points": 25,
       "claimed": false,
-      "why": "unmerged"
+      "why": "unmerged",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/24601",
+        "title": "feat: Add error alerting",
+        "state": "CLOSED"
+      }
     },
     {
       "number": 27182,
@@ -1366,7 +1574,12 @@
       "alsoKnownAs": [],
       "points": 25,
       "claimed": false,
-      "why": "unmerged"
+      "why": "unmerged",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/27182",
+        "title": "feat(clickhouse) Switch django to use clickhouse proxy",
+        "state": "CLOSED"
+      }
     },
     {
       "number": 30000,
@@ -1495,7 +1708,12 @@
       "alsoKnownAs": [],
       "points": 25,
       "claimed": false,
-      "why": "unmerged"
+      "why": "unmerged",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/33333",
+        "title": "fix: handle None path in Sentry traces_sampler",
+        "state": "CLOSED"
+      }
     },
     {
       "number": 40000,
@@ -1672,7 +1890,12 @@
       "alsoKnownAs": [],
       "points": 50,
       "claimed": false,
-      "why": "unmerged"
+      "why": "unmerged",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/60000",
+        "title": "fix(hobby): escape ELAPSED/TIMEOUT in kafka-init compose command",
+        "state": "CLOSED"
+      }
     },
     {
       "number": 62831,
@@ -1684,7 +1907,12 @@
       "alsoKnownAs": [],
       "points": 25,
       "claimed": false,
-      "why": "unmerged"
+      "why": "unmerged",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/62831",
+        "title": "feat(data-warehouse): add support for service account impersonation for BigQuery",
+        "state": "CLOSED"
+      }
     },
     {
       "number": 62832,
@@ -1696,7 +1924,12 @@
       "alsoKnownAs": [],
       "points": 25,
       "claimed": false,
-      "why": "unmerged"
+      "why": "unmerged",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/62832",
+        "title": "chore(ci): Update bot IPs from GoodBots repository",
+        "state": "CLOSED"
+      }
     },
     {
       "number": 65536,
@@ -1733,7 +1966,12 @@
       "alsoKnownAs": [],
       "points": 25,
       "claimed": false,
-      "why": "unmerged"
+      "why": "unmerged",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/66666",
+        "title": "fix(cohorts): fail cohort recalc gracefully when query exceeds max_query_size",
+        "state": "CLOSED"
+      }
     },
     {
       "number": 67000,
@@ -1772,7 +2010,12 @@
       "alsoKnownAs": [],
       "points": 25,
       "claimed": false,
-      "why": "unmerged"
+      "why": "unmerged",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/69000",
+        "title": "fix(data-warehouse): handle database build failure in warehouse view link list",
+        "state": "CLOSED"
+      }
     },
     {
       "number": 69420,
@@ -1821,7 +2064,12 @@
       "alsoKnownAs": [],
       "points": 25,
       "claimed": false,
-      "why": "unmerged"
+      "why": "unmerged",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/77777",
+        "title": "trunk-merge/pr-77406/aa725690-dd1e-4f25-8117-b1752d01565c",
+        "state": "CLOSED"
+      }
     },
     {
       "number": 80000,
@@ -1858,7 +2106,12 @@
       "alsoKnownAs": [],
       "points": 25,
       "claimed": false,
-      "why": "unmerged"
+      "why": "unmerged",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/88888",
+        "title": "trunk-merge/pr-88144/b8826bf9-39df-49e8-bf14-84ec74e04f23",
+        "state": "CLOSED"
+      }
     },
     {
       "number": 90000,
@@ -1896,7 +2149,12 @@
       "alsoKnownAs": [],
       "points": 25,
       "claimed": false,
-      "why": "unmerged"
+      "why": "unmerged",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/90210",
+        "title": "ci(tasks): resolve latest hogland CLI release, reuse the deployer app",
+        "state": "CLOSED"
+      }
     },
     {
       "number": 99999,
@@ -1907,7 +2165,12 @@
       "alsoKnownAs": [],
       "points": 25,
       "claimed": false,
-      "why": "open"
+      "why": "open",
+      "pr": {
+        "url": "https://github.com/PostHog/posthog/pull/99999",
+        "title": "#100000 countdown: 1 to go",
+        "state": "OPEN"
+      }
     },
     {
       "number": 100000,
@@ -1936,19 +2199,6 @@
       }
     },
     {
-      "number": 110000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "110k",
-      "blurb": "110 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 9451,
-      "why": "future"
-    },
-    {
       "number": 111111,
       "category": "repdigit",
       "tier": "legendary",
@@ -1958,20 +2208,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 10562,
-      "why": "future"
-    },
-    {
-      "number": 120000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "120k",
-      "blurb": "120 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 19451,
+      "toGo": 10560,
       "why": "future"
     },
     {
@@ -1984,20 +2221,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 22907,
-      "why": "future"
-    },
-    {
-      "number": 130000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "130k",
-      "blurb": "130 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 29451,
+      "toGo": 22905,
       "why": "future"
     },
     {
@@ -2010,20 +2234,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 30523,
-      "why": "future"
-    },
-    {
-      "number": 140000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "140k",
-      "blurb": "140 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 39451,
+      "toGo": 30521,
       "why": "future"
     },
     {
@@ -2036,59 +2247,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 49451,
-      "why": "future"
-    },
-    {
-      "number": 160000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "160k",
-      "blurb": "160 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 59451,
-      "why": "future"
-    },
-    {
-      "number": 170000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "170k",
-      "blurb": "170 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 69451,
-      "why": "future"
-    },
-    {
-      "number": 180000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "180k",
-      "blurb": "180 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 79451,
-      "why": "future"
-    },
-    {
-      "number": 190000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "190k",
-      "blurb": "190 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 89451,
+      "toGo": 49449,
       "why": "future"
     },
     {
@@ -2101,33 +2260,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 99451,
-      "why": "future"
-    },
-    {
-      "number": 210000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "210k",
-      "blurb": "210 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 109451,
-      "why": "future"
-    },
-    {
-      "number": 220000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "220k",
-      "blurb": "220 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 119451,
+      "toGo": 99449,
       "why": "future"
     },
     {
@@ -2140,33 +2273,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 121673,
-      "why": "future"
-    },
-    {
-      "number": 230000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "230k",
-      "blurb": "230 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 129451,
-      "why": "future"
-    },
-    {
-      "number": 240000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "240k",
-      "blurb": "240 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 139451,
+      "toGo": 121671,
       "why": "future"
     },
     {
@@ -2179,20 +2286,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 149451,
-      "why": "future"
-    },
-    {
-      "number": 260000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "260k",
-      "blurb": "260 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 159451,
+      "toGo": 149449,
       "why": "future"
     },
     {
@@ -2205,46 +2299,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 161595,
-      "why": "future"
-    },
-    {
-      "number": 270000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "270k",
-      "blurb": "270 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 169451,
-      "why": "future"
-    },
-    {
-      "number": 280000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "280k",
-      "blurb": "280 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 179451,
-      "why": "future"
-    },
-    {
-      "number": 290000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "290k",
-      "blurb": "290 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 189451,
+      "toGo": 161593,
       "why": "future"
     },
     {
@@ -2257,20 +2312,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 199451,
-      "why": "future"
-    },
-    {
-      "number": 310000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "310k",
-      "blurb": "310 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 209451,
+      "toGo": 199449,
       "why": "future"
     },
     {
@@ -2284,33 +2326,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 213610,
-      "why": "future"
-    },
-    {
-      "number": 320000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "320k",
-      "blurb": "320 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 219451,
-      "why": "future"
-    },
-    {
-      "number": 330000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "330k",
-      "blurb": "330 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 229451,
+      "toGo": 213608,
       "why": "future"
     },
     {
@@ -2323,20 +2339,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 232784,
-      "why": "future"
-    },
-    {
-      "number": 340000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "340k",
-      "blurb": "340 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 239451,
+      "toGo": 232782,
       "why": "future"
     },
     {
@@ -2349,20 +2352,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 249451,
-      "why": "future"
-    },
-    {
-      "number": 360000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "360k",
-      "blurb": "360 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 259451,
+      "toGo": 249449,
       "why": "future"
     },
     {
@@ -2376,46 +2366,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 262331,
-      "why": "future"
-    },
-    {
-      "number": 370000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "370k",
-      "blurb": "370 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 269451,
-      "why": "future"
-    },
-    {
-      "number": 380000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "380k",
-      "blurb": "380 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 279451,
-      "why": "future"
-    },
-    {
-      "number": 390000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "390k",
-      "blurb": "390 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 289451,
+      "toGo": 262329,
       "why": "future"
     },
     {
@@ -2428,59 +2379,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 299451,
-      "why": "future"
-    },
-    {
-      "number": 410000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "410k",
-      "blurb": "410 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 309451,
-      "why": "future"
-    },
-    {
-      "number": 420000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "420k",
-      "blurb": "420 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 319451,
-      "why": "future"
-    },
-    {
-      "number": 430000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "430k",
-      "blurb": "430 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 329451,
-      "why": "future"
-    },
-    {
-      "number": 440000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "440k",
-      "blurb": "440 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 339451,
+      "toGo": 299449,
       "why": "future"
     },
     {
@@ -2493,7 +2392,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 343895,
+      "toGo": 343893,
       "why": "future"
     },
     {
@@ -2506,59 +2405,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 349451,
-      "why": "future"
-    },
-    {
-      "number": 460000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "460k",
-      "blurb": "460 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 359451,
-      "why": "future"
-    },
-    {
-      "number": 470000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "470k",
-      "blurb": "470 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 369451,
-      "why": "future"
-    },
-    {
-      "number": 480000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "480k",
-      "blurb": "480 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 379451,
-      "why": "future"
-    },
-    {
-      "number": 490000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "490k",
-      "blurb": "490 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 389451,
+      "toGo": 349449,
       "why": "future"
     },
     {
@@ -2571,33 +2418,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 399451,
-      "why": "future"
-    },
-    {
-      "number": 510000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "510k",
-      "blurb": "510 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 409451,
-      "why": "future"
-    },
-    {
-      "number": 520000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "520k",
-      "blurb": "520 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 419451,
+      "toGo": 399449,
       "why": "future"
     },
     {
@@ -2610,33 +2431,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 423739,
-      "why": "future"
-    },
-    {
-      "number": 530000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "530k",
-      "blurb": "530 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 429451,
-      "why": "future"
-    },
-    {
-      "number": 540000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "540k",
-      "blurb": "540 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 439451,
+      "toGo": 423737,
       "why": "future"
     },
     {
@@ -2649,7 +2444,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 449451,
+      "toGo": 449449,
       "why": "future"
     },
     {
@@ -2662,59 +2457,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 455006,
-      "why": "future"
-    },
-    {
-      "number": 560000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "560k",
-      "blurb": "560 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 459451,
-      "why": "future"
-    },
-    {
-      "number": 570000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "570k",
-      "blurb": "570 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 469451,
-      "why": "future"
-    },
-    {
-      "number": 580000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "580k",
-      "blurb": "580 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 479451,
-      "why": "future"
-    },
-    {
-      "number": 590000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "590k",
-      "blurb": "590 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 489451,
+      "toGo": 455004,
       "why": "future"
     },
     {
@@ -2727,33 +2470,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 499451,
-      "why": "future"
-    },
-    {
-      "number": 610000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "610k",
-      "blurb": "610 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 509451,
-      "why": "future"
-    },
-    {
-      "number": 620000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "620k",
-      "blurb": "620 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 519451,
+      "toGo": 499449,
       "why": "future"
     },
     {
@@ -2767,33 +2484,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 527769,
-      "why": "future"
-    },
-    {
-      "number": 630000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "630k",
-      "blurb": "630 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 529451,
-      "why": "future"
-    },
-    {
-      "number": 640000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "640k",
-      "blurb": "640 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 539451,
+      "toGo": 527767,
       "why": "future"
     },
     {
@@ -2806,7 +2497,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 549451,
+      "toGo": 549449,
       "why": "future"
     },
     {
@@ -2819,20 +2510,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 553772,
-      "why": "future"
-    },
-    {
-      "number": 660000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "660k",
-      "blurb": "660 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 559451,
+      "toGo": 553770,
       "why": "future"
     },
     {
@@ -2845,20 +2523,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 566117,
-      "why": "future"
-    },
-    {
-      "number": 670000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "670k",
-      "blurb": "670 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 569451,
+      "toGo": 566115,
       "why": "future"
     },
     {
@@ -2872,33 +2537,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 576218,
-      "why": "future"
-    },
-    {
-      "number": 680000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "680k",
-      "blurb": "680 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 579451,
-      "why": "future"
-    },
-    {
-      "number": 690000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "690k",
-      "blurb": "690 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 589451,
+      "toGo": 576216,
       "why": "future"
     },
     {
@@ -2912,7 +2551,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 596420,
+      "toGo": 596418,
       "why": "future"
     },
     {
@@ -2925,59 +2564,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 599451,
-      "why": "future"
-    },
-    {
-      "number": 710000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "710k",
-      "blurb": "710 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 609451,
-      "why": "future"
-    },
-    {
-      "number": 720000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "720k",
-      "blurb": "720 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 619451,
-      "why": "future"
-    },
-    {
-      "number": 730000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "730k",
-      "blurb": "730 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 629451,
-      "why": "future"
-    },
-    {
-      "number": 740000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "740k",
-      "blurb": "740 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 639451,
+      "toGo": 599449,
       "why": "future"
     },
     {
@@ -2990,33 +2577,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 649451,
-      "why": "future"
-    },
-    {
-      "number": 760000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "760k",
-      "blurb": "760 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 659451,
-      "why": "future"
-    },
-    {
-      "number": 770000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "770k",
-      "blurb": "770 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 669451,
+      "toGo": 649449,
       "why": "future"
     },
     {
@@ -3029,33 +2590,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 677228,
-      "why": "future"
-    },
-    {
-      "number": 780000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "780k",
-      "blurb": "780 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 679451,
-      "why": "future"
-    },
-    {
-      "number": 790000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "790k",
-      "blurb": "790 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 689451,
+      "toGo": 677226,
       "why": "future"
     },
     {
@@ -3068,59 +2603,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 699451,
-      "why": "future"
-    },
-    {
-      "number": 810000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "810k",
-      "blurb": "810 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 709451,
-      "why": "future"
-    },
-    {
-      "number": 820000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "820k",
-      "blurb": "820 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 719451,
-      "why": "future"
-    },
-    {
-      "number": 830000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "830k",
-      "blurb": "830 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 729451,
-      "why": "future"
-    },
-    {
-      "number": 840000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "840k",
-      "blurb": "840 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 739451,
+      "toGo": 699449,
       "why": "future"
     },
     {
@@ -3133,46 +2616,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 749451,
-      "why": "future"
-    },
-    {
-      "number": 860000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "860k",
-      "blurb": "860 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 759451,
-      "why": "future"
-    },
-    {
-      "number": 870000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "870k",
-      "blurb": "870 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 769451,
-      "why": "future"
-    },
-    {
-      "number": 880000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "880k",
-      "blurb": "880 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 779451,
+      "toGo": 749449,
       "why": "future"
     },
     {
@@ -3185,20 +2629,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 788339,
-      "why": "future"
-    },
-    {
-      "number": 890000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "890k",
-      "blurb": "890 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 789451,
+      "toGo": 788337,
       "why": "future"
     },
     {
@@ -3211,59 +2642,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 799451,
-      "why": "future"
-    },
-    {
-      "number": 910000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "910k",
-      "blurb": "910 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 809451,
-      "why": "future"
-    },
-    {
-      "number": 920000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "920k",
-      "blurb": "920 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 819451,
-      "why": "future"
-    },
-    {
-      "number": 930000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "930k",
-      "blurb": "930 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 829451,
-      "why": "future"
-    },
-    {
-      "number": 940000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "940k",
-      "blurb": "940 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 839451,
+      "toGo": 799449,
       "why": "future"
     },
     {
@@ -3276,59 +2655,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 849451,
-      "why": "future"
-    },
-    {
-      "number": 960000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "960k",
-      "blurb": "960 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 859451,
-      "why": "future"
-    },
-    {
-      "number": 970000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "970k",
-      "blurb": "970 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 869451,
-      "why": "future"
-    },
-    {
-      "number": 980000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "980k",
-      "blurb": "980 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 879451,
-      "why": "future"
-    },
-    {
-      "number": 990000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "990k",
-      "blurb": "990 thousand pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 889451,
+      "toGo": 849449,
       "why": "future"
     },
     {
@@ -3341,7 +2668,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 899450,
+      "toGo": 899448,
       "why": "future"
     },
     {
@@ -3354,7 +2681,7 @@
       "points": 1000,
       "claimed": false,
       "future": true,
-      "toGo": 899451,
+      "toGo": 899449,
       "why": "future"
     }
   ],
@@ -3427,6 +2754,55 @@
       "rank": 1
     },
     {
+      "login": "mariusandra",
+      "name": "Marius Andra",
+      "url": "https://github.com/mariusandra",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/53387?u=fff0dd833220dc640f9c50d6f8a9dadc74e1896e&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 1701,
+          "name": "NCC-1701",
+          "tier": "rare",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/1701",
+          "title": "Fix Master EE code",
+          "mergedAt": "2020-09-24T10:14:18Z"
+        },
+        {
+          "number": 2000,
+          "name": "2k",
+          "tier": "epic",
+          "category": "round",
+          "url": "https://github.com/PostHog/posthog/pull/2000",
+          "title": "Fix cohort page link",
+          "mergedAt": "2020-10-23T09:12:27Z"
+        },
+        {
+          "number": 6900,
+          "name": "Nice, Rounded",
+          "tier": "rare",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/6900",
+          "title": "Fix funnelLogic key",
+          "mergedAt": "2021-11-04T12:52:10Z"
+        },
+        {
+          "number": 7000,
+          "name": "7k",
+          "tier": "epic",
+          "category": "round",
+          "url": "https://github.com/PostHog/posthog/pull/7000",
+          "title": "404 on static assets",
+          "mergedAt": "2021-11-09T23:15:23Z"
+        }
+      ],
+      "points": 70,
+      "count": 4,
+      "firstNumber": 1701,
+      "rank": 2
+    },
+    {
       "login": "EDsCODE",
       "name": "Eric Duong",
       "url": "https://github.com/EDsCODE",
@@ -3473,7 +2849,7 @@
       "points": 40,
       "count": 4,
       "firstNumber": 1234,
-      "rank": 2
+      "rank": 3
     },
     {
       "login": "rafaeelaudibert",
@@ -3513,7 +2889,47 @@
       "points": 125,
       "count": 3,
       "firstNumber": 30000,
-      "rank": 3
+      "rank": 4
+    },
+    {
+      "login": "alexkim205",
+      "name": "Alex Gyujin Kim",
+      "url": "https://github.com/alexkim205",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/13460330?v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 5555,
+          "name": "4 × 5",
+          "tier": "rare",
+          "category": "repdigit",
+          "url": "https://github.com/PostHog/posthog/pull/5555",
+          "title": "Add docker compose down to remove network",
+          "mergedAt": "2021-08-12T00:25:13Z"
+        },
+        {
+          "number": 6000,
+          "name": "6k",
+          "tier": "epic",
+          "category": "round",
+          "url": "https://github.com/PostHog/posthog/pull/6000",
+          "title": "Unordered funnel quirks",
+          "mergedAt": "2021-09-16T21:46:51Z"
+        },
+        {
+          "number": 6969,
+          "name": "Double Nice",
+          "tier": "rare",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/6969",
+          "title": "Session Recording buffering race bug",
+          "mergedAt": "2021-11-09T00:36:38Z"
+        }
+      ],
+      "points": 45,
+      "count": 3,
+      "firstNumber": 5555,
+      "rank": 5
     },
     {
       "login": "neilkakkar",
@@ -3553,7 +2969,7 @@
       "points": 45,
       "count": 3,
       "firstNumber": 6666,
-      "rank": 4
+      "rank": 6
     },
     {
       "login": "yakkomajuri",
@@ -3593,7 +3009,7 @@
       "points": 30,
       "count": 3,
       "firstNumber": 7777,
-      "rank": 5
+      "rank": 7
     },
     {
       "login": "veryayskiy",
@@ -3624,7 +3040,7 @@
       "points": 150,
       "count": 2,
       "firstNumber": 50000,
-      "rank": 6
+      "rank": 8
     },
     {
       "login": "jurajmajerik",
@@ -3655,38 +3071,7 @@
       "points": 50,
       "count": 2,
       "firstNumber": 32768,
-      "rank": 7
-    },
-    {
-      "login": "mariusandra",
-      "name": "Marius Andra",
-      "url": "https://github.com/mariusandra",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/53387?u=fff0dd833220dc640f9c50d6f8a9dadc74e1896e&v=4",
-      "bot": false,
-      "achievements": [
-        {
-          "number": 1701,
-          "name": "NCC-1701",
-          "tier": "rare",
-          "category": "meme",
-          "url": "https://github.com/PostHog/posthog/pull/1701",
-          "title": "Fix Master EE code",
-          "mergedAt": "2020-09-24T10:14:18Z"
-        },
-        {
-          "number": 6900,
-          "name": "Nice, Rounded",
-          "tier": "rare",
-          "category": "meme",
-          "url": "https://github.com/PostHog/posthog/pull/6900",
-          "title": "Fix funnelLogic key",
-          "mergedAt": "2021-11-04T12:52:10Z"
-        }
-      ],
-      "points": 20,
-      "count": 2,
-      "firstNumber": 1701,
-      "rank": 8
+      "rank": 9
     },
     {
       "login": "liyiy",
@@ -3717,37 +3102,6 @@
       "points": 20,
       "count": 2,
       "firstNumber": 4321,
-      "rank": 9
-    },
-    {
-      "login": "alexkim205",
-      "name": "Alex Gyujin Kim",
-      "url": "https://github.com/alexkim205",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/13460330?v=4",
-      "bot": false,
-      "achievements": [
-        {
-          "number": 5555,
-          "name": "4 × 5",
-          "tier": "rare",
-          "category": "repdigit",
-          "url": "https://github.com/PostHog/posthog/pull/5555",
-          "title": "Add docker compose down to remove network",
-          "mergedAt": "2021-08-12T00:25:13Z"
-        },
-        {
-          "number": 6969,
-          "name": "Double Nice",
-          "tier": "rare",
-          "category": "meme",
-          "url": "https://github.com/PostHog/posthog/pull/6969",
-          "title": "Session Recording buffering race bug",
-          "mergedAt": "2021-11-09T00:36:38Z"
-        }
-      ],
-      "points": 20,
-      "count": 2,
-      "firstNumber": 5555,
       "rank": 10
     },
     {
@@ -3817,6 +3171,28 @@
       "rank": 13
     },
     {
+      "login": "macobo",
+      "name": "Karl-Aksel Puulmann",
+      "url": "https://github.com/macobo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/148820?v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 3000,
+          "name": "3k",
+          "tier": "epic",
+          "category": "round",
+          "url": "https://github.com/PostHog/posthog/pull/3000",
+          "title": "Allow filtering by unseen recordings",
+          "mergedAt": "2021-01-21T07:42:01Z"
+        }
+      ],
+      "points": 25,
+      "count": 1,
+      "firstNumber": 3000,
+      "rank": 14
+    },
+    {
       "login": "fuziontech",
       "name": "James Greenhill",
       "url": "https://github.com/fuziontech",
@@ -3836,7 +3212,29 @@
       "points": 25,
       "count": 1,
       "firstNumber": 4096,
-      "rank": 14
+      "rank": 15
+    },
+    {
+      "login": "kpthatsme",
+      "name": "Kunal",
+      "url": "https://github.com/kpthatsme",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/5965891?v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 5000,
+          "name": "5k",
+          "tier": "epic",
+          "category": "round",
+          "url": "https://github.com/PostHog/posthog/pull/5000",
+          "title": "Change home default behavior, don't route by default",
+          "mergedAt": "2021-07-07T01:13:47Z"
+        }
+      ],
+      "points": 25,
+      "count": 1,
+      "firstNumber": 5000,
+      "rank": 16
     },
     {
       "login": "Twixes",
@@ -3858,7 +3256,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 11111,
-      "rank": 15
+      "rank": 17
     },
     {
       "login": "hazzadous",
@@ -3880,7 +3278,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 12345,
-      "rank": 16
+      "rank": 18
     },
     {
       "login": "pauldambra",
@@ -3902,7 +3300,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 13337,
-      "rank": 17
+      "rank": 19
     },
     {
       "login": "daibhin",
@@ -3924,7 +3322,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 16384,
-      "rank": 18
+      "rank": 20
     },
     {
       "login": "tiina303",
@@ -3946,7 +3344,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 22222,
-      "rank": 19
+      "rank": 21
     },
     {
       "login": "lucasheriques",
@@ -3968,7 +3366,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 31415,
-      "rank": 20
+      "rank": 22
     },
     {
       "login": "zlwaterfield",
@@ -3990,7 +3388,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 31416,
-      "rank": 21
+      "rank": 23
     },
     {
       "login": "adboio",
@@ -4012,7 +3410,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 42000,
-      "rank": 22
+      "rank": 24
     },
     {
       "login": "jamesefhawkins",
@@ -4034,7 +3432,7 @@
       "points": 10,
       "count": 1,
       "firstNumber": 500,
-      "rank": 23
+      "rank": 25
     },
     {
       "login": "paolodamico",
@@ -4056,7 +3454,7 @@
       "points": 10,
       "count": 1,
       "firstNumber": 2222,
-      "rank": 24
+      "rank": 26
     }
   ]
 }

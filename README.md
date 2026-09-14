@@ -16,7 +16,7 @@ so it keeps growing on its own as the repo burns through PR numbers:
 
 | Category | Rule | Examples |
 | --- | --- | --- |
-| Round numbers | Powers of ten, then every 10,000 | `#1`, `#1000`, `#100000` |
+| Round numbers | Powers of ten, then every 1k to 10k, every 10k to 100k, every 50k beyond | `#1`, `#5000`, `#100000`, `#450000` |
 | Repdigits | Every digit the same | `#777`, `#9999`, `#111111` |
 | Staircases | The digits 1 through n, up or down | `#1234`, `#4321`, `#123456` |
 | Powers of two | From 256 up | `#1024`, `#65536` |
@@ -75,6 +75,7 @@ Fork or clone this, then edit `config.json`:
 | `repo` | The repo to read, as `owner/name`. Must be public, or the token needs access to it. |
 | `title` | Shown in the masthead and the page title. The last word gets the accent colour. |
 | `ceiling` | Highest number the club recognises. That number becomes the sole **Singularity**. Defaults to 1,000,000. |
+| `source` | Where *this* site's code lives, for the "fork it" link in the footer. Point it at your fork, or omit it to drop the line. |
 
 Then:
 

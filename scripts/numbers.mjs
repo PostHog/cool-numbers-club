@@ -121,7 +121,7 @@ function ordinalSuffix(n) {
   return n + (s[(v - 20) % 10] || s[v] || s[0])
 }
 
-/** Round numbers: powers of ten, then every 10k once we are past 10k. */
+/** Round numbers: powers of ten, plus a ladder that widens as the repo grows. */
 function* roundNumbers(max) {
   for (let p = 1; p <= max; p *= 10) {
     const final = p === CEILING
@@ -143,12 +143,15 @@ function* roundNumbers(max) {
           : `The ${ordinalSuffix(String(p).length - 1)} power of ten. A genuine odometer moment.`,
     }
   }
-  for (let n = 10000; n <= max; n += 10000) {
+  // The ladder widens as the repo grows: every 1k to 10k, every 10k to 100k,
+  // then every 50k. Past six figures a 10k milestone is a few weeks' work,
+  // which is not much of a milestone.
+  for (let n = 1000; n <= max; n += n < 10000 ? 1000 : n < 100000 ? 10000 : 50000) {
     if (String(n).match(/^10*$/)) continue // already claimed as a power of ten
     yield {
       number: n,
       category: 'round',
-      tier: 'legendary',
+      tier: n >= 10000 ? 'legendary' : 'epic',
       name: `${n / 1000}k`,
       blurb: `${(n / 1000).toLocaleString('en-US')} thousand pull requests deep.`,
     }

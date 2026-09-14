@@ -30,8 +30,15 @@ function load() {
     throw new Error(`config.json: "title" must be a non-empty string, got ${JSON.stringify(raw.title)}`)
   }
 
+  // Where this site's own code lives, for the "fork it" line in the footer.
+  // Optional: leave it out and the footer simply omits that line.
+  const source = raw.source ?? null
+  if (source !== null && (typeof source !== 'string' || !/^[\w.-]+\/[\w.-]+$/.test(source))) {
+    throw new Error(`config.json: "source" must look like "owner/name" or be omitted, got ${JSON.stringify(source)}`)
+  }
+
   const [owner, name] = repo.split('/')
-  return { repo, owner, name, ceiling, title: title.trim() }
+  return { repo, owner, name, ceiling, title: title.trim(), source }
 }
 
 export const config = load()
