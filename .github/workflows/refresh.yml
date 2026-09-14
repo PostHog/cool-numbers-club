@@ -38,6 +38,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run fetch
 
+      # Do NOT add [skip ci] (or [CI Skip] / [CF-Pages-Skip]) to this commit
+      # message. Cloudflare Pages treats those as "do not deploy" and the nightly
+      # refresh would silently stop publishing.
+      #
+      # It is not needed anyway: pushes made with GITHUB_TOKEN do not trigger
+      # `on: push` workflows, so there is no loop to guard against. That
+      # suppression is scoped to Actions runs and does not affect the webhook
+      # Cloudflare listens on.
       - name: Commit if the register changed
         run: |
           if git diff --quiet -- data/achievements.json; then

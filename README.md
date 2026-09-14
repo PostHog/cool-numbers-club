@@ -112,9 +112,10 @@ outright, and anonymous REST is capped at 60 requests an hour — below what a
 full pass needs. Nobody has to *create* one, though. See below.
 
 The fetch costs about 3 points of the 5,000/hour GraphQL budget: every reachable
-number is looked up in batches of 100 aliases per request. It only rewrites
-`data/achievements.json` when something actually changed, so re-running it is a
-no-op rather than a timestamp churn.
+number is looked up in batches of 100 aliases per request. It only rewrites `data/achievements.json`
+when something other than its own timestamp changed. In practice the highest PR
+number moves constantly, so the nightly run does normally produce a commit — the
+check mainly stops back-to-back re-runs from churning the file.
 
 ## Deploying
 
@@ -139,6 +140,25 @@ Cloudflare Pages redeploys on that push.
 `secrets.GITHUB_TOKEN` automatically for the fetch, and Cloudflare deploys on
 git push like any other commit. Point Cloudflare Pages at the repo and you are
 done.
+
+Pushes made with `GITHUB_TOKEN` do not start `on: push` **workflows** — that is
+GitHub's loop prevention — but the suppression is scoped to Actions runs and does
+not affect the webhook Cloudflare's GitHub App listens on. (GitHub Pages *is*
+also suppressed, which GitHub documents as its own separate rule; there is no
+equivalent rule for third-party apps.)
+
+Three things would silently stop the nightly deploy, so watch for them:
+
+- **`[skip ci]` in the commit message.** Cloudflare Pages reads `[skip ci]`,
+  `[CI Skip]` and `[CF-Pages-Skip]` as "do not deploy". The workflow carries a
+  comment warning against adding one.
+- **Branch deployment controls** excluding the branch being pushed to.
+- **Build watch paths** filtering out `data/achievements.json`.
+
+If you want a guarantee rather than a default, add a Pages
+[deploy hook](https://developers.cloudflare.com/pages/configuration/deploy-hooks/)
+and `curl -X POST` it after the push — that bypasses webhook delivery entirely,
+at the cost of one stored secret.
 
 Run it by hand any time from the Actions tab — the workflow has a
 `workflow_dispatch` trigger.
