@@ -9,6 +9,9 @@
 # means Cloudflare never talks to the GitHub API and needs no secrets at all --
 # its build command just renders the committed JSON.
 #
+# The commit goes through the REST API rather than `git push` so that GitHub
+# signs it, satisfying branch rules that require verified signatures.
+#
 # Setup: none, beyond pointing Cloudflare Pages at this repo.
 
 name: Refresh the register
@@ -49,14 +52,28 @@ jobs:
       # suppression is scoped to Actions runs and does not affect the webhook
       # Cloudflare listens on.
       - name: Commit if the register changed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FILE: data/achievements.json
         run: |
-          if git diff --quiet -- data/achievements.json; then
+          if git diff --quiet -- "$FILE"; then
             echo "No new claims. Nothing to deploy."
             exit 0
           fi
-          git config user.name  'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/achievements.json
-          git commit -m 'Refresh the club register'
-          git push
+
+          # Commit through the API rather than `git push`. Commits created this
+          # way are signed by GitHub, which satisfies the org's
+          # verified-signatures rule without storing a signing key anywhere.
+          current=$(gh api "repos/$GITHUB_REPOSITORY/contents/$FILE?ref=$GITHUB_REF_NAME" --jq .sha)
+
+          jq -n \
+            --arg message 'Refresh the club register' \
+            --arg branch  "$GITHUB_REF_NAME" \
+            --arg sha     "$current" \
+            --arg content "$(base64 -w0 "$FILE")" \
+            '{message: $message, branch: $branch, sha: $sha, content: $content}' > /tmp/commit.json
+
+          gh api --method PUT "repos/$GITHUB_REPOSITORY/contents/$FILE" \
+            --input /tmp/commit.json --jq '.commit.html_url'
+
           echo "Register updated. Cloudflare Pages will redeploy on this push."
