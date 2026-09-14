@@ -21,7 +21,7 @@ const num = (n) => n.toLocaleString('en-US')
 
 /** Why a number is not yet on someone's wall, in the voice of the machine. */
 const STATUS = {
-  'not-a-pr': 'Never a pull request',
+  'not-a-pr': 'Not a pull request',
   unmerged: 'Opened, never merged',
   open: 'Still open — claim pending',
 }
