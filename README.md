@@ -112,19 +112,26 @@ No dependencies to install — the project has none.
 
 ### The social preview card
 
-`src/og.png` is committed and copied into `dist/` by the build. Its source is
-[`src/og.html`](src/og.html), a standalone page using the same palette and type
-as the site. To change it, edit that file and re-render:
+`src/og.png` is committed and copied into `dist/` by the build.
+[`scripts/og.mjs`](scripts/og.mjs) draws it from the same data and palette as
+the site: what the club is on the left, the *Recently issued* list on the right.
 
 ```sh
-npx playwright install chromium   # once
-npm run og                        # writes src/og.png at 2400x1260
+npm run og   # writes src/og.png at 2400x1260
 ```
 
-This is the only thing in the project that needs a browser, which is exactly why
-it is not part of `npm run build` — the deploy build stays dependency-free. The
-card shows fixed numbers rather than live ones, so it never goes stale between
-rebuilds.
+That is the only thing in the project that needs a browser, which is why it is
+not part of `npm run build` — the deploy build stays dependency-free. It drives
+whatever Chrome is already installed instead of pulling in a headless-browser
+package; set `CHROME` to point at a specific binary. Because the card carries
+live names and dates, the nightly refresh re-renders it and commits the PNG
+alongside the register.
+
+The PostHog mark in the footer is vendored from
+[`@posthog/brand`](https://github.com/PostHog/brand) into
+[`src/posthog-logo.svg`](src/posthog-logo.svg), and only appears when the
+configured repo is `posthog/posthog` — a fork pointed at another repository
+gets an unbranded card.
 
 `npm run fetch` needs a GitHub token. It reads `GITHUB_TOKEN` (or `GH_TOKEN`)
 and falls back to `gh auth token`, so `gh auth login` is all the local setup

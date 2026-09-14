@@ -9,31 +9,18 @@
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync } from 'node:fs'
 import { CATEGORIES, TIERS } from './numbers.mjs'
 import { config } from './config.mjs'
+import { esc, num, since } from './format.mjs'
 
 const src = (f) => new URL(`../src/${f}`, import.meta.url)
 const root = (f) => new URL(`../${f}`, import.meta.url)
 
 const data = JSON.parse(readFileSync(root('data/achievements.json'), 'utf8'))
 
-const esc = (s) =>
-  String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]))
-const num = (n) => n.toLocaleString('en-US')
-
 /** Why a number is not yet on someone's wall, in the voice of the machine. */
 const STATUS = {
   'not-a-pr': 'Not a pull request',
   unmerged: 'Opened, never merged',
   open: 'Still open — claim pending',
-}
-
-function since(iso) {
-  const days = Math.floor((Date.now() - Date.parse(iso)) / 86400000)
-  if (days <= 0) return 'today'
-  if (days === 1) return 'yesterday'
-  if (days < 30) return `${days}d ago`
-  if (days < 365) return `${Math.floor(days / 30)}mo ago`
-  const years = Math.floor(days / 365)
-  return `${years}y ago`
 }
 
 function odometer(n) {
@@ -176,7 +163,10 @@ ${
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="2400">
 <meta property="og:image:height" content="1260">
-<meta property="og:image:alt" content="${esc(config.title)} — ticket stubs for pull requests #42, #31,415, #100,000 and #1,000,000.">
+<meta property="og:image:alt" content="${esc(config.title)} — the most recently issued numbers: ${data.recent
+        .slice(0, 6)
+        .map((r) => `#${num(r.number)} to ${esc(r.holder.login)}`)
+        .join(', ')}.">
 <meta name="twitter:image" content="${esc(config.url)}/og.png">`
     : ''
 }
