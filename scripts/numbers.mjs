@@ -77,9 +77,13 @@ const MEMES = [
 /**
  * Numbers that are cool because mathematics says so.
  *
- * An irrational constant needs five digits to count -- fewer than that is a
- * coincidence, not an achievement. Exact values (perfect numbers, factorials,
- * 2^16-1) are listed at their true value, however long that is.
+ * Only irrational constants may be truncated, because their digits are the
+ * recognisable thing, and they need five of them to count -- fewer than that is
+ * a coincidence, not an achievement.
+ *
+ * Anything with an exact value (perfect numbers, factorials, max int) is listed
+ * at that value or not at all. A truncation of an exact integer is just a
+ * different integer: 21474 is not max int, it is 21474.
  */
 const MATH = [
   [31415, 'Pi', 'Five digits of a circle.'],
@@ -88,7 +92,6 @@ const MATH = [
   [27182, "Euler's Number", 'The base of natural growth.'],
   [16180, 'Phi', 'The golden ratio, and allegedly the most beautiful proportion.'],
   [14142, 'Root Two', 'The diagonal of a unit square.'],
-  [21474, 'Almost Max Int', 'The beginning of a very famous overflow.'],
   [1729, 'The Taxicab Number', 'The smallest number expressible as two cubes, two ways.'],
   [6174, "Kaprekar's Constant", 'All roads lead here in four steps.'],
   [496, 'Perfect Number', 'Equal to the sum of its own divisors.'],
