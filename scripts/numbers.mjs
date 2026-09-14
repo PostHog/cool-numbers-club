@@ -69,20 +69,18 @@ const MEMES = [
 /**
  * Numbers that are cool because mathematics says so.
  *
- * Constants start at four digits -- three digits of pi is a coincidence, not an
- * achievement.
+ * An irrational constant needs five digits to count -- fewer than that is a
+ * coincidence, not an achievement. Exact values (perfect numbers, factorials,
+ * 2^16-1) are listed at their true value, however long that is.
  */
 const MATH = [
-  [3141, 'Pi', 'Four digits of a circle.'],
-  [31415, 'Pi, Serious Business', 'Five digits. This is a real commitment to pi.'],
+  [31415, 'Pi', 'Five digits of a circle.'],
   [31416, 'Pi, Rounded', 'For the pedants who round correctly.'],
   [314159, 'Pi, Fully Committed', 'Six digits of transcendence.'],
-  [2718, "Euler's Number", 'The base of natural growth, four digits in.'],
-  [27182, 'e, Serious Business', 'Five digits of e.'],
-  [1618, 'Phi', 'The golden ratio, and allegedly the most beautiful proportion.'],
-  [16180, 'Phi, Extended', 'Divine proportion, five digits in.'],
-  [1414, 'Root Two', 'The diagonal of a unit square.'],
-  [14142, 'Root Two, Extended', 'Irrational and proud.'],
+  [27182, "Euler's Number", 'The base of natural growth.'],
+  [16180, 'Phi', 'The golden ratio, and allegedly the most beautiful proportion.'],
+  [14142, 'Root Two', 'The diagonal of a unit square.'],
+  [21474, 'Almost Max Int', 'The beginning of a very famous overflow.'],
   [1729, 'The Taxicab Number', 'The smallest number expressible as two cubes, two ways.'],
   [6174, "Kaprekar's Constant", 'All roads lead here in four steps.'],
   [496, 'Perfect Number', 'Equal to the sum of its own divisors.'],
@@ -91,7 +89,6 @@ const MATH = [
   [40320, 'Eight Factorial', '8! ways to arrange your commits.'],
   [1089, 'The Magic Number', 'Reverse it, subtract, and the magic trick works.'],
   [65535, 'Max Unsigned Short', 'One short of overflowing.'],
-  [2147, 'Almost Max Int', 'The beginning of a very famous overflow.'],
 ]
 
 const digits = (n) => String(n)
@@ -150,27 +147,31 @@ function* repdigits(max) {
   }
 }
 
-/** Staircases: runs of consecutive digits, ascending or descending. */
+/**
+ * Staircases: the digits 1 through n, counted up or back down.
+ *
+ * Only runs that start from 1 count. An offset run like 2345 or 6789 is the
+ * same trick with a worse starting hand, and a dozen of them crowd out
+ * everything else.
+ */
 function* staircases(max) {
   for (let len = 4; len <= String(max).length; len++) {
-    for (let start = 1; start <= 9; start++) {
-      for (const dir of [1, -1]) {
-        const ds = []
-        for (let i = 0; i < len; i++) {
-          const d = start + i * dir
-          if (d < 0 || d > 9) break
-          ds.push(d)
-        }
-        if (ds.length !== len) continue
-        const n = Number(ds.join(''))
-        if (n > max || String(n).length !== len) continue
-        yield {
-          number: n,
-          category: 'staircase',
-          tier: len >= 6 ? 'legendary' : len >= 5 ? 'epic' : 'rare',
-          name: dir === 1 ? 'Staircase Up' : 'Staircase Down',
-          blurb: `${len} consecutive digits, marching ${dir === 1 ? 'upwards' : 'downwards'}.`,
-        }
+    const up = Array.from({ length: len }, (_, i) => i + 1)
+    if (up.at(-1) > 9) break
+
+    for (const dir of ['up', 'down']) {
+      const ds = dir === 'up' ? up : [...up].reverse()
+      const n = Number(ds.join(''))
+      if (n > max) continue
+      yield {
+        number: n,
+        category: 'staircase',
+        tier: len >= 6 ? 'legendary' : len >= 5 ? 'epic' : 'rare',
+        name: dir === 'up' ? 'Counting Up' : 'Countdown',
+        blurb:
+          dir === 'up'
+            ? `Every digit from 1 to ${len}, in order.`
+            : `${len}, ${len - 1}, and so on down to 1. Liftoff.`,
       }
     }
   }

@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-09-14T18:15:36.205Z",
+  "generatedAt": "2026-09-14T18:18:01.326Z",
   "repo": "posthog/posthog",
-  "highestPr": 100523,
+  "highestPr": 100527,
   "stats": {
-    "total": 117,
-    "claimed": 64,
-    "byHumans": 58,
-    "byBots": 6,
-    "unclaimed": 53,
-    "members": 30
+    "total": 93,
+    "claimed": 49,
+    "byHumans": 45,
+    "byBots": 4,
+    "unclaimed": 44,
+    "members": 25
   },
   "upcoming": [
     {
@@ -19,7 +19,7 @@
       "blurb": "110 thousand pull requests deep.",
       "alsoKnownAs": [],
       "points": 50,
-      "toGo": 9477
+      "toGo": 9473
     },
     {
       "number": 111111,
@@ -29,7 +29,7 @@
       "blurb": "6 identical digits in a row. The odds were not good.",
       "alsoKnownAs": [],
       "points": 50,
-      "toGo": 10588
+      "toGo": 10584
     },
     {
       "number": 120000,
@@ -39,17 +39,17 @@
       "blurb": "120 thousand pull requests deep.",
       "alsoKnownAs": [],
       "points": 50,
-      "toGo": 19477
+      "toGo": 19473
     },
     {
       "number": 123456,
       "category": "staircase",
       "tier": "legendary",
-      "name": "Staircase Up",
-      "blurb": "6 consecutive digits, marching upwards.",
+      "name": "Counting Up",
+      "blurb": "Every digit from 1 to 6, in order.",
       "alsoKnownAs": [],
       "points": 50,
-      "toGo": 22933
+      "toGo": 22929
     }
   ],
   "recent": [
@@ -110,20 +110,6 @@
       "url": "https://github.com/PostHog/posthog/pull/67000"
     },
     {
-      "number": 65432,
-      "name": "Staircase Down",
-      "tier": "epic",
-      "holder": {
-        "login": "webjunkie",
-        "name": "Julian Bez",
-        "url": "https://github.com/webjunkie",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/59713?u=7bfc22f91a964d0015731031bccaebdf5bddb754&v=4",
-        "bot": false
-      },
-      "mergedAt": "2026-06-23T20:00:35Z",
-      "url": "https://github.com/PostHog/posthog/pull/65432"
-    },
-    {
       "number": 65536,
       "name": "2^16",
       "tier": "legendary",
@@ -136,6 +122,20 @@
       },
       "mergedAt": "2026-06-23T17:33:07Z",
       "url": "https://github.com/PostHog/posthog/pull/65536"
+    },
+    {
+      "number": 65535,
+      "name": "Max Unsigned Short",
+      "tier": "epic",
+      "holder": {
+        "login": "joshsny",
+        "name": "Joshua Snyder",
+        "url": "https://github.com/joshsny",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/7135900?u=109e43c5e906a8ecc1a2d465c4457f5cf29328a5&v=4",
+        "bot": false
+      },
+      "mergedAt": "2026-06-23T17:13:29Z",
+      "url": "https://github.com/PostHog/posthog/pull/65535"
     }
   ],
   "achievements": [
@@ -572,8 +572,8 @@
       "number": 1234,
       "category": "staircase",
       "tier": "rare",
-      "name": "Staircase Up",
-      "blurb": "4 consecutive digits, marching upwards.",
+      "name": "Counting Up",
+      "blurb": "Every digit from 1 to 4, in order.",
       "alsoKnownAs": [],
       "points": 10,
       "claimed": true,
@@ -619,45 +619,6 @@
         "createdAt": "2020-08-03T17:53:09Z",
         "additions": 22,
         "deletions": 3
-      }
-    },
-    {
-      "number": 1414,
-      "category": "math",
-      "tier": "rare",
-      "name": "Root Two",
-      "blurb": "The diagonal of a unit square.",
-      "handwritten": true,
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": false,
-      "why": "not-a-pr"
-    },
-    {
-      "number": 1618,
-      "category": "math",
-      "tier": "rare",
-      "name": "Phi",
-      "blurb": "The golden ratio, and allegedly the most beautiful proportion.",
-      "handwritten": true,
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": true,
-      "bot": false,
-      "holder": {
-        "login": "fuziontech",
-        "name": "James Greenhill",
-        "url": "https://github.com/fuziontech",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/391319?u=653d605da3baa9badfc2b1d2783010c4858646a0&v=4",
-        "bot": false
-      },
-      "pr": {
-        "title": "Convert private functions to public for ee access",
-        "url": "https://github.com/PostHog/posthog/pull/1618",
-        "mergedAt": "2020-09-09T05:35:27Z",
-        "createdAt": "2020-09-09T04:30:45Z",
-        "additions": 1097,
-        "deletions": 29
       }
     },
     {
@@ -772,33 +733,6 @@
       }
     },
     {
-      "number": 2147,
-      "category": "math",
-      "tier": "rare",
-      "name": "Almost Max Int",
-      "blurb": "The beginning of a very famous overflow.",
-      "handwritten": true,
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": true,
-      "bot": false,
-      "holder": {
-        "login": "timgl",
-        "name": "timgl",
-        "url": "https://github.com/timgl",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/1727427?u=68d3693009c289044285447b6ed667bdb08176d2&v=4",
-        "bot": false
-      },
-      "pr": {
-        "title": "Slim down dev docker image",
-        "url": "https://github.com/PostHog/posthog/pull/2147",
-        "mergedAt": "2020-10-30T20:30:06Z",
-        "createdAt": "2020-10-30T19:11:55Z",
-        "additions": 0,
-        "deletions": 1
-      }
-    },
-    {
       "number": 2222,
       "category": "repdigit",
       "tier": "rare",
@@ -825,82 +759,6 @@
       }
     },
     {
-      "number": 2345,
-      "category": "staircase",
-      "tier": "rare",
-      "name": "Staircase Up",
-      "blurb": "4 consecutive digits, marching upwards.",
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": false,
-      "why": "not-a-pr"
-    },
-    {
-      "number": 2718,
-      "category": "math",
-      "tier": "rare",
-      "name": "Euler's Number",
-      "blurb": "The base of natural growth, four digits in.",
-      "handwritten": true,
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": false,
-      "why": "not-a-pr"
-    },
-    {
-      "number": 3141,
-      "category": "math",
-      "tier": "rare",
-      "name": "Pi",
-      "blurb": "Four digits of a circle.",
-      "handwritten": true,
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": true,
-      "bot": false,
-      "holder": {
-        "login": "Twixes",
-        "name": "Michael Matloka",
-        "url": "https://github.com/Twixes",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/4550621?u=8cfecce44cfc8ff05fccd1d27bc103fb2462f97c&v=4",
-        "bot": false
-      },
-      "pr": {
-        "title": "Improve handling of .git* files/dirs",
-        "url": "https://github.com/PostHog/posthog/pull/3141",
-        "mergedAt": "2021-02-01T08:25:41Z",
-        "createdAt": "2021-02-01T08:17:59Z",
-        "additions": 14,
-        "deletions": 7
-      }
-    },
-    {
-      "number": 3210,
-      "category": "staircase",
-      "tier": "rare",
-      "name": "Staircase Down",
-      "blurb": "4 consecutive digits, marching downwards.",
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": true,
-      "bot": false,
-      "holder": {
-        "login": "paolodamico",
-        "name": "Paolo D'Amico",
-        "url": "https://github.com/paolodamico",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/5864173?u=a16869d7c39e9f146cdf35b293d24062a5e99413&v=4",
-        "bot": false
-      },
-      "pr": {
-        "title": "Fix more z-index wonkiness",
-        "url": "https://github.com/PostHog/posthog/pull/3210",
-        "mergedAt": "2021-02-08T15:23:45Z",
-        "createdAt": "2021-02-05T07:10:55Z",
-        "additions": 24,
-        "deletions": 9
-      }
-    },
-    {
       "number": 3333,
       "category": "repdigit",
       "tier": "rare",
@@ -910,32 +768,6 @@
       "points": 10,
       "claimed": false,
       "why": "not-a-pr"
-    },
-    {
-      "number": 3456,
-      "category": "staircase",
-      "tier": "rare",
-      "name": "Staircase Up",
-      "blurb": "4 consecutive digits, marching upwards.",
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": true,
-      "bot": true,
-      "holder": {
-        "login": "posthog-bot",
-        "name": "PostHog Bot",
-        "url": "https://github.com/posthog-bot",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/69588470?u=0b71d256b6218d78b51c69fa51f623946eb3234e&v=4",
-        "bot": true
-      },
-      "pr": {
-        "title": "Update plugin server to 0.9.28",
-        "url": "https://github.com/PostHog/posthog/pull/3456",
-        "mergedAt": "2021-02-24T11:49:49Z",
-        "createdAt": "2021-02-24T11:40:51Z",
-        "additions": 7,
-        "deletions": 6
-      }
     },
     {
       "number": 4096,
@@ -979,8 +811,8 @@
       "number": 4321,
       "category": "staircase",
       "tier": "rare",
-      "name": "Staircase Down",
-      "blurb": "4 consecutive digits, marching downwards.",
+      "name": "Countdown",
+      "blurb": "4, 3, and so on down to 1. Liftoff.",
       "alsoKnownAs": [],
       "points": 10,
       "claimed": true,
@@ -1007,17 +839,6 @@
       "tier": "rare",
       "name": "4 × 4",
       "blurb": "4 identical digits in a row. The odds were not good.",
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": false,
-      "why": "not-a-pr"
-    },
-    {
-      "number": 4567,
-      "category": "staircase",
-      "tier": "rare",
-      "name": "Staircase Up",
-      "blurb": "4 consecutive digits, marching upwards.",
       "alsoKnownAs": [],
       "points": 10,
       "claimed": false,
@@ -1051,32 +872,6 @@
       }
     },
     {
-      "number": 5432,
-      "category": "staircase",
-      "tier": "rare",
-      "name": "Staircase Down",
-      "blurb": "4 consecutive digits, marching downwards.",
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": true,
-      "bot": false,
-      "holder": {
-        "login": "paolodamico",
-        "name": "Paolo D'Amico",
-        "url": "https://github.com/paolodamico",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/5864173?u=a16869d7c39e9f146cdf35b293d24062a5e99413&v=4",
-        "bot": false
-      },
-      "pr": {
-        "title": "Better insights instrumentation",
-        "url": "https://github.com/PostHog/posthog/pull/5432",
-        "mergedAt": "2021-08-04T21:45:14Z",
-        "createdAt": "2021-08-03T18:54:57Z",
-        "additions": 103,
-        "deletions": 21
-      }
-    },
-    {
       "number": 5555,
       "category": "repdigit",
       "tier": "rare",
@@ -1103,32 +898,6 @@
       }
     },
     {
-      "number": 5678,
-      "category": "staircase",
-      "tier": "rare",
-      "name": "Staircase Up",
-      "blurb": "4 consecutive digits, marching upwards.",
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": true,
-      "bot": false,
-      "holder": {
-        "login": "kpthatsme",
-        "name": "Kunal",
-        "url": "https://github.com/kpthatsme",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/5965891?v=4",
-        "bot": false
-      },
-      "pr": {
-        "title": "sentence case the readme",
-        "url": "https://github.com/PostHog/posthog/pull/5678",
-        "mergedAt": "2021-08-21T06:13:50Z",
-        "createdAt": "2021-08-21T05:19:01Z",
-        "additions": 7,
-        "deletions": 7
-      }
-    },
-    {
       "number": 6174,
       "category": "math",
       "tier": "rare",
@@ -1151,32 +920,6 @@
         "url": "https://github.com/PostHog/posthog/pull/6174",
         "mergedAt": "2021-09-29T11:24:12Z",
         "createdAt": "2021-09-29T11:03:50Z",
-        "additions": 5,
-        "deletions": 5
-      }
-    },
-    {
-      "number": 6543,
-      "category": "staircase",
-      "tier": "rare",
-      "name": "Staircase Down",
-      "blurb": "4 consecutive digits, marching downwards.",
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": true,
-      "bot": true,
-      "holder": {
-        "login": "posthog-bot",
-        "name": "PostHog Bot",
-        "url": "https://github.com/posthog-bot",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/69588470?u=0b71d256b6218d78b51c69fa51f623946eb3234e&v=4",
-        "bot": true
-      },
-      "pr": {
-        "title": "Update plugin server to 1.10.1",
-        "url": "https://github.com/PostHog/posthog/pull/6543",
-        "mergedAt": "2021-10-19T12:32:15Z",
-        "createdAt": "2021-10-19T12:19:04Z",
         "additions": 5,
         "deletions": 5
       }
@@ -1235,32 +978,6 @@
       }
     },
     {
-      "number": 6789,
-      "category": "staircase",
-      "tier": "rare",
-      "name": "Staircase Up",
-      "blurb": "4 consecutive digits, marching upwards.",
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": true,
-      "bot": false,
-      "holder": {
-        "login": "Twixes",
-        "name": "Michael Matloka",
-        "url": "https://github.com/Twixes",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/4550621?u=8cfecce44cfc8ff05fccd1d27bc103fb2462f97c&v=4",
-        "bot": false
-      },
-      "pr": {
-        "title": "Add top level danger `TopBar` indicator for potential system issues",
-        "url": "https://github.com/PostHog/posthog/pull/6789",
-        "mergedAt": "2021-11-02T17:01:04Z",
-        "createdAt": "2021-11-02T15:23:23Z",
-        "additions": 37,
-        "deletions": 2
-      }
-    },
-    {
       "number": 6900,
       "category": "meme",
       "tier": "rare",
@@ -1315,32 +1032,6 @@
       }
     },
     {
-      "number": 7654,
-      "category": "staircase",
-      "tier": "rare",
-      "name": "Staircase Down",
-      "blurb": "4 consecutive digits, marching downwards.",
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": true,
-      "bot": false,
-      "holder": {
-        "login": "paolodamico",
-        "name": "Paolo D'Amico",
-        "url": "https://github.com/paolodamico",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/5864173?u=a16869d7c39e9f146cdf35b293d24062a5e99413&v=4",
-        "bot": false
-      },
-      "pr": {
-        "title": "Release funnel vertical breakdown",
-        "url": "https://github.com/PostHog/posthog/pull/7654",
-        "mergedAt": "2021-12-13T19:45:39Z",
-        "createdAt": "2021-12-11T01:38:06Z",
-        "additions": 143,
-        "deletions": 175
-      }
-    },
-    {
       "number": 7777,
       "category": "repdigit",
       "tier": "rare",
@@ -1390,32 +1081,6 @@
       "why": "unmerged"
     },
     {
-      "number": 8765,
-      "category": "staircase",
-      "tier": "rare",
-      "name": "Staircase Down",
-      "blurb": "4 consecutive digits, marching downwards.",
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": true,
-      "bot": false,
-      "holder": {
-        "login": "Twixes",
-        "name": "Michael Matloka",
-        "url": "https://github.com/Twixes",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/4550621?u=8cfecce44cfc8ff05fccd1d27bc103fb2462f97c&v=4",
-        "bot": false
-      },
-      "pr": {
-        "title": "Fix `Popup` animation when the overlay is above reference",
-        "url": "https://github.com/PostHog/posthog/pull/8765",
-        "mergedAt": "2022-03-01T09:06:11Z",
-        "createdAt": "2022-02-28T14:37:06Z",
-        "additions": 10,
-        "deletions": 0
-      }
-    },
-    {
       "number": 8888,
       "category": "repdigit",
       "tier": "rare",
@@ -1448,17 +1113,6 @@
       "name": "It's Over 9000",
       "blurb": "What, nine thousand?!",
       "handwritten": true,
-      "alsoKnownAs": [],
-      "points": 10,
-      "claimed": false,
-      "why": "not-a-pr"
-    },
-    {
-      "number": 9876,
-      "category": "staircase",
-      "tier": "rare",
-      "name": "Staircase Down",
-      "blurb": "4 consecutive digits, marching downwards.",
       "alsoKnownAs": [],
       "points": 10,
       "claimed": false,
@@ -1536,9 +1190,9 @@
       "handwritten": true,
       "alsoKnownAs": [
         {
-          "name": "Staircase Up",
+          "name": "Counting Up",
           "category": "staircase",
-          "blurb": "5 consecutive digits, marching upwards."
+          "blurb": "Every digit from 1 to 5, in order."
         }
       ],
       "points": 25,
@@ -1591,8 +1245,8 @@
       "number": 14142,
       "category": "math",
       "tier": "epic",
-      "name": "Root Two, Extended",
-      "blurb": "Irrational and proud.",
+      "name": "Root Two",
+      "blurb": "The diagonal of a unit square.",
       "handwritten": true,
       "alsoKnownAs": [],
       "points": 25,
@@ -1603,8 +1257,8 @@
       "number": 16180,
       "category": "math",
       "tier": "epic",
-      "name": "Phi, Extended",
-      "blurb": "Divine proportion, five digits in.",
+      "name": "Phi",
+      "blurb": "The golden ratio, and allegedly the most beautiful proportion.",
       "handwritten": true,
       "alsoKnownAs": [],
       "points": 25,
@@ -1664,6 +1318,33 @@
       "why": "unmerged"
     },
     {
+      "number": 21474,
+      "category": "math",
+      "tier": "epic",
+      "name": "Almost Max Int",
+      "blurb": "The beginning of a very famous overflow.",
+      "handwritten": true,
+      "alsoKnownAs": [],
+      "points": 25,
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "neilkakkar",
+        "name": "Neil Kakkar",
+        "url": "https://github.com/neilkakkar",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/7115141?u=c1b21ee65c207eb778d423d9c06d4c4082cd3b15&v=4",
+        "bot": false
+      },
+      "pr": {
+        "title": "feat(experiments): Add exposure cohort flow",
+        "url": "https://github.com/PostHog/posthog/pull/21474",
+        "mergedAt": "2024-04-17T14:09:17Z",
+        "createdAt": "2024-04-10T17:04:16Z",
+        "additions": 942,
+        "deletions": 20
+      }
+    },
+    {
       "number": 22222,
       "category": "repdigit",
       "tier": "epic",
@@ -1690,17 +1371,6 @@
       }
     },
     {
-      "number": 23456,
-      "category": "staircase",
-      "tier": "epic",
-      "name": "Staircase Up",
-      "blurb": "5 consecutive digits, marching upwards.",
-      "alsoKnownAs": [],
-      "points": 25,
-      "claimed": false,
-      "why": "not-a-pr"
-    },
-    {
       "number": 24601,
       "category": "meme",
       "tier": "epic",
@@ -1716,8 +1386,8 @@
       "number": 27182,
       "category": "math",
       "tier": "epic",
-      "name": "e, Serious Business",
-      "blurb": "Five digits of e.",
+      "name": "Euler's Number",
+      "blurb": "The base of natural growth.",
       "handwritten": true,
       "alsoKnownAs": [],
       "points": 25,
@@ -1766,8 +1436,8 @@
       "number": 31415,
       "category": "math",
       "tier": "epic",
-      "name": "Pi, Serious Business",
-      "blurb": "Five digits. This is a real commitment to pi.",
+      "name": "Pi",
+      "blurb": "Five digits of a circle.",
       "handwritten": true,
       "alsoKnownAs": [],
       "points": 25,
@@ -1852,32 +1522,6 @@
       "points": 25,
       "claimed": false,
       "why": "unmerged"
-    },
-    {
-      "number": 34567,
-      "category": "staircase",
-      "tier": "epic",
-      "name": "Staircase Up",
-      "blurb": "5 consecutive digits, marching upwards.",
-      "alsoKnownAs": [],
-      "points": 25,
-      "claimed": true,
-      "bot": false,
-      "holder": {
-        "login": "jose-sequeira",
-        "name": "José Sequeira",
-        "url": "https://github.com/jose-sequeira",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/117165826?u=390bdb2b233b0ee3dacf439bc42192d135acd124&v=4",
-        "bot": false
-      },
-      "pr": {
-        "title": "fix(plugin-server): fix logger shutdown",
-        "url": "https://github.com/PostHog/posthog/pull/34567",
-        "mergedAt": "2025-07-04T12:06:31Z",
-        "createdAt": "2025-07-04T11:48:39Z",
-        "additions": 7,
-        "deletions": 2
-      }
     },
     {
       "number": 40000,
@@ -1972,32 +1616,6 @@
       }
     },
     {
-      "number": 43210,
-      "category": "staircase",
-      "tier": "epic",
-      "name": "Staircase Down",
-      "blurb": "5 consecutive digits, marching downwards.",
-      "alsoKnownAs": [],
-      "points": 25,
-      "claimed": true,
-      "bot": false,
-      "holder": {
-        "login": "darkopia",
-        "name": "Ben Lea",
-        "url": "https://github.com/darkopia",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/80100530?u=49b034b7d423f83da26c1efd5b2fa015c6863688&v=4",
-        "bot": false
-      },
-      "pr": {
-        "title": "fix: allow Personal API Key access to playlist recordings endpoint",
-        "url": "https://github.com/PostHog/posthog/pull/43210",
-        "mergedAt": "2025-12-18T13:00:40Z",
-        "createdAt": "2025-12-11T14:21:34Z",
-        "additions": 118,
-        "deletions": 1
-      }
-    },
-    {
       "number": 44444,
       "category": "repdigit",
       "tier": "epic",
@@ -2007,32 +1625,6 @@
       "points": 25,
       "claimed": false,
       "why": "not-a-pr"
-    },
-    {
-      "number": 45678,
-      "category": "staircase",
-      "tier": "epic",
-      "name": "Staircase Up",
-      "blurb": "5 consecutive digits, marching upwards.",
-      "alsoKnownAs": [],
-      "points": 25,
-      "claimed": true,
-      "bot": false,
-      "holder": {
-        "login": "joshsny",
-        "name": "Joshua Snyder",
-        "url": "https://github.com/joshsny",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/7135900?u=109e43c5e906a8ecc1a2d465c4457f5cf29328a5&v=4",
-        "bot": false
-      },
-      "pr": {
-        "title": "fix: single worker per pod",
-        "url": "https://github.com/PostHog/posthog/pull/45678",
-        "mergedAt": "2026-01-22T11:48:11Z",
-        "createdAt": "2026-01-22T11:35:18Z",
-        "additions": 1,
-        "deletions": 1
-      }
     },
     {
       "number": 50000,
@@ -2064,8 +1656,8 @@
       "number": 54321,
       "category": "staircase",
       "tier": "epic",
-      "name": "Staircase Down",
-      "blurb": "5 consecutive digits, marching downwards.",
+      "name": "Countdown",
+      "blurb": "5, 4, and so on down to 1. Liftoff.",
       "alsoKnownAs": [],
       "points": 25,
       "claimed": true,
@@ -2098,32 +1690,6 @@
       "why": "not-a-pr"
     },
     {
-      "number": 56789,
-      "category": "staircase",
-      "tier": "epic",
-      "name": "Staircase Up",
-      "blurb": "5 consecutive digits, marching upwards.",
-      "alsoKnownAs": [],
-      "points": 25,
-      "claimed": true,
-      "bot": false,
-      "holder": {
-        "login": "lricoy",
-        "name": "Lucas Ricoy",
-        "url": "https://github.com/lricoy",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/2034367?v=4",
-        "bot": false
-      },
-      "pr": {
-        "title": "feat(web-analytics): add bot definitions for Manus, NotebookLM, Lighthouse, Slack image proxy",
-        "url": "https://github.com/PostHog/posthog/pull/56789",
-        "mergedAt": "2026-04-29T02:18:13Z",
-        "createdAt": "2026-04-28T18:05:43Z",
-        "additions": 25,
-        "deletions": 17
-      }
-    },
-    {
       "number": 60000,
       "category": "round",
       "tier": "legendary",
@@ -2133,32 +1699,6 @@
       "points": 50,
       "claimed": false,
       "why": "unmerged"
-    },
-    {
-      "number": 65432,
-      "category": "staircase",
-      "tier": "epic",
-      "name": "Staircase Down",
-      "blurb": "5 consecutive digits, marching downwards.",
-      "alsoKnownAs": [],
-      "points": 25,
-      "claimed": true,
-      "bot": false,
-      "holder": {
-        "login": "webjunkie",
-        "name": "Julian Bez",
-        "url": "https://github.com/webjunkie",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/59713?u=7bfc22f91a964d0015731031bccaebdf5bddb754&v=4",
-        "bot": false
-      },
-      "pr": {
-        "title": "feat(engineering_analytics): add branch filter and failure tracking to workflow health",
-        "url": "https://github.com/PostHog/posthog/pull/65432",
-        "mergedAt": "2026-06-23T20:00:35Z",
-        "createdAt": "2026-06-23T12:05:17Z",
-        "additions": 318,
-        "deletions": 50
-      }
     },
     {
       "number": 65535,
@@ -2302,17 +1842,6 @@
       }
     },
     {
-      "number": 76543,
-      "category": "staircase",
-      "tier": "epic",
-      "name": "Staircase Down",
-      "blurb": "5 consecutive digits, marching downwards.",
-      "alsoKnownAs": [],
-      "points": 25,
-      "claimed": false,
-      "why": "unmerged"
-    },
-    {
       "number": 77777,
       "category": "repdigit",
       "tier": "epic",
@@ -2348,17 +1877,6 @@
         "additions": 197,
         "deletions": 27
       }
-    },
-    {
-      "number": 87654,
-      "category": "staircase",
-      "tier": "epic",
-      "name": "Staircase Down",
-      "blurb": "5 consecutive digits, marching downwards.",
-      "alsoKnownAs": [],
-      "points": 25,
-      "claimed": false,
-      "why": "not-a-pr"
     },
     {
       "number": 88888,
@@ -2408,17 +1926,6 @@
       "points": 25,
       "claimed": false,
       "why": "unmerged"
-    },
-    {
-      "number": 98765,
-      "category": "staircase",
-      "tier": "epic",
-      "name": "Staircase Down",
-      "blurb": "5 consecutive digits, marching downwards.",
-      "alsoKnownAs": [],
-      "points": 25,
-      "claimed": false,
-      "why": "open"
     },
     {
       "number": 99999,
@@ -2519,69 +2026,60 @@
           "url": "https://github.com/PostHog/posthog/pull/1111",
           "title": "Update logo",
           "mergedAt": "2020-07-01T14:12:39Z"
-        },
-        {
-          "number": 2147,
-          "name": "Almost Max Int",
-          "tier": "rare",
-          "category": "math",
-          "url": "https://github.com/PostHog/posthog/pull/2147",
-          "title": "Slim down dev docker image",
-          "mergedAt": "2020-10-30T20:30:06Z"
         }
       ],
-      "points": 70,
-      "count": 7,
+      "points": 60,
+      "count": 6,
       "firstMergedAt": "2020-02-11T22:15:58Z",
       "rank": 1
     },
     {
-      "login": "Twixes",
-      "name": "Michael Matloka",
-      "url": "https://github.com/Twixes",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/4550621?u=8cfecce44cfc8ff05fccd1d27bc103fb2462f97c&v=4",
+      "login": "neilkakkar",
+      "name": "Neil Kakkar",
+      "url": "https://github.com/neilkakkar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/7115141?u=c1b21ee65c207eb778d423d9c06d4c4082cd3b15&v=4",
       "bot": false,
       "achievements": [
         {
-          "number": 3141,
-          "name": "Pi",
+          "number": 6666,
+          "name": "4 × 6",
           "tier": "rare",
-          "category": "math",
-          "url": "https://github.com/PostHog/posthog/pull/3141",
-          "title": "Improve handling of .git* files/dirs",
-          "mergedAt": "2021-02-01T08:25:41Z"
-        },
-        {
-          "number": 6789,
-          "name": "Staircase Up",
-          "tier": "rare",
-          "category": "staircase",
-          "url": "https://github.com/PostHog/posthog/pull/6789",
-          "title": "Add top level danger `TopBar` indicator for potential system issues",
-          "mergedAt": "2021-11-02T17:01:04Z"
-        },
-        {
-          "number": 8765,
-          "name": "Staircase Down",
-          "tier": "rare",
-          "category": "staircase",
-          "url": "https://github.com/PostHog/posthog/pull/8765",
-          "title": "Fix `Popup` animation when the overlay is above reference",
-          "mergedAt": "2022-03-01T09:06:11Z"
-        },
-        {
-          "number": 11111,
-          "name": "5 × 1",
-          "tier": "epic",
           "category": "repdigit",
-          "url": "https://github.com/PostHog/posthog/pull/11111",
-          "title": "refactor(insights): Polish up axis unit setting",
-          "mergedAt": "2022-08-03T16:48:14Z"
+          "url": "https://github.com/PostHog/posthog/pull/6666",
+          "title": "Add event with properties benchmark",
+          "mergedAt": "2021-10-26T16:19:25Z"
+        },
+        {
+          "number": 6767,
+          "name": "Six Seven Six Seven",
+          "tier": "rare",
+          "category": "meme",
+          "url": "https://github.com/PostHog/posthog/pull/6767",
+          "title": "Fixes for Correlation UI: pagination & persons modal",
+          "mergedAt": "2021-11-02T09:54:45Z"
+        },
+        {
+          "number": 16180,
+          "name": "Phi",
+          "tier": "epic",
+          "category": "math",
+          "url": "https://github.com/PostHog/posthog/pull/16180",
+          "title": "fix(decide): healthcheck takes into account all errors",
+          "mergedAt": "2023-06-22T13:32:05Z"
+        },
+        {
+          "number": 21474,
+          "name": "Almost Max Int",
+          "tier": "epic",
+          "category": "math",
+          "url": "https://github.com/PostHog/posthog/pull/21474",
+          "title": "feat(experiments): Add exposure cohort flow",
+          "mergedAt": "2024-04-17T14:09:17Z"
         }
       ],
-      "points": 55,
+      "points": 70,
       "count": 4,
-      "firstMergedAt": "2021-02-01T08:25:41Z",
+      "firstMergedAt": "2021-10-26T16:19:25Z",
       "rank": 2
     },
     {
@@ -2593,7 +2091,7 @@
       "achievements": [
         {
           "number": 1234,
-          "name": "Staircase Up",
+          "name": "Counting Up",
           "tier": "rare",
           "category": "staircase",
           "url": "https://github.com/PostHog/posthog/pull/1234",
@@ -2634,55 +2132,6 @@
       "rank": 3
     },
     {
-      "login": "paolodamico",
-      "name": "Paolo D'Amico",
-      "url": "https://github.com/paolodamico",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/5864173?u=a16869d7c39e9f146cdf35b293d24062a5e99413&v=4",
-      "bot": false,
-      "achievements": [
-        {
-          "number": 2222,
-          "name": "4 × 2",
-          "tier": "rare",
-          "category": "repdigit",
-          "url": "https://github.com/PostHog/posthog/pull/2222",
-          "title": "Enable email on localhost by default",
-          "mergedAt": "2020-11-13T15:55:45Z"
-        },
-        {
-          "number": 3210,
-          "name": "Staircase Down",
-          "tier": "rare",
-          "category": "staircase",
-          "url": "https://github.com/PostHog/posthog/pull/3210",
-          "title": "Fix more z-index wonkiness",
-          "mergedAt": "2021-02-08T15:23:45Z"
-        },
-        {
-          "number": 5432,
-          "name": "Staircase Down",
-          "tier": "rare",
-          "category": "staircase",
-          "url": "https://github.com/PostHog/posthog/pull/5432",
-          "title": "Better insights instrumentation",
-          "mergedAt": "2021-08-04T21:45:14Z"
-        },
-        {
-          "number": 7654,
-          "name": "Staircase Down",
-          "tier": "rare",
-          "category": "staircase",
-          "url": "https://github.com/PostHog/posthog/pull/7654",
-          "title": "Release funnel vertical breakdown",
-          "mergedAt": "2021-12-13T19:45:39Z"
-        }
-      ],
-      "points": 40,
-      "count": 4,
-      "firstMergedAt": "2020-11-13T15:55:45Z",
-      "rank": 3
-    },
-    {
       "login": "rafaeelaudibert",
       "name": "Rafael Audibert",
       "url": "https://github.com/rafaeelaudibert",
@@ -2720,47 +2169,7 @@
       "points": 125,
       "count": 3,
       "firstMergedAt": "2025-03-17T04:15:29Z",
-      "rank": 5
-    },
-    {
-      "login": "neilkakkar",
-      "name": "Neil Kakkar",
-      "url": "https://github.com/neilkakkar",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/7115141?u=c1b21ee65c207eb778d423d9c06d4c4082cd3b15&v=4",
-      "bot": false,
-      "achievements": [
-        {
-          "number": 6666,
-          "name": "4 × 6",
-          "tier": "rare",
-          "category": "repdigit",
-          "url": "https://github.com/PostHog/posthog/pull/6666",
-          "title": "Add event with properties benchmark",
-          "mergedAt": "2021-10-26T16:19:25Z"
-        },
-        {
-          "number": 6767,
-          "name": "Six Seven Six Seven",
-          "tier": "rare",
-          "category": "meme",
-          "url": "https://github.com/PostHog/posthog/pull/6767",
-          "title": "Fixes for Correlation UI: pagination & persons modal",
-          "mergedAt": "2021-11-02T09:54:45Z"
-        },
-        {
-          "number": 16180,
-          "name": "Phi, Extended",
-          "tier": "epic",
-          "category": "math",
-          "url": "https://github.com/PostHog/posthog/pull/16180",
-          "title": "fix(decide): healthcheck takes into account all errors",
-          "mergedAt": "2023-06-22T13:32:05Z"
-        }
-      ],
-      "points": 45,
-      "count": 3,
-      "firstMergedAt": "2021-10-26T16:19:25Z",
-      "rank": 6
+      "rank": 4
     },
     {
       "login": "yakkomajuri",
@@ -2800,7 +2209,7 @@
       "points": 30,
       "count": 3,
       "firstMergedAt": "2021-12-17T18:09:41Z",
-      "rank": 7
+      "rank": 5
     },
     {
       "login": "veryayskiy",
@@ -2831,7 +2240,7 @@
       "points": 150,
       "count": 2,
       "firstMergedAt": "2026-03-05T15:10:18Z",
-      "rank": 8
+      "rank": 6
     },
     {
       "login": "jurajmajerik",
@@ -2862,69 +2271,7 @@
       "points": 50,
       "count": 2,
       "firstMergedAt": "2025-05-30T13:23:45Z",
-      "rank": 9
-    },
-    {
-      "login": "joshsny",
-      "name": "Joshua Snyder",
-      "url": "https://github.com/joshsny",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/7135900?u=109e43c5e906a8ecc1a2d465c4457f5cf29328a5&v=4",
-      "bot": false,
-      "achievements": [
-        {
-          "number": 45678,
-          "name": "Staircase Up",
-          "tier": "epic",
-          "category": "staircase",
-          "url": "https://github.com/PostHog/posthog/pull/45678",
-          "title": "fix: single worker per pod",
-          "mergedAt": "2026-01-22T11:48:11Z"
-        },
-        {
-          "number": 65535,
-          "name": "Max Unsigned Short",
-          "tier": "epic",
-          "category": "math",
-          "url": "https://github.com/PostHog/posthog/pull/65535",
-          "title": "revert: diagnostic support agent with safety guardrails",
-          "mergedAt": "2026-06-23T17:13:29Z"
-        }
-      ],
-      "points": 50,
-      "count": 2,
-      "firstMergedAt": "2026-01-22T11:48:11Z",
-      "rank": 9
-    },
-    {
-      "login": "fuziontech",
-      "name": "James Greenhill",
-      "url": "https://github.com/fuziontech",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/391319?u=653d605da3baa9badfc2b1d2783010c4858646a0&v=4",
-      "bot": false,
-      "achievements": [
-        {
-          "number": 1618,
-          "name": "Phi",
-          "tier": "rare",
-          "category": "math",
-          "url": "https://github.com/PostHog/posthog/pull/1618",
-          "title": "Convert private functions to public for ee access",
-          "mergedAt": "2020-09-09T05:35:27Z"
-        },
-        {
-          "number": 4096,
-          "name": "2^12",
-          "tier": "epic",
-          "category": "power",
-          "url": "https://github.com/PostHog/posthog/pull/4096",
-          "title": "Enable cleanup of SSM Task that enables us to exec into containers on ecs",
-          "mergedAt": "2021-05-04T14:22:21Z"
-        }
-      ],
-      "points": 35,
-      "count": 2,
-      "firstMergedAt": "2020-09-09T05:35:27Z",
-      "rank": 11
+      "rank": 7
     },
     {
       "login": "mariusandra",
@@ -2955,7 +2302,7 @@
       "points": 20,
       "count": 2,
       "firstMergedAt": "2020-09-24T10:14:18Z",
-      "rank": 12
+      "rank": 8
     },
     {
       "login": "liyiy",
@@ -2966,7 +2313,7 @@
       "achievements": [
         {
           "number": 4321,
-          "name": "Staircase Down",
+          "name": "Countdown",
           "tier": "rare",
           "category": "staircase",
           "url": "https://github.com/PostHog/posthog/pull/4321",
@@ -2986,7 +2333,7 @@
       "points": 20,
       "count": 2,
       "firstMergedAt": "2021-05-14T00:43:35Z",
-      "rank": 12
+      "rank": 8
     },
     {
       "login": "alexkim205",
@@ -3017,7 +2364,7 @@
       "points": 20,
       "count": 2,
       "firstMergedAt": "2021-08-12T00:25:13Z",
-      "rank": 12
+      "rank": 8
     },
     {
       "login": "ablaszkiewicz",
@@ -3039,7 +2386,7 @@
       "points": 50,
       "count": 1,
       "firstMergedAt": "2026-06-23T17:33:07Z",
-      "rank": 15
+      "rank": 11
     },
     {
       "login": "Gilbert09",
@@ -3061,7 +2408,7 @@
       "points": 50,
       "count": 1,
       "firstMergedAt": "2026-07-14T18:33:00Z",
-      "rank": 15
+      "rank": 11
     },
     {
       "login": "jakesciotto",
@@ -3083,7 +2430,51 @@
       "points": 50,
       "count": 1,
       "firstMergedAt": "2026-08-10T14:44:04Z",
-      "rank": 15
+      "rank": 11
+    },
+    {
+      "login": "fuziontech",
+      "name": "James Greenhill",
+      "url": "https://github.com/fuziontech",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/391319?u=653d605da3baa9badfc2b1d2783010c4858646a0&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 4096,
+          "name": "2^12",
+          "tier": "epic",
+          "category": "power",
+          "url": "https://github.com/PostHog/posthog/pull/4096",
+          "title": "Enable cleanup of SSM Task that enables us to exec into containers on ecs",
+          "mergedAt": "2021-05-04T14:22:21Z"
+        }
+      ],
+      "points": 25,
+      "count": 1,
+      "firstMergedAt": "2021-05-04T14:22:21Z",
+      "rank": 14
+    },
+    {
+      "login": "Twixes",
+      "name": "Michael Matloka",
+      "url": "https://github.com/Twixes",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/4550621?u=8cfecce44cfc8ff05fccd1d27bc103fb2462f97c&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 11111,
+          "name": "5 × 1",
+          "tier": "epic",
+          "category": "repdigit",
+          "url": "https://github.com/PostHog/posthog/pull/11111",
+          "title": "refactor(insights): Polish up axis unit setting",
+          "mergedAt": "2022-08-03T16:48:14Z"
+        }
+      ],
+      "points": 25,
+      "count": 1,
+      "firstMergedAt": "2022-08-03T16:48:14Z",
+      "rank": 14
     },
     {
       "login": "hazzadous",
@@ -3105,7 +2496,7 @@
       "points": 25,
       "count": 1,
       "firstMergedAt": "2022-10-28T10:05:16Z",
-      "rank": 18
+      "rank": 14
     },
     {
       "login": "pauldambra",
@@ -3127,7 +2518,7 @@
       "points": 25,
       "count": 1,
       "firstMergedAt": "2022-12-14T22:48:29Z",
-      "rank": 18
+      "rank": 14
     },
     {
       "login": "daibhin",
@@ -3149,7 +2540,7 @@
       "points": 25,
       "count": 1,
       "firstMergedAt": "2023-07-05T12:14:38Z",
-      "rank": 18
+      "rank": 14
     },
     {
       "login": "tiina303",
@@ -3171,7 +2562,7 @@
       "points": 25,
       "count": 1,
       "firstMergedAt": "2024-05-09T14:38:29Z",
-      "rank": 18
+      "rank": 14
     },
     {
       "login": "zlwaterfield",
@@ -3193,7 +2584,7 @@
       "points": 25,
       "count": 1,
       "firstMergedAt": "2025-04-21T23:01:23Z",
-      "rank": 18
+      "rank": 14
     },
     {
       "login": "lucasheriques",
@@ -3204,7 +2595,7 @@
       "achievements": [
         {
           "number": 31415,
-          "name": "Pi, Serious Business",
+          "name": "Pi",
           "tier": "epic",
           "category": "math",
           "url": "https://github.com/PostHog/posthog/pull/31415",
@@ -3215,29 +2606,7 @@
       "points": 25,
       "count": 1,
       "firstMergedAt": "2025-04-23T16:07:30Z",
-      "rank": 18
-    },
-    {
-      "login": "jose-sequeira",
-      "name": "José Sequeira",
-      "url": "https://github.com/jose-sequeira",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/117165826?u=390bdb2b233b0ee3dacf439bc42192d135acd124&v=4",
-      "bot": false,
-      "achievements": [
-        {
-          "number": 34567,
-          "name": "Staircase Up",
-          "tier": "epic",
-          "category": "staircase",
-          "url": "https://github.com/PostHog/posthog/pull/34567",
-          "title": "fix(plugin-server): fix logger shutdown",
-          "mergedAt": "2025-07-04T12:06:31Z"
-        }
-      ],
-      "points": 25,
-      "count": 1,
-      "firstMergedAt": "2025-07-04T12:06:31Z",
-      "rank": 18
+      "rank": 14
     },
     {
       "login": "adboio",
@@ -3259,73 +2628,29 @@
       "points": 25,
       "count": 1,
       "firstMergedAt": "2025-11-24T23:15:51Z",
-      "rank": 18
+      "rank": 14
     },
     {
-      "login": "darkopia",
-      "name": "Ben Lea",
-      "url": "https://github.com/darkopia",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/80100530?u=49b034b7d423f83da26c1efd5b2fa015c6863688&v=4",
+      "login": "joshsny",
+      "name": "Joshua Snyder",
+      "url": "https://github.com/joshsny",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/7135900?u=109e43c5e906a8ecc1a2d465c4457f5cf29328a5&v=4",
       "bot": false,
       "achievements": [
         {
-          "number": 43210,
-          "name": "Staircase Down",
+          "number": 65535,
+          "name": "Max Unsigned Short",
           "tier": "epic",
-          "category": "staircase",
-          "url": "https://github.com/PostHog/posthog/pull/43210",
-          "title": "fix: allow Personal API Key access to playlist recordings endpoint",
-          "mergedAt": "2025-12-18T13:00:40Z"
+          "category": "math",
+          "url": "https://github.com/PostHog/posthog/pull/65535",
+          "title": "revert: diagnostic support agent with safety guardrails",
+          "mergedAt": "2026-06-23T17:13:29Z"
         }
       ],
       "points": 25,
       "count": 1,
-      "firstMergedAt": "2025-12-18T13:00:40Z",
-      "rank": 18
-    },
-    {
-      "login": "lricoy",
-      "name": "Lucas Ricoy",
-      "url": "https://github.com/lricoy",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/2034367?v=4",
-      "bot": false,
-      "achievements": [
-        {
-          "number": 56789,
-          "name": "Staircase Up",
-          "tier": "epic",
-          "category": "staircase",
-          "url": "https://github.com/PostHog/posthog/pull/56789",
-          "title": "feat(web-analytics): add bot definitions for Manus, NotebookLM, Lighthouse, Slack image proxy",
-          "mergedAt": "2026-04-29T02:18:13Z"
-        }
-      ],
-      "points": 25,
-      "count": 1,
-      "firstMergedAt": "2026-04-29T02:18:13Z",
-      "rank": 18
-    },
-    {
-      "login": "webjunkie",
-      "name": "Julian Bez",
-      "url": "https://github.com/webjunkie",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/59713?u=7bfc22f91a964d0015731031bccaebdf5bddb754&v=4",
-      "bot": false,
-      "achievements": [
-        {
-          "number": 65432,
-          "name": "Staircase Down",
-          "tier": "epic",
-          "category": "staircase",
-          "url": "https://github.com/PostHog/posthog/pull/65432",
-          "title": "feat(engineering_analytics): add branch filter and failure tracking to workflow health",
-          "mergedAt": "2026-06-23T20:00:35Z"
-        }
-      ],
-      "points": 25,
-      "count": 1,
-      "firstMergedAt": "2026-06-23T20:00:35Z",
-      "rank": 18
+      "firstMergedAt": "2026-06-23T17:13:29Z",
+      "rank": 14
     },
     {
       "login": "jamesefhawkins",
@@ -3347,29 +2672,29 @@
       "points": 10,
       "count": 1,
       "firstMergedAt": "2020-04-08T12:15:13Z",
-      "rank": 29
+      "rank": 24
     },
     {
-      "login": "kpthatsme",
-      "name": "Kunal",
-      "url": "https://github.com/kpthatsme",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/5965891?v=4",
+      "login": "paolodamico",
+      "name": "Paolo D'Amico",
+      "url": "https://github.com/paolodamico",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/5864173?u=a16869d7c39e9f146cdf35b293d24062a5e99413&v=4",
       "bot": false,
       "achievements": [
         {
-          "number": 5678,
-          "name": "Staircase Up",
+          "number": 2222,
+          "name": "4 × 2",
           "tier": "rare",
-          "category": "staircase",
-          "url": "https://github.com/PostHog/posthog/pull/5678",
-          "title": "sentence case the readme",
-          "mergedAt": "2021-08-21T06:13:50Z"
+          "category": "repdigit",
+          "url": "https://github.com/PostHog/posthog/pull/2222",
+          "title": "Enable email on localhost by default",
+          "mergedAt": "2020-11-13T15:55:45Z"
         }
       ],
       "points": 10,
       "count": 1,
-      "firstMergedAt": "2021-08-21T06:13:50Z",
-      "rank": 29
+      "firstMergedAt": "2020-11-13T15:55:45Z",
+      "rank": 24
     }
   ]
 }
