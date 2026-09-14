@@ -206,7 +206,7 @@ function unchanged(file, payload) {
  * Rank by number of achievements, then by rarity, then by who got there first.
  *
  * Every member gets a distinct rank: if two people are level on both count and
- * rarity, the one whose earliest cool number merged first takes the higher spot.
+ * rarity, whoever holds the lower PR number takes the higher spot.
  */
 function buildLeaderboard(claimed) {
   const byLogin = new Map()
@@ -221,12 +221,12 @@ function buildLeaderboard(claimed) {
     ...m,
     count: m.achievements.length,
     achievements: m.achievements.sort((a, b) => a.number - b.number),
-    firstMergedAt: m.achievements.reduce((min, a) => (a.mergedAt < min ? a.mergedAt : min), '9999'),
+    // PR numbers are handed out in order, so the lowest one someone holds is
+    // simply the earliest -- no dates to parse or compare.
+    firstNumber: m.achievements.reduce((min, a) => Math.min(min, a.number), Infinity),
   }))
 
-  members.sort(
-    (a, b) => b.count - a.count || b.points - a.points || a.firstMergedAt.localeCompare(b.firstMergedAt)
-  )
+  members.sort((a, b) => b.count - a.count || b.points - a.points || a.firstNumber - b.firstNumber)
 
   return members.map((m, i) => ({ ...m, rank: i + 1 }))
 }

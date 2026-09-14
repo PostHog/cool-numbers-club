@@ -92,13 +92,13 @@ const searchKey = (a) =>
 /* ── Register ──────────────────────────────────────────────── */
 
 function registerRow(m) {
-  // Counts and earliest claim per tier, so narrowing the rarities re-scores and
+  // Count and lowest PR number per tier, so narrowing the rarities re-scores and
   // re-breaks ties against only what is still being counted.
   const perTier = Object.keys(TIERS)
     .map((t) => {
       const held = m.achievements.filter((a) => a.tier === t)
-      const earliest = held.reduce((min, a) => (min === '' || a.mergedAt < min ? a.mergedAt : min), '')
-      return `data-tier-${t}="${held.length}" data-first-${t}="${esc(earliest)}"`
+      const lowest = held.length ? Math.min(...held.map((a) => a.number)) : ''
+      return `data-tier-${t}="${held.length}" data-first-${t}="${lowest}"`
     })
     .join(' ')
   const numbers = m.achievements
@@ -107,7 +107,7 @@ function registerRow(m) {
         `<a class="chip" data-tier="${a.tier}" href="#n-${a.number}" title="${esc(a.name)} — ${esc(a.title)}">#${num(a.number)}</a>`
     )
     .join('')
-  return `<li class="register__row" data-podium="${m.rank}" data-first="${esc(m.firstMergedAt)}" ${perTier}>
+  return `<li class="register__row" data-podium="${m.rank}" ${perTier}>
     <div class="register__rank">${m.rank}</div>
     ${avatar(m.avatarUrl, 'register__avatar', '')}
     <div class="register__who">
@@ -199,7 +199,7 @@ const html = `<!doctype html>
     <div class="section__head">
       <div>
         <h2 class="section__title">The register</h2>
-        <p class="section__sub">Ranked by how many cool numbers you hold, then by rarity, then by whoever got there first. Narrow the rarities to see who leads on the good ones. Bots are on the wall but not in the running.</p>
+        <p class="section__sub">Ranked by how many cool numbers you hold, then by rarity, then by whoever holds the lowest PR number. Narrow the rarities to see who leads on the good ones. Bots are on the wall but not in the running.</p>
       </div>
       <div class="controls">
         <div class="control">

@@ -44,7 +44,9 @@ Two rules about how these are counted:
   whose login ends in `-bot`/`[bot]`/`-app`, is listed as the holder but kept
   off the leaderboard.
 
-Scoring: Singularity 1000, Mythic 100, Legendary 50, Epic 25, Rare 10.
+Scoring: Singularity 1000, Mythic 100, Legendary 50, Epic 25, Rare 10. Ranks are
+strict — level on both count and rarity is broken by whoever holds the lowest PR
+number, since numbers are handed out in order.
 **Singularity** exists for exactly one number — `#1,000,000`, the last ticket the
 machine will ever print. It gets an animated rainbow treatment on the page, and
 its rarity toggle stays hidden from the leaderboard until someone actually claims

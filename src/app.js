@@ -73,7 +73,7 @@
   const members = [...register.children].map((el) => ({
     el,
     byTier: Object.fromEntries(TIERS.map((t) => [t, Number(el.dataset[key('tier', t)] || 0)])),
-    firstByTier: Object.fromEntries(TIERS.map((t) => [t, el.dataset[key('first', t)] || ''])),
+    firstByTier: Object.fromEntries(TIERS.map((t) => [t, Number(el.dataset[key('first', t)]) || 0])),
     rankEl: el.querySelector('.register__rank'),
     countEl: el.querySelector('.register__count'),
     pointsEl: el.querySelector('.register__pts'),
@@ -84,16 +84,15 @@
     for (const m of members) {
       m.count = TIERS.reduce((n, t) => (selected.has(t) ? n + m.byTier[t] : n), 0)
       m.points = TIERS.reduce((n, t) => (selected.has(t) ? n + m.byTier[t] * tierPoints[t] : n), 0)
-      // Earliest claim among the rarities still being counted.
-      m.first = TIERS.filter((t) => selected.has(t) && m.firstByTier[t])
-        .map((t) => m.firstByTier[t])
-        .sort()[0] ?? ''
+      // Lowest PR number among the rarities still being counted.
+      const held = TIERS.filter((t) => selected.has(t) && m.firstByTier[t]).map((t) => m.firstByTier[t])
+      m.first = held.length ? Math.min(...held) : Infinity
       for (const chip of m.chips) chip.hidden = !selected.has(chip.dataset.tier)
     }
 
     // Someone with nothing in the selected rarities is not in this contest.
     const ranked = members.filter((m) => m.count > 0)
-    ranked.sort((a, b) => ORDER[sortMode](a, b) || a.first.localeCompare(b.first))
+    ranked.sort((a, b) => ORDER[sortMode](a, b) || a.first - b.first)
 
     ranked.forEach((m, i) => {
       const rank = i + 1
