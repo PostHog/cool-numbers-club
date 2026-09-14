@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-09-14T18:55:47.538Z",
+  "generatedAt": "2026-09-14T18:57:52.083Z",
   "repo": "posthog/posthog",
-  "highestPr": 100556,
+  "highestPr": 100557,
   "stats": {
-    "total": 170,
+    "total": 137,
     "claimed": 52,
     "byHumans": 48,
     "byBots": 4,
     "missed": 48,
-    "future": 70,
+    "future": 37,
     "members": 26
   },
   "upcoming": [
@@ -22,7 +22,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 10555,
+      "toGo": 10554,
       "why": "future"
     },
     {
@@ -35,7 +35,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 22900,
+      "toGo": 22899,
       "why": "future"
     },
     {
@@ -48,7 +48,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 30516,
+      "toGo": 30515,
       "why": "future"
     },
     {
@@ -61,7 +61,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 49444,
+      "toGo": 49443,
       "why": "future"
     }
   ],
@@ -2208,7 +2208,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 10555,
+      "toGo": 10554,
       "why": "future"
     },
     {
@@ -2221,7 +2221,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 22900,
+      "toGo": 22899,
       "why": "future"
     },
     {
@@ -2234,7 +2234,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 30516,
+      "toGo": 30515,
       "why": "future"
     },
     {
@@ -2247,7 +2247,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 49444,
+      "toGo": 49443,
       "why": "future"
     },
     {
@@ -2260,7 +2260,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 99444,
+      "toGo": 99443,
       "why": "future"
     },
     {
@@ -2273,7 +2273,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 121666,
+      "toGo": 121665,
       "why": "future"
     },
     {
@@ -2286,7 +2286,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 149444,
+      "toGo": 149443,
       "why": "future"
     },
     {
@@ -2299,7 +2299,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 161588,
+      "toGo": 161587,
       "why": "future"
     },
     {
@@ -2312,7 +2312,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 199444,
+      "toGo": 199443,
       "why": "future"
     },
     {
@@ -2326,7 +2326,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 213603,
+      "toGo": 213602,
       "why": "future"
     },
     {
@@ -2339,7 +2339,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 232777,
+      "toGo": 232776,
       "why": "future"
     },
     {
@@ -2352,7 +2352,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 249444,
+      "toGo": 249443,
       "why": "future"
     },
     {
@@ -2366,7 +2366,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 262324,
+      "toGo": 262323,
       "why": "future"
     },
     {
@@ -2379,7 +2379,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 299444,
+      "toGo": 299443,
       "why": "future"
     },
     {
@@ -2392,7 +2392,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 343888,
+      "toGo": 343887,
       "why": "future"
     },
     {
@@ -2405,7 +2405,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 349444,
+      "toGo": 349443,
       "why": "future"
     },
     {
@@ -2418,7 +2418,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 399444,
+      "toGo": 399443,
       "why": "future"
     },
     {
@@ -2431,7 +2431,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 423732,
+      "toGo": 423731,
       "why": "future"
     },
     {
@@ -2444,7 +2444,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 449444,
+      "toGo": 449443,
       "why": "future"
     },
     {
@@ -2457,7 +2457,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 454999,
+      "toGo": 454998,
       "why": "future"
     },
     {
@@ -2470,7 +2470,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 499444,
+      "toGo": 499443,
       "why": "future"
     },
     {
@@ -2484,7 +2484,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 527762,
+      "toGo": 527761,
       "why": "future"
     },
     {
@@ -2497,7 +2497,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 549444,
+      "toGo": 549443,
       "why": "future"
     },
     {
@@ -2510,7 +2510,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 553765,
+      "toGo": 553764,
       "why": "future"
     },
     {
@@ -2523,7 +2523,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 566110,
+      "toGo": 566109,
       "why": "future"
     },
     {
@@ -2537,7 +2537,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 576211,
+      "toGo": 576210,
       "why": "future"
     },
     {
@@ -2551,7 +2551,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 596413,
+      "toGo": 596412,
       "why": "future"
     },
     {
@@ -2564,7 +2564,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 599444,
+      "toGo": 599443,
       "why": "future"
     },
     {
@@ -2577,7 +2577,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 649444,
+      "toGo": 649443,
       "why": "future"
     },
     {
@@ -2590,7 +2590,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 677221,
+      "toGo": 677220,
       "why": "future"
     },
     {
@@ -2603,7 +2603,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 699444,
+      "toGo": 699443,
       "why": "future"
     },
     {
@@ -2616,7 +2616,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 749444,
+      "toGo": 749443,
       "why": "future"
     },
     {
@@ -2629,7 +2629,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 788332,
+      "toGo": 788331,
       "why": "future"
     },
     {
@@ -2642,7 +2642,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 799444,
+      "toGo": 799443,
       "why": "future"
     },
     {
@@ -2655,7 +2655,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 849444,
+      "toGo": 849443,
       "why": "future"
     },
     {
@@ -2668,449 +2668,20 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 899443,
+      "toGo": 899442,
       "why": "future"
     },
     {
       "number": 1000000,
       "category": "round",
-      "tier": "mythic",
-      "name": "One in a Million",
-      "blurb": "The 6th power of ten. A genuine odometer moment.",
-      "alsoKnownAs": [],
-      "points": 100,
-      "claimed": false,
-      "future": true,
-      "toGo": 899444,
-      "why": "future"
-    },
-    {
-      "number": 1048576,
-      "category": "power",
-      "tier": "legendary",
-      "name": "2^20",
-      "blurb": "Two to the 20th. A number with real binary dignity.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 948020,
-      "why": "future"
-    },
-    {
-      "number": 1111111,
-      "category": "repdigit",
-      "tier": "legendary",
-      "name": "7 × 1",
-      "blurb": "7 identical digits in a row. The odds are not good.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 1010555,
-      "why": "future"
-    },
-    {
-      "number": 1234567,
-      "category": "staircase",
-      "tier": "legendary",
-      "name": "Counting Up",
-      "blurb": "Every digit from 1 to 7, in order.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 1134011,
-      "why": "future"
-    },
-    {
-      "number": 1500000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "1.5M",
-      "blurb": "1.5 million pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 1399444,
-      "why": "future"
-    },
-    {
-      "number": 2000000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "2M",
-      "blurb": "2 million pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 1899444,
-      "why": "future"
-    },
-    {
-      "number": 2097152,
-      "category": "power",
-      "tier": "legendary",
-      "name": "2^21",
-      "blurb": "Two to the 21st. A number with real binary dignity.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 1996596,
-      "why": "future"
-    },
-    {
-      "number": 2222222,
-      "category": "repdigit",
-      "tier": "legendary",
-      "name": "7 × 2",
-      "blurb": "7 identical digits in a row. The odds are not good.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 2121666,
-      "why": "future"
-    },
-    {
-      "number": 2500000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "2.5M",
-      "blurb": "2.5 million pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 2399444,
-      "why": "future"
-    },
-    {
-      "number": 3000000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "3M",
-      "blurb": "3 million pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 2899444,
-      "why": "future"
-    },
-    {
-      "number": 3333333,
-      "category": "repdigit",
-      "tier": "legendary",
-      "name": "7 × 3",
-      "blurb": "7 identical digits in a row. The odds are not good.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 3232777,
-      "why": "future"
-    },
-    {
-      "number": 3500000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "3.5M",
-      "blurb": "3.5 million pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 3399444,
-      "why": "future"
-    },
-    {
-      "number": 4000000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "4M",
-      "blurb": "4 million pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 3899444,
-      "why": "future"
-    },
-    {
-      "number": 4194304,
-      "category": "power",
-      "tier": "legendary",
-      "name": "2^22",
-      "blurb": "Two to the 22nd. A number with real binary dignity.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 4093748,
-      "why": "future"
-    },
-    {
-      "number": 4444444,
-      "category": "repdigit",
-      "tier": "legendary",
-      "name": "7 × 4",
-      "blurb": "7 identical digits in a row. The odds are not good.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 4343888,
-      "why": "future"
-    },
-    {
-      "number": 4500000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "4.5M",
-      "blurb": "4.5 million pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 4399444,
-      "why": "future"
-    },
-    {
-      "number": 5000000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "5M",
-      "blurb": "5 million pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 4899444,
-      "why": "future"
-    },
-    {
-      "number": 5500000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "5.5M",
-      "blurb": "5.5 million pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 5399444,
-      "why": "future"
-    },
-    {
-      "number": 5555555,
-      "category": "repdigit",
-      "tier": "legendary",
-      "name": "7 × 5",
-      "blurb": "7 identical digits in a row. The odds are not good.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 5454999,
-      "why": "future"
-    },
-    {
-      "number": 6000000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "6M",
-      "blurb": "6 million pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 5899444,
-      "why": "future"
-    },
-    {
-      "number": 6500000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "6.5M",
-      "blurb": "6.5 million pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 6399444,
-      "why": "future"
-    },
-    {
-      "number": 6666666,
-      "category": "repdigit",
-      "tier": "legendary",
-      "name": "7 × 6",
-      "blurb": "7 identical digits in a row. The odds are not good.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 6566110,
-      "why": "future"
-    },
-    {
-      "number": 7000000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "7M",
-      "blurb": "7 million pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 6899444,
-      "why": "future"
-    },
-    {
-      "number": 7500000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "7.5M",
-      "blurb": "7.5 million pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 7399444,
-      "why": "future"
-    },
-    {
-      "number": 7654321,
-      "category": "staircase",
-      "tier": "legendary",
-      "name": "Countdown",
-      "blurb": "7, 6, and so on down to 1. Liftoff.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 7553765,
-      "why": "future"
-    },
-    {
-      "number": 7777777,
-      "category": "repdigit",
-      "tier": "legendary",
-      "name": "7 × 7",
-      "blurb": "7 identical digits in a row. The odds are not good.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 7677221,
-      "why": "future"
-    },
-    {
-      "number": 8000000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "8M",
-      "blurb": "8 million pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 7899444,
-      "why": "future"
-    },
-    {
-      "number": 8388608,
-      "category": "power",
-      "tier": "legendary",
-      "name": "2^23",
-      "blurb": "Two to the 23rd. A number with real binary dignity.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 8288052,
-      "why": "future"
-    },
-    {
-      "number": 8500000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "8.5M",
-      "blurb": "8.5 million pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 8399444,
-      "why": "future"
-    },
-    {
-      "number": 8888888,
-      "category": "repdigit",
-      "tier": "legendary",
-      "name": "7 × 8",
-      "blurb": "7 identical digits in a row. The odds are not good.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 8788332,
-      "why": "future"
-    },
-    {
-      "number": 9000000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "9M",
-      "blurb": "9 million pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 8899444,
-      "why": "future"
-    },
-    {
-      "number": 9500000,
-      "category": "round",
-      "tier": "legendary",
-      "name": "9.5M",
-      "blurb": "9.5 million pull requests deep.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 9399444,
-      "why": "future"
-    },
-    {
-      "number": 9999999,
-      "category": "repdigit",
-      "tier": "legendary",
-      "name": "7 × 9",
-      "blurb": "7 identical digits in a row. The odds are not good.",
-      "alsoKnownAs": [],
-      "points": 50,
-      "claimed": false,
-      "future": true,
-      "toGo": 9899443,
-      "why": "future"
-    },
-    {
-      "number": 10000000,
-      "category": "round",
       "tier": "singularity",
-      "name": "The Last Ticket",
-      "blurb": "The 10,000,000th pull request, and the highest number the club recognises. The machine prints exactly one of these, ever.",
+      "name": "One in a Million",
+      "blurb": "The 1,000,000th pull request, and the highest number the club recognises. The machine prints exactly one of these, ever.",
       "alsoKnownAs": [],
       "points": 1000,
       "claimed": false,
       "future": true,
-      "toGo": 9899444,
+      "toGo": 899443,
       "why": "future"
     }
   ],
