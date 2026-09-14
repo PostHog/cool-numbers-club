@@ -56,43 +56,46 @@ Legendary re-scores everyone and shows who leads on the numbers that matter.
 ## Running it locally
 
 ```sh
-npm run build   # fetch fresh data from GitHub, then render to dist/
-npm run dev     # render from the committed data and serve dist/ locally
+npm run dev      # render the committed data and serve it
+npm run refresh  # pull fresh data from GitHub, then render
 ```
 
-`npm run fetch` needs a GitHub token. It reads `GITHUB_TOKEN` (or `GH_TOKEN`),
-and falls back to `gh auth token` if you have the GitHub CLI set up. The whole
-fetch costs about 3 points of the 5,000/hour GraphQL budget — every number in
-the catalogue is looked up in batches of 100 aliases per request.
+No dependencies to install — the project has none.
 
-`data/achievements.json` is committed so `npm run dev` works without a token.
-It is a convenience snapshot, not the source of truth; the deployed site always
-refetches.
+`npm run fetch` needs a GitHub token. It reads `GITHUB_TOKEN` (or `GH_TOKEN`)
+and falls back to `gh auth token`, so `gh auth login` is all the local setup
+there is. A token is not optional: the GraphQL API rejects anonymous requests
+outright, and anonymous REST is capped at 60 requests an hour — below what a
+full pass needs. Nobody has to *create* one, though. See below.
+
+The fetch costs about 3 points of the 5,000/hour GraphQL budget: every reachable
+number is looked up in batches of 100 aliases per request. It only rewrites
+`data/achievements.json` when something actually changed, so re-running it is a
+no-op rather than a timestamp churn.
 
 ## Deploying
 
-The site is a directory of static files, so Cloudflare Pages needs almost nothing:
+`data/achievements.json` is committed, and the build just renders it. So
+Cloudflare Pages needs **no secrets and no GitHub API access**:
 
 | Setting | Value |
 | --- | --- |
 | Build command | `npm run build` |
 | Build output directory | `dist` |
-| Environment variable | `GITHUB_TOKEN` — a fine-grained PAT with public repo read access |
+| Environment variables | none |
 
-`.node-version` pins Node 22 so the build gets a modern runtime.
+`.node-version` pins Node 22.
 
-If the GitHub fetch fails, the build fails and Cloudflare keeps the previous
-deploy live. That is deliberate: a visibly stale page beats a silently wrong one.
+### The nightly refresh
 
-### The nightly rebuild
+[`.github/workflows/refresh.yml`](.github/workflows/refresh.yml) runs at 06:00
+UTC, fetches the latest claims, and commits the result only if it changed.
+Cloudflare Pages redeploys on that push.
 
-Cloudflare Pages cannot schedule its own builds, so
-[`.github/workflows/nightly.yml`](.github/workflows/nightly.yml) POSTs to a Pages
-deploy hook at 06:00 UTC. To wire it up:
-
-1. In Cloudflare Pages, go to **Settings → Builds → Deploy hooks** and create one
-   on the `main` branch.
-2. Add the URL as a repository secret named `CLOUDFLARE_DEPLOY_HOOK`.
+**There is no PAT and no deploy hook to set up.** GitHub Actions injects
+`secrets.GITHUB_TOKEN` automatically for the fetch, and Cloudflare deploys on
+git push like any other commit. Point Cloudflare Pages at the repo and you are
+done.
 
 Run it by hand any time from the Actions tab — the workflow has a
 `workflow_dispatch` trigger.

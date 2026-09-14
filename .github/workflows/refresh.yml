@@ -1,0 +1,52 @@
+# Nightly refresh of the club register.
+#
+# The fetch needs a GitHub token -- the GraphQL API rejects anonymous requests,
+# and anonymous REST is capped at 60/hour, below what a full pass needs. Nobody
+# has to create one: Actions injects `secrets.GITHUB_TOKEN` automatically, so
+# there is no PAT to mint, store or rotate.
+#
+# This commits the refreshed data, and Cloudflare Pages redeploys on push. That
+# means Cloudflare never talks to the GitHub API and needs no secrets at all --
+# its build command just renders the committed JSON.
+#
+# Setup: none, beyond pointing Cloudflare Pages at this repo.
+
+name: Refresh the register
+
+on:
+  schedule:
+    # 06:00 UTC daily. GitHub's scheduler is best-effort and can run late.
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+
+      # No dependencies to install -- the project has none.
+      - name: Fetch the latest claims
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run fetch
+
+      - name: Commit if the register changed
+        run: |
+          if git diff --quiet -- data/achievements.json; then
+            echo "No new claims. Nothing to deploy."
+            exit 0
+          fi
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/achievements.json
+          git commit -m 'Refresh the club register'
+          git push
+          echo "Register updated. Cloudflare Pages will redeploy on this push."

@@ -7,7 +7,7 @@
  */
 
 import { execFileSync } from 'node:child_process'
-import { writeFileSync } from 'node:fs'
+import { readFileSync, writeFileSync } from 'node:fs'
 import { catalogue, CEILING } from './numbers.mjs'
 
 const REPO = { owner: 'posthog', name: 'posthog' }
@@ -24,14 +24,19 @@ const BOT_LOGINS = new Set(['posthog'])
 const looksLikeABot = (author) =>
   author.__typename === 'Bot' || BOT_LOGIN.test(author.login) || BOT_LOGINS.has(author.login)
 
+/**
+ * A token is not optional: the GraphQL API rejects anonymous requests outright,
+ * and anonymous REST is capped at 60 requests an hour, below what a cold build
+ * needs. Nobody has to create one by hand though -- CI passes the automatic
+ * GITHUB_TOKEN, and locally we borrow the gh CLI's credentials.
+ */
 function token() {
   const fromEnv = process.env.GITHUB_TOKEN || process.env.GH_TOKEN
   if (fromEnv) return fromEnv
   try {
-    // Local convenience: borrow the gh CLI's credentials.
     return execFileSync('gh', ['auth', 'token'], { encoding: 'utf8' }).trim()
   } catch {
-    throw new Error('No GITHUB_TOKEN set, and `gh auth token` failed. Set GITHUB_TOKEN and retry.')
+    throw new Error('No GITHUB_TOKEN set, and `gh auth token` failed. Run `gh auth login` or set GITHUB_TOKEN.')
   }
 }
 
@@ -168,13 +173,33 @@ async function main() {
     leaderboard,
   }
 
-  writeFileSync(new URL('../data/achievements.json', import.meta.url), JSON.stringify(payload, null, 2) + '\n')
+  const out = new URL('../data/achievements.json', import.meta.url)
+
+  // Only rewrite the file when something real changed. The timestamp alone moves
+  // every run, and a nightly commit of nothing but a clock is just noise.
+  if (unchanged(out, payload)) {
+    console.error('No change since the last run -- leaving data/achievements.json alone.')
+    return
+  }
+
+  writeFileSync(out, JSON.stringify(payload, null, 2) + '\n')
   console.error(
     `Wrote data/achievements.json -- ${payload.stats.claimed} claimed ` +
       `(${payload.stats.byHumans} human, ${payload.stats.byBots} bot), ` +
       `${payload.stats.missed} missed, ${payload.stats.future} still to come, ` +
       `${leaderboard.length} club members.`
   )
+}
+
+/** True when the new payload matches what is on disk, ignoring the timestamp. */
+function unchanged(file, payload) {
+  try {
+    const { generatedAt: _was, ...previous } = JSON.parse(readFileSync(file, 'utf8'))
+    const { generatedAt: _is, ...next } = payload
+    return JSON.stringify(previous) === JSON.stringify(next)
+  } catch {
+    return false
+  }
 }
 
 /**
