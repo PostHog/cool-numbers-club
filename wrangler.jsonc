@@ -1,0 +1,19 @@
+// Cloudflare deploy config.
+//
+// This file exists mainly to stop `wrangler deploy` guessing. With no config it
+// runs auto-configuration, which sniffed this repo as a Hugo site and tried to
+// run `npx hugo` into `public/`. Declaring the assets directory skips all of
+// that and simply uploads what `npm run build` produced.
+//
+// There is no `main` entry: this is a static-assets-only Worker, so no script
+// runs on a request. `dist/_headers` still applies.
+{
+  "name": "cool-numbers-club",
+  "compatibility_date": "2026-09-11",
+  "assets": {
+    "directory": "./dist"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

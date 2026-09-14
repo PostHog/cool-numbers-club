@@ -92,9 +92,9 @@ npm run dev        # look at it
 
 That is the whole change — no code to edit.
 
-To deploy your copy, point Cloudflare Pages at your fork (build command
-`npm run build`, output `dist`) and the nightly workflow keeps it current. There
-are no secrets to configure.
+To deploy your copy, point Cloudflare at your fork and change `name` in
+`wrangler.jsonc`. The nightly workflow keeps it current, and there are no secrets
+to configure.
 
 Everything else is shared: the rule-generated categories work on any repo, and
 the hand-written `MEMES`/`MATH` lists are just as valid elsewhere. If your repo
@@ -123,14 +123,23 @@ check mainly stops back-to-back re-runs from churning the file.
 
 ## Deploying
 
-`data/achievements.json` is committed, and the build just renders it. So
-Cloudflare Pages needs **no secrets and no GitHub API access**:
+`data/achievements.json` is committed and the build just renders it, so Cloudflare
+needs **no secrets and no GitHub API access**:
 
 | Setting | Value |
 | --- | --- |
 | Build command | `npm run build` |
-| Build output directory | `dist` |
+| Deploy command | `npx wrangler deploy` |
 | Environment variables | none |
+
+This deploys as a **Worker with static assets**, configured by
+[`wrangler.jsonc`](wrangler.jsonc). That file matters more than it looks: with no
+config, `wrangler deploy` runs auto-detection, which sniffs this repo as a Hugo
+site and tries to run `npx hugo` into `public/`. Declaring `assets.directory`
+skips the guessing and uploads what the build produced.
+
+There is no `main` entry — nothing runs on a request, it is pure static hosting.
+`src/_headers` is copied into `dist/` and is applied by Workers as usual.
 
 `.node-version` pins Node 22.
 
@@ -138,12 +147,11 @@ Cloudflare Pages needs **no secrets and no GitHub API access**:
 
 [`.github/workflows/refresh.yml`](.github/workflows/refresh.yml) runs at 06:00
 UTC, fetches the latest claims, and commits the result only if it changed.
-Cloudflare Pages redeploys on that push.
+Cloudflare redeploys on that push.
 
 **There is no PAT and no deploy hook to set up.** GitHub Actions injects
 `secrets.GITHUB_TOKEN` automatically for the fetch, and Cloudflare deploys on
-git push like any other commit. Point Cloudflare Pages at the repo and you are
-done.
+git push like any other commit. Point Cloudflare at the repo and you are done.
 
 Pushes made with `GITHUB_TOKEN` do not start `on: push` **workflows** — that is
 GitHub's loop prevention — but the suppression is scoped to Actions runs and does
@@ -153,7 +161,7 @@ equivalent rule for third-party apps.)
 
 Three things would silently stop the nightly deploy, so watch for them:
 
-- **`[skip ci]` in the commit message.** Cloudflare Pages reads `[skip ci]`,
+- **`[skip ci]` in the commit message.** Cloudflare reads `[skip ci]`,
   `[CI Skip]` and `[CF-Pages-Skip]` as "do not deploy". The workflow carries a
   comment warning against adding one.
 - **Branch deployment controls** excluding the branch being pushed to.
