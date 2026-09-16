@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-09-15T06:16:48.887Z",
+  "generatedAt": "2026-09-16T06:16:28.514Z",
   "repo": "posthog/posthog",
-  "highestPr": 100729,
+  "highestPr": 101408,
   "stats": {
     "total": 137,
-    "claimed": 52,
-    "byHumans": 48,
+    "claimed": 53,
+    "byHumans": 49,
     "byBots": 4,
-    "missed": 48,
+    "missed": 47,
     "future": 37,
-    "members": 26
+    "members": 27
   },
   "upcoming": [
     {
@@ -22,7 +22,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 10382,
+      "toGo": 9703,
       "why": "future"
     },
     {
@@ -35,7 +35,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 22727,
+      "toGo": 22048,
       "why": "future"
     },
     {
@@ -48,7 +48,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 30343,
+      "toGo": 29664,
       "why": "future"
     },
     {
@@ -61,11 +61,25 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 49271,
+      "toGo": 48592,
       "why": "future"
     }
   ],
   "recent": [
+    {
+      "number": 99999,
+      "name": "5 × 9",
+      "tier": "epic",
+      "holder": {
+        "login": "sakce",
+        "name": "Jovan Sakovic",
+        "url": "https://github.com/sakce",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/49978945?u=b9320d127f4a54a37de25e6467a65d4454865817&v=4",
+        "bot": false
+      },
+      "mergedAt": "2026-09-15T10:30:42Z",
+      "url": "https://github.com/PostHog/posthog/pull/99999"
+    },
     {
       "number": 100000,
       "name": "PR #100,000",
@@ -135,20 +149,6 @@
       },
       "mergedAt": "2026-06-23T17:33:07Z",
       "url": "https://github.com/PostHog/posthog/pull/65536"
-    },
-    {
-      "number": 50000,
-      "name": "50k",
-      "tier": "legendary",
-      "holder": {
-        "login": "veryayskiy",
-        "name": "Alex V",
-        "url": "https://github.com/veryayskiy",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/13624984?u=9bd247851dfa702b3c5952fd7b9e1d967ed3c598&v=4",
-        "bot": false
-      },
-      "mergedAt": "2026-03-05T15:10:18Z",
-      "url": "https://github.com/PostHog/posthog/pull/50000"
     }
   ],
   "achievements": [
@@ -2164,12 +2164,22 @@
       "blurb": "5 identical digits in a row. The odds are not good.",
       "alsoKnownAs": [],
       "points": 25,
-      "claimed": false,
-      "why": "open",
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "sakce",
+        "name": "Jovan Sakovic",
+        "url": "https://github.com/sakce",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/49978945?u=b9320d127f4a54a37de25e6467a65d4454865817&v=4",
+        "bot": false
+      },
       "pr": {
-        "url": "https://github.com/PostHog/posthog/pull/99999",
         "title": "feat(games): add Ship It, a game about landing a pull request",
-        "state": "OPEN"
+        "url": "https://github.com/PostHog/posthog/pull/99999",
+        "mergedAt": "2026-09-15T10:30:42Z",
+        "createdAt": "2026-09-14T09:43:41Z",
+        "additions": 1196,
+        "deletions": 2
       }
     },
     {
@@ -2208,7 +2218,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 10382,
+      "toGo": 9703,
       "why": "future"
     },
     {
@@ -2221,7 +2231,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 22727,
+      "toGo": 22048,
       "why": "future"
     },
     {
@@ -2234,7 +2244,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 30343,
+      "toGo": 29664,
       "why": "future"
     },
     {
@@ -2247,7 +2257,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 49271,
+      "toGo": 48592,
       "why": "future"
     },
     {
@@ -2260,7 +2270,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 99271,
+      "toGo": 98592,
       "why": "future"
     },
     {
@@ -2273,7 +2283,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 121493,
+      "toGo": 120814,
       "why": "future"
     },
     {
@@ -2286,7 +2296,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 149271,
+      "toGo": 148592,
       "why": "future"
     },
     {
@@ -2299,7 +2309,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 161415,
+      "toGo": 160736,
       "why": "future"
     },
     {
@@ -2312,7 +2322,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 199271,
+      "toGo": 198592,
       "why": "future"
     },
     {
@@ -2326,7 +2336,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 213430,
+      "toGo": 212751,
       "why": "future"
     },
     {
@@ -2339,7 +2349,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 232604,
+      "toGo": 231925,
       "why": "future"
     },
     {
@@ -2352,7 +2362,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 249271,
+      "toGo": 248592,
       "why": "future"
     },
     {
@@ -2366,7 +2376,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 262151,
+      "toGo": 261472,
       "why": "future"
     },
     {
@@ -2379,7 +2389,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 299271,
+      "toGo": 298592,
       "why": "future"
     },
     {
@@ -2392,7 +2402,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 343715,
+      "toGo": 343036,
       "why": "future"
     },
     {
@@ -2405,7 +2415,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 349271,
+      "toGo": 348592,
       "why": "future"
     },
     {
@@ -2418,7 +2428,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 399271,
+      "toGo": 398592,
       "why": "future"
     },
     {
@@ -2431,7 +2441,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 423559,
+      "toGo": 422880,
       "why": "future"
     },
     {
@@ -2444,7 +2454,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 449271,
+      "toGo": 448592,
       "why": "future"
     },
     {
@@ -2457,7 +2467,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 454826,
+      "toGo": 454147,
       "why": "future"
     },
     {
@@ -2470,7 +2480,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 499271,
+      "toGo": 498592,
       "why": "future"
     },
     {
@@ -2484,7 +2494,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 527589,
+      "toGo": 526910,
       "why": "future"
     },
     {
@@ -2497,7 +2507,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 549271,
+      "toGo": 548592,
       "why": "future"
     },
     {
@@ -2510,7 +2520,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 553592,
+      "toGo": 552913,
       "why": "future"
     },
     {
@@ -2523,7 +2533,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 565937,
+      "toGo": 565258,
       "why": "future"
     },
     {
@@ -2537,7 +2547,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 576038,
+      "toGo": 575359,
       "why": "future"
     },
     {
@@ -2551,7 +2561,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 596240,
+      "toGo": 595561,
       "why": "future"
     },
     {
@@ -2564,7 +2574,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 599271,
+      "toGo": 598592,
       "why": "future"
     },
     {
@@ -2577,7 +2587,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 649271,
+      "toGo": 648592,
       "why": "future"
     },
     {
@@ -2590,7 +2600,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 677048,
+      "toGo": 676369,
       "why": "future"
     },
     {
@@ -2603,7 +2613,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 699271,
+      "toGo": 698592,
       "why": "future"
     },
     {
@@ -2616,7 +2626,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 749271,
+      "toGo": 748592,
       "why": "future"
     },
     {
@@ -2629,7 +2639,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 788159,
+      "toGo": 787480,
       "why": "future"
     },
     {
@@ -2642,7 +2652,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 799271,
+      "toGo": 798592,
       "why": "future"
     },
     {
@@ -2655,7 +2665,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 849271,
+      "toGo": 848592,
       "why": "future"
     },
     {
@@ -2668,7 +2678,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 899270,
+      "toGo": 898591,
       "why": "future"
     },
     {
@@ -2681,7 +2691,7 @@
       "points": 1000,
       "claimed": false,
       "future": true,
-      "toGo": 899271,
+      "toGo": 898592,
       "why": "future"
     }
   ],
@@ -3413,6 +3423,28 @@
       "rank": 24
     },
     {
+      "login": "sakce",
+      "name": "Jovan Sakovic",
+      "url": "https://github.com/sakce",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/49978945?u=b9320d127f4a54a37de25e6467a65d4454865817&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 99999,
+          "name": "5 × 9",
+          "tier": "epic",
+          "category": "repdigit",
+          "url": "https://github.com/PostHog/posthog/pull/99999",
+          "title": "feat(games): add Ship It, a game about landing a pull request",
+          "mergedAt": "2026-09-15T10:30:42Z"
+        }
+      ],
+      "points": 25,
+      "count": 1,
+      "firstNumber": 99999,
+      "rank": 25
+    },
+    {
       "login": "jamesefhawkins",
       "name": "James Hawkins",
       "url": "https://github.com/jamesefhawkins",
@@ -3432,7 +3464,7 @@
       "points": 10,
       "count": 1,
       "firstNumber": 500,
-      "rank": 25
+      "rank": 26
     },
     {
       "login": "paolodamico",
@@ -3454,7 +3486,7 @@
       "points": 10,
       "count": 1,
       "firstNumber": 2222,
-      "rank": 26
+      "rank": 27
     }
   ]
 }
