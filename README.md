@@ -145,6 +145,34 @@ when something other than its own timestamp changed. In practice the highest PR
 number moves constantly, so the nightly run does normally produce a commit — the
 check mainly stops back-to-back re-runs from churning the file.
 
+### The favicon
+
+[`src/favicon.svg`](src/favicon.svg) is the PostHog logomark on a transparent
+square, generated from [`@posthog/brand`](https://github.com/PostHog/brand) and
+committed like the card:
+
+```sh
+npm run favicon   # writes src/favicon.svg
+```
+
+One file covers both colour schemes and switches between them itself, with a
+`prefers-color-scheme` query inside the SVG. That is not a flourish: Chrome
+ignores the `media` attribute on `<link rel="icon">`, so two linked files would
+leave it showing whichever it loaded first no matter which scheme the reader is
+in. Light mode gets the gradient variant, dark mode the flat print one with its
+near-black head lifted to white — as drawn it would vanish against a dark tab
+strip. The mark stands on its own, with no plate behind it.
+
+[`scripts/favicon.mjs`](scripts/favicon.mjs) needs the brand package and React
+to render it, which is why it is generated rather than built: it installs them
+into a temp directory, writes the file, and cleans up, so the deploy build keeps
+its zero dependencies. Nothing in the favicon changes from night to night, so
+unlike the card the nightly refresh leaves it alone. Re-run it by hand when the
+brand package moves; the version it came from is recorded in the file.
+
+Like the footer mark, it only flies over `posthog/posthog` — a fork pointed at
+another repository gets the unbranded take-a-number monogram instead.
+
 ## Deploying
 
 `data/achievements.json` is committed and the build just renders it, so Cloudflare

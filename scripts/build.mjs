@@ -198,6 +198,14 @@ const filters = [
   ['future', 'Still to come'],
 ]
 
+// PostHog's mark only flies over PostHog's own club, exactly as on the social
+// card; a fork pointed elsewhere keeps the unbranded take-a-number monogram.
+// src/favicon.svg carries both colour schemes and switches between them itself,
+// because Chrome ignores `media` on `<link rel="icon">`.
+const icon = isHomeRepo
+  ? '<link rel="icon" href="./favicon.svg" type="image/svg+xml">'
+  : `<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%23f54e00'/><text x='50' y='74' font-size='68' font-family='Helvetica,Arial' font-weight='bold' text-anchor='middle' fill='%23f2eee2'>%23</text></svg>">`
+
 const html = `<!doctype html>
 <html lang="en">
 <head>
@@ -226,7 +234,7 @@ ${
     : ''
 }
 <meta name="theme-color" content="#14161d">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%23f54e00'/><text x='50' y='74' font-size='68' font-family='Helvetica,Arial' font-weight='bold' text-anchor='middle' fill='%23f2eee2'>%23</text></svg>">
+${icon}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=DM+Mono:wght@400;500&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -379,6 +387,7 @@ copyFileSync(src('styles.css'), root('dist/styles.css'))
 copyFileSync(src('app.js'), root('dist/app.js'))
 copyFileSync(src('_headers'), root('dist/_headers'))
 copyFileSync(src('og.png'), root('dist/og.png'))
+if (isHomeRepo) copyFileSync(src('favicon.svg'), root('dist/favicon.svg'))
 
 // Both need a public URL to point at: a sitemap of relative links is no sitemap
 // at all, and robots.txt is mostly here to advertise one.
