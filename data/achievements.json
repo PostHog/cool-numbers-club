@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-07T06:15:55.406Z",
+  "generatedAt": "2026-10-08T06:18:00.007Z",
   "repo": "posthog/posthog",
-  "highestPr": 113039,
+  "highestPr": 113703,
   "stats": {
     "total": 137,
     "claimed": 52,
@@ -22,7 +22,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 10417,
+      "toGo": 9753,
       "why": "future"
     },
     {
@@ -35,7 +35,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 18033,
+      "toGo": 17369,
       "why": "future"
     },
     {
@@ -48,7 +48,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 36961,
+      "toGo": 36297,
       "why": "future"
     },
     {
@@ -61,7 +61,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 86961,
+      "toGo": 86297,
       "why": "future"
     }
   ],
@@ -2224,7 +2224,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 10417,
+      "toGo": 9753,
       "why": "future"
     },
     {
@@ -2237,7 +2237,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 18033,
+      "toGo": 17369,
       "why": "future"
     },
     {
@@ -2250,7 +2250,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 36961,
+      "toGo": 36297,
       "why": "future"
     },
     {
@@ -2263,7 +2263,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 86961,
+      "toGo": 86297,
       "why": "future"
     },
     {
@@ -2276,7 +2276,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 109183,
+      "toGo": 108519,
       "why": "future"
     },
     {
@@ -2289,7 +2289,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 136961,
+      "toGo": 136297,
       "why": "future"
     },
     {
@@ -2302,7 +2302,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 149105,
+      "toGo": 148441,
       "why": "future"
     },
     {
@@ -2315,7 +2315,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 186961,
+      "toGo": 186297,
       "why": "future"
     },
     {
@@ -2329,7 +2329,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 201120,
+      "toGo": 200456,
       "why": "future"
     },
     {
@@ -2342,7 +2342,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 220294,
+      "toGo": 219630,
       "why": "future"
     },
     {
@@ -2355,7 +2355,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 236961,
+      "toGo": 236297,
       "why": "future"
     },
     {
@@ -2369,7 +2369,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 249841,
+      "toGo": 249177,
       "why": "future"
     },
     {
@@ -2382,7 +2382,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 286961,
+      "toGo": 286297,
       "why": "future"
     },
     {
@@ -2395,7 +2395,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 331405,
+      "toGo": 330741,
       "why": "future"
     },
     {
@@ -2408,7 +2408,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 336961,
+      "toGo": 336297,
       "why": "future"
     },
     {
@@ -2421,7 +2421,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 386961,
+      "toGo": 386297,
       "why": "future"
     },
     {
@@ -2434,7 +2434,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 411249,
+      "toGo": 410585,
       "why": "future"
     },
     {
@@ -2447,7 +2447,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 436961,
+      "toGo": 436297,
       "why": "future"
     },
     {
@@ -2460,7 +2460,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 442516,
+      "toGo": 441852,
       "why": "future"
     },
     {
@@ -2473,7 +2473,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 486961,
+      "toGo": 486297,
       "why": "future"
     },
     {
@@ -2487,7 +2487,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 515279,
+      "toGo": 514615,
       "why": "future"
     },
     {
@@ -2500,7 +2500,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 536961,
+      "toGo": 536297,
       "why": "future"
     },
     {
@@ -2513,7 +2513,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 541282,
+      "toGo": 540618,
       "why": "future"
     },
     {
@@ -2526,7 +2526,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 553627,
+      "toGo": 552963,
       "why": "future"
     },
     {
@@ -2540,7 +2540,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 563728,
+      "toGo": 563064,
       "why": "future"
     },
     {
@@ -2554,7 +2554,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 583930,
+      "toGo": 583266,
       "why": "future"
     },
     {
@@ -2567,7 +2567,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 586961,
+      "toGo": 586297,
       "why": "future"
     },
     {
@@ -2580,7 +2580,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 636961,
+      "toGo": 636297,
       "why": "future"
     },
     {
@@ -2593,7 +2593,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 664738,
+      "toGo": 664074,
       "why": "future"
     },
     {
@@ -2606,7 +2606,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 686961,
+      "toGo": 686297,
       "why": "future"
     },
     {
@@ -2619,7 +2619,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 736961,
+      "toGo": 736297,
       "why": "future"
     },
     {
@@ -2632,7 +2632,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 775849,
+      "toGo": 775185,
       "why": "future"
     },
     {
@@ -2645,7 +2645,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 786961,
+      "toGo": 786297,
       "why": "future"
     },
     {
@@ -2658,7 +2658,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 836961,
+      "toGo": 836297,
       "why": "future"
     },
     {
@@ -2671,7 +2671,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 886960,
+      "toGo": 886296,
       "why": "future"
     },
     {
@@ -2684,7 +2684,7 @@
       "points": 1000,
       "claimed": false,
       "future": true,
-      "toGo": 886961,
+      "toGo": 886297,
       "why": "future"
     }
   ],
