@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-27T06:16:27.042Z",
+  "generatedAt": "2026-10-28T06:12:16.040Z",
   "repo": "posthog/posthog",
-  "highestPr": 123801,
+  "highestPr": 124593,
   "stats": {
     "total": 137,
-    "claimed": 52,
-    "byHumans": 49,
+    "claimed": 53,
+    "byHumans": 50,
     "byBots": 3,
-    "missed": 50,
+    "missed": 49,
     "future": 35,
-    "members": 27
+    "members": 28
   },
   "upcoming": [
     {
@@ -22,7 +22,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 7271,
+      "toGo": 6479,
       "why": "future"
     },
     {
@@ -35,7 +35,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 26199,
+      "toGo": 25407,
       "why": "future"
     },
     {
@@ -48,7 +48,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 76199,
+      "toGo": 75407,
       "why": "future"
     },
     {
@@ -61,11 +61,25 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 98421,
+      "toGo": 97629,
       "why": "future"
     }
   ],
   "recent": [
+    {
+      "number": 123456,
+      "name": "Counting Up",
+      "tier": "legendary",
+      "holder": {
+        "login": "JamesPatrickGill",
+        "name": "James Gill",
+        "url": "https://github.com/JamesPatrickGill",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44863195?u=1d3c56fd6b7364548a449d0c41c2fac8e0941bbc&v=4",
+        "bot": false
+      },
+      "mergedAt": "2026-10-27T18:21:16Z",
+      "url": "https://github.com/PostHog/posthog/pull/123456"
+    },
     {
       "number": 99999,
       "name": "5 × 9",
@@ -135,20 +149,6 @@
       },
       "mergedAt": "2026-06-30T13:18:39Z",
       "url": "https://github.com/PostHog/posthog/pull/67000"
-    },
-    {
-      "number": 65536,
-      "name": "2^16",
-      "tier": "legendary",
-      "holder": {
-        "login": "ablaszkiewicz",
-        "name": "Aleksander Błaszkiewicz",
-        "url": "https://github.com/ablaszkiewicz",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/54682207?u=88966d9677a50f06145b9e5b5b7360744504c99d&v=4",
-        "bot": false
-      },
-      "mergedAt": "2026-06-23T17:33:07Z",
-      "url": "https://github.com/PostHog/posthog/pull/65536"
     }
   ],
   "achievements": [
@@ -2222,12 +2222,22 @@
       "blurb": "Every digit from 1 to 6, in order.",
       "alsoKnownAs": [],
       "points": 50,
-      "claimed": false,
-      "why": "open",
+      "claimed": true,
+      "bot": false,
+      "holder": {
+        "login": "JamesPatrickGill",
+        "name": "James Gill",
+        "url": "https://github.com/JamesPatrickGill",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44863195?u=1d3c56fd6b7364548a449d0c41c2fac8e0941bbc&v=4",
+        "bot": false
+      },
       "pr": {
-        "url": "https://github.com/PostHog/posthog/pull/123456",
         "title": "feat(error-tracking): add issue age and severity to the read event",
-        "state": "OPEN"
+        "url": "https://github.com/PostHog/posthog/pull/123456",
+        "mergedAt": "2026-10-27T18:21:16Z",
+        "createdAt": "2026-10-26T14:22:01Z",
+        "additions": 53,
+        "deletions": 11
       }
     },
     {
@@ -2240,7 +2250,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 7271,
+      "toGo": 6479,
       "why": "future"
     },
     {
@@ -2253,7 +2263,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 26199,
+      "toGo": 25407,
       "why": "future"
     },
     {
@@ -2266,7 +2276,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 76199,
+      "toGo": 75407,
       "why": "future"
     },
     {
@@ -2279,7 +2289,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 98421,
+      "toGo": 97629,
       "why": "future"
     },
     {
@@ -2292,7 +2302,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 126199,
+      "toGo": 125407,
       "why": "future"
     },
     {
@@ -2305,7 +2315,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 138343,
+      "toGo": 137551,
       "why": "future"
     },
     {
@@ -2318,7 +2328,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 176199,
+      "toGo": 175407,
       "why": "future"
     },
     {
@@ -2332,7 +2342,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 190358,
+      "toGo": 189566,
       "why": "future"
     },
     {
@@ -2345,7 +2355,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 209532,
+      "toGo": 208740,
       "why": "future"
     },
     {
@@ -2358,7 +2368,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 226199,
+      "toGo": 225407,
       "why": "future"
     },
     {
@@ -2372,7 +2382,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 239079,
+      "toGo": 238287,
       "why": "future"
     },
     {
@@ -2385,7 +2395,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 276199,
+      "toGo": 275407,
       "why": "future"
     },
     {
@@ -2398,7 +2408,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 320643,
+      "toGo": 319851,
       "why": "future"
     },
     {
@@ -2411,7 +2421,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 326199,
+      "toGo": 325407,
       "why": "future"
     },
     {
@@ -2424,7 +2434,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 376199,
+      "toGo": 375407,
       "why": "future"
     },
     {
@@ -2437,7 +2447,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 400487,
+      "toGo": 399695,
       "why": "future"
     },
     {
@@ -2450,7 +2460,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 426199,
+      "toGo": 425407,
       "why": "future"
     },
     {
@@ -2463,7 +2473,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 431754,
+      "toGo": 430962,
       "why": "future"
     },
     {
@@ -2476,7 +2486,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 476199,
+      "toGo": 475407,
       "why": "future"
     },
     {
@@ -2490,7 +2500,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 504517,
+      "toGo": 503725,
       "why": "future"
     },
     {
@@ -2503,7 +2513,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 526199,
+      "toGo": 525407,
       "why": "future"
     },
     {
@@ -2516,7 +2526,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 530520,
+      "toGo": 529728,
       "why": "future"
     },
     {
@@ -2529,7 +2539,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 542865,
+      "toGo": 542073,
       "why": "future"
     },
     {
@@ -2543,7 +2553,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 552966,
+      "toGo": 552174,
       "why": "future"
     },
     {
@@ -2557,7 +2567,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 573168,
+      "toGo": 572376,
       "why": "future"
     },
     {
@@ -2570,7 +2580,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 576199,
+      "toGo": 575407,
       "why": "future"
     },
     {
@@ -2583,7 +2593,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 626199,
+      "toGo": 625407,
       "why": "future"
     },
     {
@@ -2596,7 +2606,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 653976,
+      "toGo": 653184,
       "why": "future"
     },
     {
@@ -2609,7 +2619,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 676199,
+      "toGo": 675407,
       "why": "future"
     },
     {
@@ -2622,7 +2632,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 726199,
+      "toGo": 725407,
       "why": "future"
     },
     {
@@ -2635,7 +2645,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 765087,
+      "toGo": 764295,
       "why": "future"
     },
     {
@@ -2648,7 +2658,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 776199,
+      "toGo": 775407,
       "why": "future"
     },
     {
@@ -2661,7 +2671,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 826199,
+      "toGo": 825407,
       "why": "future"
     },
     {
@@ -2674,7 +2684,7 @@
       "points": 50,
       "claimed": false,
       "future": true,
-      "toGo": 876198,
+      "toGo": 875406,
       "why": "future"
     },
     {
@@ -2687,7 +2697,7 @@
       "points": 1000,
       "claimed": false,
       "future": true,
-      "toGo": 876199,
+      "toGo": 875407,
       "why": "future"
     }
   ],
@@ -3177,6 +3187,28 @@
       "rank": 13
     },
     {
+      "login": "JamesPatrickGill",
+      "name": "James Gill",
+      "url": "https://github.com/JamesPatrickGill",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/44863195?u=1d3c56fd6b7364548a449d0c41c2fac8e0941bbc&v=4",
+      "bot": false,
+      "achievements": [
+        {
+          "number": 123456,
+          "name": "Counting Up",
+          "tier": "legendary",
+          "category": "staircase",
+          "url": "https://github.com/PostHog/posthog/pull/123456",
+          "title": "feat(error-tracking): add issue age and severity to the read event",
+          "mergedAt": "2026-10-27T18:21:16Z"
+        }
+      ],
+      "points": 50,
+      "count": 1,
+      "firstNumber": 123456,
+      "rank": 14
+    },
+    {
       "login": "macobo",
       "name": "Karl-Aksel Puulmann",
       "url": "https://github.com/macobo",
@@ -3196,7 +3228,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 3000,
-      "rank": 14
+      "rank": 15
     },
     {
       "login": "fuziontech",
@@ -3218,7 +3250,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 4096,
-      "rank": 15
+      "rank": 16
     },
     {
       "login": "kpthatsme",
@@ -3240,7 +3272,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 5000,
-      "rank": 16
+      "rank": 17
     },
     {
       "login": "Twixes",
@@ -3262,7 +3294,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 11111,
-      "rank": 17
+      "rank": 18
     },
     {
       "login": "hazzadous",
@@ -3284,7 +3316,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 12345,
-      "rank": 18
+      "rank": 19
     },
     {
       "login": "pauldambra",
@@ -3306,7 +3338,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 13337,
-      "rank": 19
+      "rank": 20
     },
     {
       "login": "daibhin",
@@ -3328,7 +3360,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 16384,
-      "rank": 20
+      "rank": 21
     },
     {
       "login": "tiina303",
@@ -3350,7 +3382,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 22222,
-      "rank": 21
+      "rank": 22
     },
     {
       "login": "lucasheriques",
@@ -3372,7 +3404,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 31415,
-      "rank": 22
+      "rank": 23
     },
     {
       "login": "zlwaterfield",
@@ -3394,7 +3426,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 31416,
-      "rank": 23
+      "rank": 24
     },
     {
       "login": "adboio",
@@ -3416,7 +3448,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 42000,
-      "rank": 24
+      "rank": 25
     },
     {
       "login": "sakce",
@@ -3438,7 +3470,7 @@
       "points": 25,
       "count": 1,
       "firstNumber": 99999,
-      "rank": 25
+      "rank": 26
     },
     {
       "login": "jamesefhawkins",
@@ -3460,7 +3492,7 @@
       "points": 10,
       "count": 1,
       "firstNumber": 500,
-      "rank": 26
+      "rank": 27
     },
     {
       "login": "paolodamico",
@@ -3482,7 +3514,7 @@
       "points": 10,
       "count": 1,
       "firstNumber": 2222,
-      "rank": 27
+      "rank": 28
     }
   ]
 }
